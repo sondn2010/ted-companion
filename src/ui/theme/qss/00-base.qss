@@ -1,0 +1,361 @@
+/*
+ * Synthetic Nexus — base. Chuẩn: docs/UI/style-guideline.md · Màu: `@tên_token` (viết hoa, vd. @PRIMARY) = src/ui/theme/design_tokens.py
+ * (app_theme_loader thay lúc nạp — KHÔNG viết hex trong QSS). Flat: không gradient, không bóng đổ.
+ *
+ * Biến thể dùng chung (setObjectName):
+ *   Nút:   PrimaryBtn, (mặc định = Secondary), GhostBtn, IconBtn, DangerBtn, SegmentBtn[active], FabBtn
+ *          + thuộc tính compact=true cho vùng chật (bong bóng, header chat)
+ *   Nhãn:  TitleLabel, SectionLabel, FieldLabel, HintLabel, MutedLabel, ErrorLabel, WarningLabel, SuccessLabel,
+ *          Chip, StatusPill, MetricValue, MetricLabel
+ *   Khung: Card, MetricCard, InfoPanel, WarningBanner
+ */
+
+/* ── Nền cửa sổ ─────────────────────────────────────────────────────────── */
+QMainWindow, QDialog, QWidget#DashboardRoot, QWidget#PopupRoot {
+    background-color: @SURFACE;
+    color: @TEXT;
+}
+
+QWidget {
+    color: @TEXT;
+    selection-background-color: @SELECTION;
+    selection-color: @TEXT;
+}
+
+QLabel { background: transparent; }
+
+/* ── Nhãn ───────────────────────────────────────────────────────────────── */
+QLabel#TitleLabel {
+    font-size: 20px;
+    font-weight: 600;
+    color: @TEXT;
+}
+QLabel#SectionLabel {
+    font-size: 15px;
+    font-weight: 600;
+    color: @TEXT;
+}
+QLabel#FieldLabel {
+    font-size: 13px;
+    font-weight: 500;
+    color: @TEXT;
+}
+QLabel#HintLabel, QLabel#MutedLabel, QLabel#MetricLabel {
+    font-size: 12px;
+    color: @TEXT_MUTED;
+}
+QLabel#ErrorLabel { color: @ERROR; font-weight: 600; }
+QLabel#WarningLabel { color: @WARNING; font-weight: 600; }
+QLabel#SuccessLabel { color: @TERTIARY; font-weight: 600; }
+QLabel#MetricValue {
+    font-size: 28px;
+    font-weight: 600;
+    color: @TEXT;
+}
+QLabel#Chip {
+    background-color: @SURFACE_RAISED;
+    color: @PRIMARY_SOFT;
+    border: 1px solid @OUTLINE_SECONDARY;
+    border-radius: 8px;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: 600;
+}
+QLabel#StatusPill {
+    background-color: @TERTIARY_TINT;
+    color: @TERTIARY;
+    border-radius: 10px;
+    padding: 2px 10px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* ── Khung / card ───────────────────────────────────────────────────────── */
+QFrame#Card, QFrame#MetricCard {
+    background-color: @SURFACE_RAISED;
+    border: 1px solid @OUTLINE;
+    border-radius: 16px;
+}
+QFrame#MetricCard { padding: 4px; }
+QFrame#InfoPanel {
+    background-color: @SURFACE_REASONING;
+    border: 1px solid @OUTLINE_SECONDARY_SUBTLE;
+    border-radius: 12px;
+}
+QFrame#WarningBanner {
+    background-color: @WARNING_TINT;
+    border: 1px solid @WARNING_BORDER;
+    border-radius: 12px;
+}
+
+/* ── Nút: Secondary (mặc định) ──────────────────────────────────────────── */
+QPushButton {
+    background-color: @SURFACE_RAISED;
+    color: @TEXT;
+    border: 1px solid @OUTLINE_SECONDARY;
+    border-radius: 8px;
+    padding: 7px 14px;
+    font-weight: 500;
+}
+QPushButton:hover {
+    background-color: @SURFACE_OVERLAY;
+    border-color: @OUTLINE_SECONDARY_HOVER;
+}
+QPushButton:pressed { background-color: @SURFACE_LOW; }
+QPushButton:focus { border-color: @PRIMARY; }
+/* Nút checkable đang bật (vd. 🔊 giọng đọc) = trạng thái "đang bật" chung, giống Segment active */
+QPushButton:checked, QPushButton#SegmentBtn[active="true"] {
+    background-color: @PRIMARY_TINT;
+    color: @PRIMARY;
+    border: 1px solid @PRIMARY;
+    font-weight: 600;
+}
+QPushButton:disabled {
+    color: @TEXT_DISABLED;
+    background-color: @SURFACE_LOW;
+    border-color: @OUTLINE_SUBTLE;
+}
+
+/* Mật độ compact: vùng chật (bong bóng pet, header chat) — chỉ đổi kích thước, giữ biến thể màu */
+QPushButton[compact="true"] {
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* ── Primary ────────────────────────────────────────────────────────────── */
+QPushButton#PrimaryBtn {
+    background-color: @PRIMARY;
+    color: @ON_PRIMARY;
+    border: 1px solid @PRIMARY;
+    font-weight: 600;
+}
+QPushButton#PrimaryBtn:hover {
+    background-color: @PRIMARY_HOVER;
+    border-color: @PRIMARY_HOVER;
+}
+QPushButton#PrimaryBtn:pressed { background-color: @PRIMARY; }
+QPushButton#PrimaryBtn:disabled {
+    background-color: @PRIMARY_DISABLED;
+    border-color: transparent;
+    color: @ON_PRIMARY_DISABLED;
+}
+
+/* ── Ghost / Icon ───────────────────────────────────────────────────────── */
+QPushButton#GhostBtn, QPushButton#IconBtn {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: @TEXT_MUTED;
+}
+QPushButton#GhostBtn:hover, QPushButton#IconBtn:hover {
+    background-color: @HOVER_TINT;
+    color: @TEXT;
+}
+QPushButton#GhostBtn:focus, QPushButton#IconBtn:focus { border-color: transparent; }
+QPushButton#GhostBtn:disabled, QPushButton#IconBtn:disabled { background-color: transparent; color: @TEXT_DISABLED; }
+QPushButton#IconBtn { padding: 4px; min-width: 28px; min-height: 28px; }
+
+/* ── Danger ─────────────────────────────────────────────────────────────── */
+QPushButton#DangerBtn {
+    background-color: @ERROR_TINT;
+    color: @ERROR;
+    border: 1px solid @ERROR_BORDER;
+}
+QPushButton#DangerBtn:hover { background-color: @ERROR_CONTAINER_HOVER; color: @ON_ERROR_HOVER; }
+
+/* ── Segment (nhóm chọn loại trừ: Danh sách | Ma trận, Tiếng Việt | English) — active ở rule :checked trên ── */
+QPushButton#SegmentBtn { color: @TEXT_MUTED; }
+
+/* ── FAB: nút ＋ tròn nổi cạnh tiêu đề ──────────────────────────────────── */
+QPushButton#FabBtn {
+    background-color: @PRIMARY;
+    color: @ON_PRIMARY;
+    border: none;
+    border-radius: 18px;
+    min-width: 36px; max-width: 36px;
+    min-height: 36px; max-height: 36px;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0;
+}
+QPushButton#FabBtn:hover { background-color: @PRIMARY_HOVER; }
+
+/* ── Input ──────────────────────────────────────────────────────────────── */
+QLineEdit, QTextEdit, QPlainTextEdit, QSpinBox, QDoubleSpinBox, QComboBox, QDateEdit, QDateTimeEdit, QTimeEdit {
+    background-color: @SURFACE_LOW;
+    color: @TEXT;
+    border: 1px solid @OUTLINE;
+    border-radius: 8px;
+    padding: 7px 10px;
+}
+QTextEdit, QPlainTextEdit { padding: 8px; }
+QLineEdit:hover, QTextEdit:hover, QPlainTextEdit:hover, QSpinBox:hover, QDoubleSpinBox:hover, QComboBox:hover,
+QDateEdit:hover {
+    border-color: @OUTLINE_HOVER;
+}
+QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus,
+QComboBox:focus, QDateEdit:focus, QDateTimeEdit:focus, QTimeEdit:focus {
+    border: 1px solid @PRIMARY;
+}
+QLineEdit:disabled, QTextEdit:disabled, QComboBox:disabled, QSpinBox:disabled, QDateEdit:disabled {
+    color: @TEXT_DISABLED;
+}
+
+QComboBox::drop-down, QDateEdit::drop-down { border: none; width: 24px; }
+QComboBox QAbstractItemView {
+    background-color: @SURFACE_OVERLAY;
+    color: @TEXT;
+    border: 1px solid @OUTLINE_SECONDARY;
+    border-radius: 8px;
+    padding: 4px;
+    outline: 0;
+    selection-background-color: @SELECTED_TINT;
+}
+QSpinBox::up-button, QSpinBox::down-button, QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+    border: none; width: 18px; background: transparent;
+}
+
+/* ── Checkbox / radio ───────────────────────────────────────────────────── */
+QCheckBox, QRadioButton { spacing: 8px; background: transparent; }
+QCheckBox::indicator, QRadioButton::indicator {
+    width: 14px; height: 14px;
+    border: 2px solid @TEXT_MUTED;
+    background: transparent;
+}
+QCheckBox::indicator { border-radius: 4px; }
+QRadioButton::indicator { border-radius: 9px; }
+QCheckBox::indicator:hover, QRadioButton::indicator:hover { border-color: @TEXT; }
+QCheckBox::indicator:checked, QRadioButton::indicator:checked {
+    background-color: @PRIMARY;
+    border-color: @PRIMARY;
+}
+QCheckBox:disabled, QRadioButton:disabled { color: @TEXT_DISABLED; }
+
+/* ── List / table ───────────────────────────────────────────────────────── */
+QListWidget, QListView, QTableWidget, QTableView, QTreeView {
+    background-color: @SURFACE_LOW;
+    color: @TEXT;
+    border: 1px solid @OUTLINE_SUBTLE;
+    border-radius: 12px;
+    padding: 4px;
+    outline: 0;
+    alternate-background-color: @SURFACE_ALT;
+    gridline-color: @OUTLINE_SUBTLE;
+}
+QListWidget::item, QListView::item {
+    padding: 8px 10px;
+    border-radius: 8px;
+    margin: 1px 0;
+}
+QListWidget::item:hover, QListView::item:hover { background-color: @HOVER_TINT; }
+QListWidget::item:selected, QListView::item:selected,
+QTableWidget::item:selected, QTableView::item:selected {
+    background-color: @SELECTED_TINT;
+    color: @TEXT;
+}
+QTableWidget::item, QTableView::item { padding: 6px; }
+QHeaderView::section {
+    background-color: @SURFACE_LOW;
+    color: @TEXT_MUTED;
+    border: none;
+    border-bottom: 1px solid @OUTLINE;
+    padding: 6px 8px;
+    font-size: 11px;
+    font-weight: 600;
+}
+QTableCornerButton::section { background-color: @SURFACE_LOW; border: none; }
+
+/* ── Group box ──────────────────────────────────────────────────────────── */
+QGroupBox {
+    background-color: @SURFACE_LOW;
+    border: 1px solid @OUTLINE_SUBTLE;
+    border-radius: 16px;
+    margin-top: 22px;
+    padding: 14px 12px 12px 12px;
+    font-weight: 600;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 6px;
+    padding: 0 4px;
+    color: @TEXT;
+    font-size: 14px;
+}
+
+/* ── Tab con (vd. tab module Coach) ─────────────────────────────────────── */
+QTabWidget::pane {
+    border: none;
+    border-top: 1px solid @OUTLINE;
+    background: transparent;
+    top: -1px;
+}
+QTabBar { background: transparent; }
+QTabBar::tab {
+    background: transparent;
+    color: @TEXT_MUTED;
+    padding: 8px 14px;
+    margin-right: 4px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+}
+QTabBar::tab:hover { color: @TEXT; }
+QTabBar::tab:selected {
+    color: @TEXT;
+    border-bottom: 2px solid @PRIMARY;
+}
+
+/* ── Scroll ─────────────────────────────────────────────────────────────── */
+QScrollArea { background: transparent; border: none; }
+QScrollArea > QWidget > QWidget { background: transparent; }
+QScrollBar:vertical { background: transparent; width: 10px; margin: 2px; }
+QScrollBar:horizontal { background: transparent; height: 10px; margin: 2px; }
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background: @SCROLL_HANDLE;
+    border-radius: 3px;
+    min-height: 24px;
+    min-width: 24px;
+}
+QScrollBar::handle:hover { background: @SCROLL_HANDLE_HOVER; }
+QScrollBar::add-line, QScrollBar::sub-line { width: 0; height: 0; }
+QScrollBar::add-page, QScrollBar::sub-page { background: transparent; }
+
+/* ── Overlay: menu, tooltip, message box ────────────────────────────────── */
+QMenu {
+    background-color: @SURFACE_OVERLAY;
+    color: @TEXT;
+    border: 1px solid @OUTLINE_SECONDARY;
+    padding: 6px;
+}
+/* Chỉ menu có nền trong suốt (apply_overlay_menu_window_flags) mới bo góc; menu native (QLineEdit, QComboBox) giữ góc vuông */
+QMenu[overlay="true"] { border-radius: 10px; }
+QMenu::item {
+    padding: 7px 18px 7px 12px;
+    border-radius: 6px;
+    background: transparent;
+}
+QMenu::item:selected { background-color: @SELECTED_TINT; color: @TEXT; }
+QMenu::item:disabled { color: @TEXT_DISABLED; }
+QMenu::separator { height: 1px; background: @OUTLINE; margin: 5px 8px; }
+
+QToolTip {
+    background-color: @SURFACE_OVERLAY;
+    color: @TEXT;
+    border: 1px solid @OUTLINE_SECONDARY;
+    border-radius: 6px;
+    padding: 5px 8px;
+}
+
+QMessageBox { background-color: @SURFACE_LOW; }
+QMessageBox QLabel { color: @TEXT; }
+
+QProgressBar {
+    background-color: @SURFACE_LOW;
+    border: 1px solid @OUTLINE_SUBTLE;
+    border-radius: 6px;
+    height: 8px;
+    text-align: center;
+    color: @TEXT_MUTED;
+}
+QProgressBar::chunk { background-color: @PRIMARY; border-radius: 5px; }

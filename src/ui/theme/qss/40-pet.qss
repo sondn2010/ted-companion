@@ -1,0 +1,73 @@
+/*
+ * Synthetic Nexus — bề mặt nổi của pet (docs/UI/style-guideline.md §9).
+ * Bong bóng thoại (PetSpeechBubble): nút dùng biến thể chung + compact=true (Chat = PrimaryBtn, Bãi đỗ / hành động
+ * / Phiên mới / 🔊 = Secondary). Nút Pomodoro tròn trên pet đổi kiểu theo thuộc tính động `pomoKind`:
+ * start | resume = Primary · pause | break = Secondary · PomoStopBtn = Danger.
+ */
+
+/* ── Bong bóng thoại: nền/viền do paintEvent vẽ (flat, không bóng), QSS chỉ lo con ── */
+QLabel#BubbleLabel {
+    color: @TEXT;
+    font-size: 13px;
+    background: transparent;
+}
+QWidget#BubbleInputContainer { background: transparent; }
+QWidget#BubbleChatHeader { background: transparent; }
+QLabel#BubbleHeaderTitle {
+    color: @PRIMARY_SOFT;
+    font-weight: 700;
+}
+QTextEdit#BubbleChatView {
+    background-color: @SURFACE_REASONING;
+    color: @TEXT;
+    border: 1px solid @OUTLINE;
+    border-radius: 12px;
+    padding: 8px 10px;
+}
+/* Ô nhập trong bong bóng: input chuẩn, nền L2 cho nổi trên nền bong bóng L3, cỡ chữ compact */
+QLineEdit#BubbleInput {
+    background-color: @SURFACE_RAISED;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+
+/* ── Nút Pomodoro tròn 28px trên pet ────────────────────────────────────── */
+QPushButton#PomoActionBtn, QPushButton#PomoStopBtn, QPushButton#PomoBreakBtn, QPushButton#PomoMeetingBtn {
+    min-width: 28px; max-width: 28px; min-height: 28px; max-height: 28px;
+    border-radius: 14px;
+    padding: 0px;
+    /* Ký hiệu ▶⏸⏹ dùng glyph đơn sắc (Segoe UI Symbol) để nhận màu chữ thay vì emoji màu */
+    font-family: "Segoe UI Symbol", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", "Be Vietnam Pro", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+/* start / resume: Primary (▶ lệch trái 2px cho cân mắt) */
+QPushButton#PomoActionBtn[pomoKind="start"], QPushButton#PomoActionBtn[pomoKind="resume"] {
+    background-color: @PRIMARY;
+    color: @ON_PRIMARY;
+    border: 1px solid @PRIMARY;
+    padding-left: 2px;
+}
+QPushButton#PomoActionBtn[pomoKind="start"]:hover, QPushButton#PomoActionBtn[pomoKind="resume"]:hover {
+    background-color: @PRIMARY_HOVER;
+    border-color: @PRIMARY_HOVER;
+}
+/* pause / break / nút phụ pet (nền L3 cho nổi trên desktop) */
+QPushButton#PomoActionBtn[pomoKind="pause"], QPushButton#PomoActionBtn[pomoKind="break"],
+QPushButton#PomoBreakBtn, QPushButton#PomoMeetingBtn {
+    background-color: @SURFACE_OVERLAY;
+    color: @TEXT;
+    border: 1px solid @OUTLINE_SECONDARY_HOVER;
+}
+QPushButton#PomoActionBtn[pomoKind="pause"]:hover, QPushButton#PomoActionBtn[pomoKind="break"]:hover,
+QPushButton#PomoBreakBtn:hover, QPushButton#PomoMeetingBtn:hover {
+    background-color: @SURFACE_RAISED;
+    border-color: @PRIMARY;
+}
+/* stop: Danger (nền L3 thay vì tint trong suốt để đọc được trên mọi hình nền) */
+QPushButton#PomoStopBtn {
+    background-color: @SURFACE_OVERLAY;
+    color: @ERROR;
+    border: 1px solid @ERROR_BORDER;
+}
+QPushButton#PomoStopBtn:hover { background-color: @ERROR_CONTAINER_HOVER; color: @ON_ERROR_HOVER; }

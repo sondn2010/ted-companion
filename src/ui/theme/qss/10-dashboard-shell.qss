@@ -1,0 +1,53 @@
+/* Dashboard shell: sidebar điều hướng + vùng trang (src/ui/dashboard_sidebar_navigation.py) */
+
+QFrame#Sidebar {
+    background-color: @SURFACE_LOW;
+    border: none;
+    border-right: 1px solid @OUTLINE_SUBTLE;
+}
+QLabel#SidebarBrand {
+    font-size: 16px;
+    font-weight: 600;
+    color: @TEXT;
+}
+QLabel#SidebarBrandDot {
+    color: @PRIMARY;
+    font-size: 12px;
+}
+
+QPushButton#NavItem {
+    background-color: transparent;
+    color: @TEXT_MUTED;
+    border: none;
+    border-left: 2px solid transparent;
+    border-radius: 8px;
+    padding: 9px 10px;
+    text-align: left;
+    font-weight: 500;
+}
+QPushButton#NavItem:hover {
+    background-color: @HOVER_TINT;
+    color: @TEXT;
+}
+QPushButton#NavItem:checked {
+    background-color: @PRIMARY_TINT;
+    color: @TEXT;
+    border-left: 2px solid @PRIMARY;
+    font-weight: 600;
+}
+QFrame#Sidebar[collapsed="true"] QPushButton#NavItem {
+    text-align: center;
+    padding: 9px 0;
+    font-size: 16px;
+}
+
+QPushButton#NavCollapseBtn {
+    background: transparent;
+    border: none;
+    color: @TEXT_MUTED;
+    padding: 6px;
+    font-size: 16px;
+}
+QPushButton#NavCollapseBtn:hover { color: @TEXT; background-color: @HOVER_TINT; }
+
+QWidget#PageHost, QStackedWidget#PageStack { background-color: @SURFACE; }

@@ -1,0 +1,118 @@
+/* Dashboard pages: selector riêng cho các trang trong src/ui/dashboard_tabs và src/ui/module_tabs.
+   Nút chọn ngôn ngữ / kiểu xem dùng SegmentBtn, nút ＋ dùng FabBtn (00-base.qss). */
+
+/* Khung đọc Markdown Trợ giúp + báo cáo Analytics: card L2 */
+QTextBrowser#HelpBrowser, QTextEdit#AnalyticsReport {
+    background-color: @SURFACE_RAISED;
+    color: @TEXT;
+    border: 1px solid @OUTLINE;
+    border-radius: 16px;
+    padding: 12px;
+}
+
+/* Header tab Trợ giúp (logo + tiêu đề) */
+QLabel#HelpHeaderTitle {
+    color: @PRIMARY_SOFT;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Browser/host trong suốt nằm trong InfoPanel hoặc scroll area */
+QTextBrowser#TransparentBrowser { background: transparent; border: none; }
+QWidget#TransparentHost { background: transparent; }
+
+/* Ma trận Eisenhower kiểu poster (phẳng): ô nền màu QUADRANT_Q1..Q4, tiêu đề là chữ chìm nền;
+   dải "Chưa phân loại" giữ card tối. Trục mũi tên vẽ trong eisenhower_matrix_axes_board_widget.py */
+QFrame#QuadrantCell {
+    background-color: @SURFACE_RAISED;
+    border: 1px solid @OUTLINE;
+    border-radius: 12px;
+}
+QFrame#QuadrantCell[quadrant="q1"] { background-color: @QUADRANT_Q1; border: none; }
+QFrame#QuadrantCell[quadrant="q2"] { background-color: @QUADRANT_Q2; border: none; }
+QFrame#QuadrantCell[quadrant="q3"] { background-color: @QUADRANT_Q3; border: none; }
+QFrame#QuadrantCell[quadrant="q4"] { background-color: @QUADRANT_Q4; border: none; }
+/* Tiêu đề/gợi ý của ô màu là chữ chìm vẽ trong QuadrantWatermarkCell; nhãn QSS chỉ còn cho dải Chưa phân loại */
+QLabel#QuadrantTitle { background: transparent; font-size: 14px; font-weight: 600; color: @SECONDARY_SOFT; }
+QLabel#QuadrantHint { background: transparent; font-size: 11px; color: @TEXT_MUTED; }
+/* Vùng task: trong suốt, viền đứt nét báo "thả vào đây"; mỗi task là một thẻ trắng dễ đọc trên nền màu */
+QListWidget#QuadrantList {
+    background: transparent;
+    border: 1px dashed @MATRIX_DROPZONE;
+    border-radius: 10px;
+    padding: 4px;
+    outline: 0;
+}
+QListWidget#QuadrantList::item {
+    background-color: @MATRIX_CARD;
+    color: @MATRIX_CARD_TEXT;
+    border-radius: 8px;
+    padding: 6px 10px;
+    margin: 3px 2px;
+}
+QListWidget#QuadrantList::item:hover { background-color: @MATRIX_CARD_HOVER; }
+QListWidget#QuadrantList::item:selected {
+    background-color: @MATRIX_CARD_HOVER;
+    color: @ON_PRIMARY;
+    border: 2px solid @MATRIX_CARD_TEXT;
+}
+
+/* ── Bộ sưu tập nhân vật: thẻ đang chọn ─────────────────────────────────── */
+QFrame#Card[selected="true"] {
+    border: 2px solid @PRIMARY;
+}
+QLabel#PersonalityChip {
+    background-color: @SURFACE_LOW;
+    color: @PRIMARY_SOFT;
+    border: 1px solid @OUTLINE_SECONDARY;
+    border-radius: 6px;
+    padding: 1px 4px;
+    font-size: 11px;
+    font-weight: 600;
+}
+QFrame#Card[locked="true"] QLabel#PersonalityChip {
+    color: @TEXT_DISABLED;
+    border-color: @OUTLINE_SUBTLE;
+}
+QPushButton#GalleryTagBtn {
+    background-color: @SURFACE_LOW;
+    color: @TEXT_MUTED;
+    border: 1px solid @OUTLINE;
+    border-radius: 12px;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: 500;
+}
+QPushButton#GalleryTagBtn:hover {
+    background-color: @SURFACE_OVERLAY;
+    color: @TEXT;
+    border-color: @OUTLINE_SECONDARY_HOVER;
+}
+QPushButton#GalleryTagBtn:checked {
+    background-color: @PRIMARY_TINT;
+    color: @PRIMARY;
+    border: 1px solid @PRIMARY;
+    font-weight: 600;
+}
+
+/* ── Hub của Ted ────────────────────────────────────────────────────────── */
+QLabel#HubLevelTitle { color: @PRIMARY_SOFT; font-size: 22px; font-weight: 700; }
+/* Cảnh báo tụt cấp: banner nhẹ (WARNING chỉ dùng cho nhãn/banner) */
+QLabel#HubWarning {
+    color: @WARNING;
+    background-color: @WARNING_TINT;
+    border: 1px solid @WARNING_BORDER;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+/* Tải màn hình đảo ngược: cao = xấu → chunk cảnh báo */
+QProgressBar#HubStatBar[tone="warn"]::chunk { background-color: @WARNING; }
+QProgressBar#HubStatBar[tone="ok"]::chunk { background-color: @PRIMARY; }
+/* Ô huy hiệu: đã mở sáng viền tertiary mờ; chưa mở nhạt đi */
+QFrame#BadgeTile {
+    background-color: @SURFACE_ALT;
+    border: 1px solid @OUTLINE;
+    border-radius: 12px;
+}
+QFrame#BadgeTile[locked="true"] { background-color: @SURFACE_LOW; border: 1px solid @OUTLINE_SUBTLE; }
+QFrame#BadgeTile[locked="true"] QLabel { color: @TEXT_DISABLED; }

@@ -1,0 +1,8 @@
+[
+  {"name": "fast", "keywords": ["thì thầm rất nhanh", "liến thoắng", "vội vã", "lao tới"], "emotion": "", "speed": 1.08, "end_pause": 0.25},
+  {"name": "laugh", "keywords": ["bật cười", "khúc khích", "tủm tỉm", "hài hước", "cười"], "emotion": "cười", "speed": 1.02},
+  {"name": "sigh", "keywords": ["thở dài", "não nề", "buồn bã", "trầm ngâm", "lặng lẽ"], "emotion": "thở dài", "speed": 0.92},
+  {"name": "stern", "keywords": ["hắng giọng", "đe dọa", "de dọa", "nghiêm nghị", "lạnh lùng"], "emotion": "hắng giọng", "speed": 0.95},
+  {"name": "shout", "keywords": ["hô lớn", "hô vang", "hét vang", "hét lên", "gào lên", "reo lên"], "emotion": "", "speed": 0.95},
+  {"name": "inner", "keywords": ["trong tâm trí", "trong đầu", "tự nhủ", "chiếc nón thì thầm"], "emotion": "", "speed": 0.92}
+]

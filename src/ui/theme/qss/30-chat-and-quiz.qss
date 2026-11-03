@@ -1,0 +1,50 @@
+/*
+ * Synthetic Nexus — Quick Chat popup + dialog Quiz/Writing (docs/UI/style-guideline.md).
+ * Biến thể dùng chung (PrimaryBtn, Chip, WarningBanner...) nằm ở 00-base.qss.
+ *   Chat: ChatView, ChatComposer, ComposerInput, ChipDot  (ô Bãi đỗ = input chuẩn)
+ *   Quiz: QuizFeedbackPanel, QuizOptionBtn (còn lại dùng biến thể chung)
+ */
+
+/* ── Quick chat ─────────────────────────────────────────────────────────── */
+QTextEdit#ChatView {
+    background-color: @CANVAS;
+    color: @TEXT;
+    border: 1px solid @OUTLINE_SUBTLE;
+    border-radius: 12px;
+    padding: 6px 10px;
+}
+QTextEdit#ChatView:focus { border: 1px solid @OUTLINE_SUBTLE; }
+
+/* Chấm cyan nhỏ đứng trước Chip chế độ */
+QLabel#ChipDot {
+    background-color: @PRIMARY;
+    border-radius: 4px;
+    min-width: 8px; max-width: 8px;
+    min-height: 8px; max-height: 8px;
+}
+
+/* Composer dock: khung L2 + viền mảnh; ô nhập bên trong phẳng, chỉ viền cyan khi focus */
+QFrame#ChatComposer {
+    background-color: @SURFACE_RAISED;
+    border: 1px solid @OUTLINE;
+    border-radius: 16px;
+}
+QLineEdit#ComposerInput {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 6px 8px;
+}
+QLineEdit#ComposerInput:hover { border-color: transparent; }
+QLineEdit#ComposerInput:focus { border: 1px solid @PRIMARY; }
+
+/* ── Quiz / Writing ─────────────────────────────────────────────────────── */
+QPushButton#QuizOptionBtn {
+    text-align: left;
+    padding: 9px 14px;
+}
+QFrame#QuizFeedbackPanel {
+    background-color: @SURFACE_REASONING;
+    border: 1px solid @OUTLINE;
+    border-radius: 12px;
+}
