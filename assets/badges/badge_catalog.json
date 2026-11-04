@@ -1,0 +1,1146 @@
+{
+ "version": 1,
+ "style_prefix": "Cute chibi kawaii achievement medal badge icon, round medal with a small ribbon, {TIER} rim, soft pastel colors, thick clean dark outline, flat vector sticker style, gentle soft shading, centered single object, plain pure white background, no text, no letters, no numbers",
+ "tier_phrases": {
+  "bronze": "warm bronze metal",
+  "silver": "shiny silver metal",
+  "gold": "glossy gold metal with tiny sparkles",
+  "special": "rainbow iridescent crystal"
+ },
+ "locked_image": "_locked.png",
+ "badges": [
+  {
+   "id": "focus_first_session",
+   "category": "focus",
+   "tier": "bronze",
+   "name": {
+    "vi": "Lặn sâu lần đầu",
+    "en": "First Dive"
+   },
+   "desc": {
+    "vi": "Hoàn thành ≥ 1 phiên tập trung",
+    "en": "Complete ≥ 1 focus session"
+   },
+   "rule": {
+    "metric": "focus_sessions",
+    "window": "lifetime",
+    "op": ">=",
+    "value": 1
+   },
+   "image": "focus_first_session.png",
+   "prompt": "a tiny diving helmet with a sparkle"
+  },
+  {
+   "id": "focus_day_bronze",
+   "category": "focus",
+   "tier": "bronze",
+   "name": {
+    "vi": "Tập trung Đồng",
+    "en": "Bronze Focus"
+   },
+   "desc": {
+    "vi": "Tập trung ≥ 50 phút trong 1 ngày",
+    "en": "Focus ≥ 50 min in one day"
+   },
+   "rule": {
+    "metric": "focus_minutes",
+    "window": "day",
+    "op": ">=",
+    "value": 50
+   },
+   "image": "focus_day_bronze.png",
+   "prompt": "cozy headphones with a soft glowing focus beam"
+  },
+  {
+   "id": "focus_day_silver",
+   "category": "focus",
+   "tier": "silver",
+   "name": {
+    "vi": "Tập trung Bạc",
+    "en": "Silver Focus"
+   },
+   "desc": {
+    "vi": "Tập trung ≥ 100 phút trong 1 ngày",
+    "en": "Focus ≥ 100 min in one day"
+   },
+   "rule": {
+    "metric": "focus_minutes",
+    "window": "day",
+    "op": ">=",
+    "value": 100
+   },
+   "image": "focus_day_silver.png",
+   "prompt": "cozy headphones with a soft glowing focus beam"
+  },
+  {
+   "id": "focus_day_gold",
+   "category": "focus",
+   "tier": "gold",
+   "name": {
+    "vi": "Tập trung Vàng",
+    "en": "Gold Focus"
+   },
+   "desc": {
+    "vi": "Tập trung ≥ 180 phút trong 1 ngày",
+    "en": "Focus ≥ 180 min in one day"
+   },
+   "rule": {
+    "metric": "focus_minutes",
+    "window": "day",
+    "op": ">=",
+    "value": 180
+   },
+   "image": "focus_day_gold.png",
+   "prompt": "cozy headphones with a soft glowing focus beam"
+  },
+  {
+   "id": "focus_week_bronze",
+   "category": "focus",
+   "tier": "bronze",
+   "name": {
+    "vi": "Thợ lặn Đồng",
+    "en": "Bronze Deep Diver"
+   },
+   "desc": {
+    "vi": "Tập trung ≥ 300 phút trong 1 tuần",
+    "en": "Focus ≥ 300 min in one week"
+   },
+   "rule": {
+    "metric": "focus_minutes",
+    "window": "week",
+    "op": ">=",
+    "value": 300
+   },
+   "image": "focus_week_bronze.png",
+   "prompt": "a cute little submarine diving deep with bubbles"
+  },
+  {
+   "id": "focus_week_silver",
+   "category": "focus",
+   "tier": "silver",
+   "name": {
+    "vi": "Thợ lặn Bạc",
+    "en": "Silver Deep Diver"
+   },
+   "desc": {
+    "vi": "Tập trung ≥ 600 phút trong 1 tuần",
+    "en": "Focus ≥ 600 min in one week"
+   },
+   "rule": {
+    "metric": "focus_minutes",
+    "window": "week",
+    "op": ">=",
+    "value": 600
+   },
+   "image": "focus_week_silver.png",
+   "prompt": "a cute little submarine diving deep with bubbles"
+  },
+  {
+   "id": "focus_week_gold",
+   "category": "focus",
+   "tier": "gold",
+   "name": {
+    "vi": "Thợ lặn Vàng",
+    "en": "Gold Deep Diver"
+   },
+   "desc": {
+    "vi": "Tập trung ≥ 1000 phút trong 1 tuần",
+    "en": "Focus ≥ 1000 min in one week"
+   },
+   "rule": {
+    "metric": "focus_minutes",
+    "window": "week",
+    "op": ">=",
+    "value": 1000
+   },
+   "image": "focus_week_gold.png",
+   "prompt": "a cute little submarine diving deep with bubbles"
+  },
+  {
+   "id": "focus_clean_day",
+   "category": "focus",
+   "tier": "silver",
+   "name": {
+    "vi": "Tâm tĩnh như nước",
+    "en": "Still Water Mind"
+   },
+   "desc": {
+    "vi": "≥ 3 phiên tập trung không bị ngắt trong 1 ngày",
+    "en": "≥ 3 uninterrupted focus sessions in one day"
+   },
+   "rule": {
+    "metric": "clean_sessions",
+    "window": "day",
+    "op": ">=",
+    "value": 3
+   },
+   "image": "focus_clean_day.png",
+   "prompt": "a lotus flower floating on calm water"
+  },
+  {
+   "id": "focus_lifetime_100h",
+   "category": "focus",
+   "tier": "special",
+   "name": {
+    "vi": "100 giờ Deep Work",
+    "en": "100 Deep Work Hours"
+   },
+   "desc": {
+    "vi": "Tập trung ≥ 6000 phút",
+    "en": "Focus ≥ 6000 min"
+   },
+   "rule": {
+    "metric": "focus_minutes",
+    "window": "lifetime",
+    "op": ">=",
+    "value": 6000
+   },
+   "image": "focus_lifetime_100h.png",
+   "prompt": "an hourglass wearing a tiny crown"
+  },
+  {
+   "id": "tasks_week_bronze",
+   "category": "tasks",
+   "tier": "bronze",
+   "name": {
+    "vi": "Dũng sĩ diệt việc Đồng",
+    "en": "Bronze Task Slayer"
+   },
+   "desc": {
+    "vi": "Hoàn thành ≥ 5 công việc trong 1 tuần",
+    "en": "Finish ≥ 5 tasks in one week"
+   },
+   "rule": {
+    "metric": "tasks_done",
+    "window": "week",
+    "op": ">=",
+    "value": 5
+   },
+   "image": "tasks_week_bronze.png",
+   "prompt": "a tiny sword slicing through a checklist"
+  },
+  {
+   "id": "tasks_week_silver",
+   "category": "tasks",
+   "tier": "silver",
+   "name": {
+    "vi": "Dũng sĩ diệt việc Bạc",
+    "en": "Silver Task Slayer"
+   },
+   "desc": {
+    "vi": "Hoàn thành ≥ 15 công việc trong 1 tuần",
+    "en": "Finish ≥ 15 tasks in one week"
+   },
+   "rule": {
+    "metric": "tasks_done",
+    "window": "week",
+    "op": ">=",
+    "value": 15
+   },
+   "image": "tasks_week_silver.png",
+   "prompt": "a tiny sword slicing through a checklist"
+  },
+  {
+   "id": "tasks_week_gold",
+   "category": "tasks",
+   "tier": "gold",
+   "name": {
+    "vi": "Dũng sĩ diệt việc Vàng",
+    "en": "Gold Task Slayer"
+   },
+   "desc": {
+    "vi": "Hoàn thành ≥ 30 công việc trong 1 tuần",
+    "en": "Finish ≥ 30 tasks in one week"
+   },
+   "rule": {
+    "metric": "tasks_done",
+    "window": "week",
+    "op": ">=",
+    "value": 30
+   },
+   "image": "tasks_week_gold.png",
+   "prompt": "a tiny sword slicing through a checklist"
+  },
+  {
+   "id": "tasks_lifetime_100",
+   "category": "tasks",
+   "tier": "special",
+   "name": {
+    "vi": "Trăm việc xong",
+    "en": "Hundred Done"
+   },
+   "desc": {
+    "vi": "Hoàn thành ≥ 100 công việc",
+    "en": "Finish ≥ 100 tasks"
+   },
+   "rule": {
+    "metric": "tasks_done",
+    "window": "lifetime",
+    "op": ">=",
+    "value": 100
+   },
+   "image": "tasks_lifetime_100.png",
+   "prompt": "a trophy cup overflowing with checkmarks"
+  },
+  {
+   "id": "quiz_first",
+   "category": "learning",
+   "tier": "bronze",
+   "name": {
+    "vi": "Câu hỏi đầu tiên",
+    "en": "First Question"
+   },
+   "desc": {
+    "vi": "Trả lời ≥ 1 câu hỏi",
+    "en": "Answer ≥ 1 quiz questions"
+   },
+   "rule": {
+    "metric": "quiz_answered",
+    "window": "lifetime",
+    "op": ">=",
+    "value": 1
+   },
+   "image": "quiz_first.png",
+   "prompt": "a speech bubble with a question mark"
+  },
+  {
+   "id": "quiz_correct_day_bronze",
+   "category": "learning",
+   "tier": "bronze",
+   "name": {
+    "vi": "Thần đồng Đồng",
+    "en": "Bronze Whiz"
+   },
+   "desc": {
+    "vi": "Trả lời đúng ≥ 10 câu trong 1 ngày",
+    "en": "Get ≥ 10 quiz answers right in one day"
+   },
+   "rule": {
+    "metric": "quiz_correct",
+    "window": "day",
+    "op": ">=",
+    "value": 10
+   },
+   "image": "quiz_correct_day_bronze.png",
+   "prompt": "a glowing lightbulb wearing a graduation cap"
+  },
+  {
+   "id": "quiz_correct_day_silver",
+   "category": "learning",
+   "tier": "silver",
+   "name": {
+    "vi": "Thần đồng Bạc",
+    "en": "Silver Whiz"
+   },
+   "desc": {
+    "vi": "Trả lời đúng ≥ 25 câu trong 1 ngày",
+    "en": "Get ≥ 25 quiz answers right in one day"
+   },
+   "rule": {
+    "metric": "quiz_correct",
+    "window": "day",
+    "op": ">=",
+    "value": 25
+   },
+   "image": "quiz_correct_day_silver.png",
+   "prompt": "a glowing lightbulb wearing a graduation cap"
+  },
+  {
+   "id": "quiz_correct_day_gold",
+   "category": "learning",
+   "tier": "gold",
+   "name": {
+    "vi": "Thần đồng Vàng",
+    "en": "Gold Whiz"
+   },
+   "desc": {
+    "vi": "Trả lời đúng ≥ 50 câu trong 1 ngày",
+    "en": "Get ≥ 50 quiz answers right in one day"
+   },
+   "rule": {
+    "metric": "quiz_correct",
+    "window": "day",
+    "op": ">=",
+    "value": 50
+   },
+   "image": "quiz_correct_day_gold.png",
+   "prompt": "a glowing lightbulb wearing a graduation cap"
+  },
+  {
+   "id": "quiz_accuracy_week_bronze",
+   "category": "learning",
+   "tier": "bronze",
+   "name": {
+    "vi": "Xạ thủ chính xác Đồng",
+    "en": "Bronze Sharpshooter"
+   },
+   "desc": {
+    "vi": "Độ chính xác quiz ≥ 70% trong 1 tuần",
+    "en": "Quiz accuracy ≥ 70% in one week"
+   },
+   "rule": {
+    "metric": "quiz_accuracy_pct",
+    "window": "week",
+    "op": ">=",
+    "value": 70,
+    "min": {
+     "metric": "quiz_answered",
+     "value": 20
+    }
+   },
+   "image": "quiz_accuracy_week_bronze.png",
+   "prompt": "an archery target with an arrow in the bullseye"
+  },
+  {
+   "id": "quiz_accuracy_week_silver",
+   "category": "learning",
+   "tier": "silver",
+   "name": {
+    "vi": "Xạ thủ chính xác Bạc",
+    "en": "Silver Sharpshooter"
+   },
+   "desc": {
+    "vi": "Độ chính xác quiz ≥ 85% trong 1 tuần",
+    "en": "Quiz accuracy ≥ 85% in one week"
+   },
+   "rule": {
+    "metric": "quiz_accuracy_pct",
+    "window": "week",
+    "op": ">=",
+    "value": 85,
+    "min": {
+     "metric": "quiz_answered",
+     "value": 20
+    }
+   },
+   "image": "quiz_accuracy_week_silver.png",
+   "prompt": "an archery target with an arrow in the bullseye"
+  },
+  {
+   "id": "quiz_accuracy_week_gold",
+   "category": "learning",
+   "tier": "gold",
+   "name": {
+    "vi": "Xạ thủ chính xác Vàng",
+    "en": "Gold Sharpshooter"
+   },
+   "desc": {
+    "vi": "Độ chính xác quiz ≥ 95% trong 1 tuần",
+    "en": "Quiz accuracy ≥ 95% in one week"
+   },
+   "rule": {
+    "metric": "quiz_accuracy_pct",
+    "window": "week",
+    "op": ">=",
+    "value": 95,
+    "min": {
+     "metric": "quiz_answered",
+     "value": 20
+    }
+   },
+   "image": "quiz_accuracy_week_gold.png",
+   "prompt": "an archery target with an arrow in the bullseye"
+  },
+  {
+   "id": "study_days_week_bronze",
+   "category": "learning",
+   "tier": "bronze",
+   "name": {
+    "vi": "Mọt sách Đồng",
+    "en": "Bronze Bookworm"
+   },
+   "desc": {
+    "vi": "Học ≥ 3 ngày trong 1 tuần",
+    "en": "Study on ≥ 3 days in one week"
+   },
+   "rule": {
+    "metric": "study_days",
+    "window": "week",
+    "op": ">=",
+    "value": 3
+   },
+   "image": "study_days_week_bronze.png",
+   "prompt": "a stack of books with a cute worm wearing glasses"
+  },
+  {
+   "id": "study_days_week_silver",
+   "category": "learning",
+   "tier": "silver",
+   "name": {
+    "vi": "Mọt sách Bạc",
+    "en": "Silver Bookworm"
+   },
+   "desc": {
+    "vi": "Học ≥ 5 ngày trong 1 tuần",
+    "en": "Study on ≥ 5 days in one week"
+   },
+   "rule": {
+    "metric": "study_days",
+    "window": "week",
+    "op": ">=",
+    "value": 5
+   },
+   "image": "study_days_week_silver.png",
+   "prompt": "a stack of books with a cute worm wearing glasses"
+  },
+  {
+   "id": "study_days_week_gold",
+   "category": "learning",
+   "tier": "gold",
+   "name": {
+    "vi": "Mọt sách Vàng",
+    "en": "Gold Bookworm"
+   },
+   "desc": {
+    "vi": "Học ≥ 7 ngày trong 1 tuần",
+    "en": "Study on ≥ 7 days in one week"
+   },
+   "rule": {
+    "metric": "study_days",
+    "window": "week",
+    "op": ">=",
+    "value": 7
+   },
+   "image": "study_days_week_gold.png",
+   "prompt": "a stack of books with a cute worm wearing glasses"
+  },
+  {
+   "id": "agenda_week_five",
+   "category": "learning",
+   "tier": "silver",
+   "name": {
+    "vi": "Hoàn thành bài tập",
+    "en": "Homework Hero"
+   },
+   "desc": {
+    "vi": "Hoàn thành ≥ 5 bài tập trong 1 tuần",
+    "en": "Complete ≥ 5 exercises in one week"
+   },
+   "rule": {
+    "metric": "agenda_done",
+    "window": "week",
+    "op": ">=",
+    "value": 5
+   },
+   "image": "agenda_week_five.png",
+   "prompt": "an open notebook covered in star stickers"
+  },
+  {
+   "id": "agenda_lifetime_50",
+   "category": "learning",
+   "tier": "gold",
+   "name": {
+    "vi": "Chiến binh bài tập",
+    "en": "Exercise Warrior"
+   },
+   "desc": {
+    "vi": "Hoàn thành ≥ 50 bài tập",
+    "en": "Complete ≥ 50 exercises"
+   },
+   "rule": {
+    "metric": "agenda_done",
+    "window": "lifetime",
+    "op": ">=",
+    "value": 50
+   },
+   "image": "agenda_lifetime_50.png",
+   "prompt": "a school backpack decorated with tiny medals"
+  },
+  {
+   "id": "quiz_lifetime_1000",
+   "category": "learning",
+   "tier": "special",
+   "name": {
+    "vi": "Ngàn câu hỏi",
+    "en": "Thousand Questions"
+   },
+   "desc": {
+    "vi": "Trả lời ≥ 1000 câu hỏi",
+    "en": "Answer ≥ 1000 quiz questions"
+   },
+   "rule": {
+    "metric": "quiz_answered",
+    "window": "lifetime",
+    "op": ">=",
+    "value": 1000
+   },
+   "image": "quiz_lifetime_1000.png",
+   "prompt": "a mountain of flash cards with a flag on top"
+  },
+  {
+   "id": "writing_first",
+   "category": "writing",
+   "tier": "bronze",
+   "name": {
+    "vi": "Ngòi bút đầu tiên",
+    "en": "First Pen"
+   },
+   "desc": {
+    "vi": "Được chấm ≥ 1 bài viết",
+    "en": "Get ≥ 1 writings graded"
+   },
+   "rule": {
+    "metric": "writing_graded",
+    "window": "lifetime",
+    "op": ">=",
+    "value": 1
+   },
+   "image": "writing_first.png",
+   "prompt": "a fountain pen with a shiny ink drop"
+  },
+  {
+   "id": "writing_lifetime_silver",
+   "category": "writing",
+   "tier": "silver",
+   "name": {
+    "vi": "Ngòi bút Bạc",
+    "en": "Silver Quill"
+   },
+   "desc": {
+    "vi": "Được chấm ≥ 10 bài viết",
+    "en": "Get ≥ 10 writings graded"
+   },
+   "rule": {
+    "metric": "writing_graded",
+    "window": "lifetime",
+    "op": ">=",
+    "value": 10
+   },
+   "image": "writing_lifetime_silver.png",
+   "prompt": "a feather quill resting on a rolled scroll"
+  },
+  {
+   "id": "writing_lifetime_gold",
+   "category": "writing",
+   "tier": "gold",
+   "name": {
+    "vi": "Ngòi bút Vàng",
+    "en": "Gold Quill"
+   },
+   "desc": {
+    "vi": "Được chấm ≥ 30 bài viết",
+    "en": "Get ≥ 30 writings graded"
+   },
+   "rule": {
+    "metric": "writing_graded",
+    "window": "lifetime",
+    "op": ">=",
+    "value": 30
+   },
+   "image": "writing_lifetime_gold.png",
+   "prompt": "a feather quill resting on a rolled scroll"
+  },
+  {
+   "id": "streak_bronze",
+   "category": "streak",
+   "tier": "bronze",
+   "name": {
+    "vi": "Lửa bền bỉ Đồng",
+    "en": "Bronze Streak"
+   },
+   "desc": {
+    "vi": "Chuỗi ≥ 3 ngày liên tiếp",
+    "en": "Streak of ≥ 3 days in a row"
+   },
+   "rule": {
+    "metric": "best_streak_days",
+    "window": "lifetime",
+    "op": ">=",
+    "value": 3
+   },
+   "image": "streak_bronze.png",
+   "prompt": "a cute little smiling flame"
+  },
+  {
+   "id": "streak_silver",
+   "category": "streak",
+   "tier": "silver",
+   "name": {
+    "vi": "Lửa bền bỉ Bạc",
+    "en": "Silver Streak"
+   },
+   "desc": {
+    "vi": "Chuỗi ≥ 7 ngày liên tiếp",
+    "en": "Streak of ≥ 7 days in a row"
+   },
+   "rule": {
+    "metric": "best_streak_days",
+    "window": "lifetime",
+    "op": ">=",
+    "value": 7
+   },
+   "image": "streak_silver.png",
+   "prompt": "a cute little smiling flame"
+  },
+  {
+   "id": "streak_gold",
+   "category": "streak",
+   "tier": "gold",
+   "name": {
+    "vi": "Lửa bền bỉ Vàng",
+    "en": "Gold Streak"
+   },
+   "desc": {
+    "vi": "Chuỗi ≥ 30 ngày liên tiếp",
+    "en": "Streak of ≥ 30 days in a row"
+   },
+   "rule": {
+    "metric": "best_streak_days",
+    "window": "lifetime",
+    "op": ">=",
+    "value": 30
+   },
+   "image": "streak_gold.png",
+   "prompt": "a cute little smiling flame"
+  },
+  {
+   "id": "perfect_week",
+   "category": "streak",
+   "tier": "special",
+   "name": {
+    "vi": "Tuần trọn vẹn",
+    "en": "Perfect Week"
+   },
+   "desc": {
+    "vi": "Hoạt động đủ ≥ 7 ngày trong 1 tuần",
+    "en": "Be active on ≥ 7 days in one week"
+   },
+   "rule": {
+    "metric": "active_days",
+    "window": "week",
+    "op": ">=",
+    "value": 7
+   },
+   "image": "perfect_week.png",
+   "prompt": "a calendar page with seven checkmarks"
+  },
+  {
+   "id": "full_rest_day",
+   "category": "health",
+   "tier": "silver",
+   "name": {
+    "vi": "Ngày nghỉ trọn vẹn",
+    "en": "Full Rest Day"
+   },
+   "desc": {
+    "vi": "Rời máy ≥ 240 phút trong 1 ngày",
+    "en": "Away from PC ≥ 240 min in one day"
+   },
+   "rule": {
+    "metric": "away_minutes",
+    "window": "day",
+    "op": ">=",
+    "value": 240
+   },
+   "image": "full_rest_day.png",
+   "prompt": "a cozy hammock between two little palm trees"
+  },
+  {
+   "id": "balanced_day",
+   "category": "health",
+   "tier": "bronze",
+   "name": {
+    "vi": "Ngày cân bằng",
+    "en": "Balanced Day"
+   },
+   "desc": {
+    "vi": "Điểm sức khỏe ≥ 80 trong 1 ngày",
+    "en": "Health score ≥ 80 in one day"
+   },
+   "rule": {
+    "metric": "health",
+    "window": "day",
+    "op": ">=",
+    "value": 80
+   },
+   "image": "balanced_day.png",
+   "prompt": "a cozy cup of tea with a small leaf"
+  },
+  {
+   "id": "family_first_week",
+   "category": "engagement",
+   "tier": "gold",
+   "name": {
+    "vi": "Gia đình là số 1",
+    "en": "Family First"
+   },
+   "desc": {
+    "vi": "Đi chơi cùng gia đình/bạn bè ≥ 2 lần trong 1 tuần",
+    "en": "Go on ≥ 2 outings in one week"
+   },
+   "rule": {
+    "metric": "outings",
+    "window": "week",
+    "op": ">=",
+    "value": 2
+   },
+   "image": "family_first_week.png",
+   "prompt": "three little hearts holding hands"
+  },
+  {
+   "id": "explorer_lifetime",
+   "category": "engagement",
+   "tier": "special",
+   "name": {
+    "vi": "Nhà thám hiểm",
+    "en": "Explorer"
+   },
+   "desc": {
+    "vi": "Đi chơi cùng gia đình/bạn bè ≥ 10 lần",
+    "en": "Go on ≥ 10 outings"
+   },
+   "rule": {
+    "metric": "outings",
+    "window": "lifetime",
+    "op": ">=",
+    "value": 10
+   },
+   "image": "explorer_lifetime.png",
+   "prompt": "a small suitcase covered in travel stickers"
+  },
+  {
+   "id": "health_week",
+   "category": "health",
+   "tier": "gold",
+   "name": {
+    "vi": "Cơ thể khỏe mạnh",
+    "en": "Healthy Body"
+   },
+   "desc": {
+    "vi": "Sức khỏe trung bình ≥ 70 trong 1 tuần",
+    "en": "Average health ≥ 70 in one week"
+   },
+   "rule": {
+    "metric": "health_avg",
+    "window": "week",
+    "op": ">=",
+    "value": 70
+   },
+   "image": "health_week.png",
+   "prompt": "a heart with a fresh green leaf"
+  },
+  {
+   "id": "eye_breaks_day",
+   "category": "eye_rest",
+   "tier": "silver",
+   "name": {
+    "vi": "Hộ vệ đôi mắt",
+    "en": "Eye Guardian"
+   },
+   "desc": {
+    "vi": "Nghỉ mắt ≥ 4 lần trong 1 ngày",
+    "en": "Take ≥ 4 eye breaks in one day"
+   },
+   "rule": {
+    "metric": "breaks_taken",
+    "window": "day",
+    "op": ">=",
+    "value": 4
+   },
+   "image": "eye_breaks_day.png",
+   "prompt": "a cute eye wearing a sleep mask"
+  },
+  {
+   "id": "eye_breaks_week",
+   "category": "eye_rest",
+   "tier": "gold",
+   "name": {
+    "vi": "Mắt sáng tinh anh",
+    "en": "Bright Eyes"
+   },
+   "desc": {
+    "vi": "Nghỉ mắt ≥ 20 lần trong 1 tuần",
+    "en": "Take ≥ 20 eye breaks in one week"
+   },
+   "rule": {
+    "metric": "breaks_taken",
+    "window": "week",
+    "op": ">=",
+    "value": 20
+   },
+   "image": "eye_breaks_week.png",
+   "prompt": "sparkling round glasses"
+  },
+  {
+   "id": "screen_balance_week",
+   "category": "screen",
+   "tier": "gold",
+   "name": {
+    "vi": "Cân bằng màn hình",
+    "en": "Screen Balance"
+   },
+   "desc": {
+    "vi": "Tải màn hình trung bình ≤ 50 trong 1 tuần",
+    "en": "Average screen load ≤ 50 in one week"
+   },
+   "rule": {
+    "metric": "screen_load_avg",
+    "window": "week",
+    "op": "<=",
+    "value": 50,
+    "min": {
+     "metric": "active_days",
+     "value": 3
+    }
+   },
+   "image": "screen_balance_week.png",
+   "prompt": "a laptop and a green leaf on a balance scale"
+  },
+  {
+   "id": "meetings_week",
+   "category": "engagement",
+   "tier": "silver",
+   "name": {
+    "vi": "Kết nối đồng đội",
+    "en": "Team Player"
+   },
+   "desc": {
+    "vi": "Họp ≥ 120 phút trong 1 tuần",
+    "en": "Meetings ≥ 120 min in one week"
+   },
+   "rule": {
+    "metric": "meeting_minutes",
+    "window": "week",
+    "op": ">=",
+    "value": 120
+   },
+   "image": "meetings_week.png",
+   "prompt": "two cute hands doing a high five"
+  },
+  {
+   "id": "away_day",
+   "category": "engagement",
+   "tier": "bronze",
+   "name": {
+    "vi": "Ra ngoài hít thở",
+    "en": "Fresh Air"
+   },
+   "desc": {
+    "vi": "Rời máy ≥ 60 phút trong 1 ngày",
+    "en": "Away from PC ≥ 60 min in one day"
+   },
+   "rule": {
+    "metric": "away_minutes",
+    "window": "day",
+    "op": ">=",
+    "value": 60
+   },
+   "image": "away_day.png",
+   "prompt": "a smiling sun over a little tree"
+  },
+  {
+   "id": "energy_full_day",
+   "category": "energy",
+   "tier": "silver",
+   "name": {
+    "vi": "Pin đầy 100%",
+    "en": "Full Battery"
+   },
+   "desc": {
+    "vi": "Năng lượng ≥ 90 trong 1 ngày",
+    "en": "Energy ≥ 90 in one day"
+   },
+   "rule": {
+    "metric": "energy",
+    "window": "day",
+    "op": ">=",
+    "value": 90
+   },
+   "image": "energy_full_day.png",
+   "prompt": "a full green battery with a happy face"
+  },
+  {
+   "id": "energy_week",
+   "category": "energy",
+   "tier": "gold",
+   "name": {
+    "vi": "Lõi năng lượng ổn định",
+    "en": "Stable Core"
+   },
+   "desc": {
+    "vi": "Năng lượng trung bình ≥ 70 trong 1 tuần",
+    "en": "Average energy ≥ 70 in one week"
+   },
+   "rule": {
+    "metric": "energy_avg",
+    "window": "week",
+    "op": ">=",
+    "value": 70
+   },
+   "image": "energy_week.png",
+   "prompt": "a glowing energy core orb"
+  },
+  {
+   "id": "level_five",
+   "category": "level",
+   "tier": "silver",
+   "name": {
+    "vi": "Ngôi sao đang lên",
+    "en": "Rising Star"
+   },
+   "desc": {
+    "vi": "Đạt cấp ≥ 5 trong 1 tuần",
+    "en": "Reach level ≥ 5 in one week"
+   },
+   "rule": {
+    "metric": "peak_level",
+    "window": "week",
+    "op": ">=",
+    "value": 5
+   },
+   "image": "level_five.png",
+   "prompt": "a shooting star"
+  },
+  {
+   "id": "level_max",
+   "category": "level",
+   "tier": "special",
+   "name": {
+    "vi": "Huyền thoại Ted",
+    "en": "Ted Legend"
+   },
+   "desc": {
+    "vi": "Đạt cấp ≥ 10 trong 1 tuần",
+    "en": "Reach level ≥ 10 in one week"
+   },
+   "rule": {
+    "metric": "peak_level",
+    "window": "week",
+    "op": ">=",
+    "value": 10
+   },
+   "image": "level_max.png",
+   "prompt": "a crown sitting on a big star"
+  },
+  {
+   "id": "comeback",
+   "category": "level",
+   "tier": "gold",
+   "name": {
+    "vi": "Trở lại mạnh mẽ",
+    "en": "Comeback"
+   },
+   "desc": {
+    "vi": "Lên lại sau khi thanh tuần tụt cấp ≥ 1 lần",
+    "en": "Bounce back after a drop ≥ 1 time in one week"
+   },
+   "rule": {
+    "metric": "comeback",
+    "window": "week",
+    "op": ">=",
+    "value": 1
+   },
+   "image": "comeback.png",
+   "prompt": "a baby phoenix chick rising from small flames"
+  },
+  {
+   "id": "week_growth",
+   "category": "weekly_log",
+   "tier": "gold",
+   "name": {
+    "vi": "Tiến bộ vượt bậc",
+    "en": "Big Leap"
+   },
+   "desc": {
+    "vi": "XP tăng ≥ 20% so với tuần trước",
+    "en": "XP up ≥ 20% vs last week"
+   },
+   "rule": {
+    "metric": "xp_growth_pct",
+    "window": "week",
+    "op": ">=",
+    "value": 20,
+    "min": {
+     "metric": "prev_week_xp",
+     "value": 100
+    }
+   },
+   "image": "week_growth.png",
+   "prompt": "a little rocket with an upward arrow"
+  },
+  {
+   "id": "level_growth",
+   "category": "weekly_log",
+   "tier": "silver",
+   "name": {
+    "vi": "Thăng hạng",
+    "en": "Rank Up"
+   },
+   "desc": {
+    "vi": "Tăng ≥ 2 cấp so với tuần trước",
+    "en": "Gain ≥ 2 levels vs last week"
+   },
+   "rule": {
+    "metric": "level_growth",
+    "window": "week",
+    "op": ">=",
+    "value": 2
+   },
+   "image": "level_growth.png",
+   "prompt": "a small staircase with a star on top"
+  },
+  {
+   "id": "team_player",
+   "category": "engagement",
+   "tier": "bronze",
+   "name": {
+    "vi": "Đồng đội",
+    "en": "Team Player"
+   },
+   "desc": {
+    "vi": "Họp / học nhóm ≥ 3 buổi trong 1 tuần",
+    "en": "Meet or study together ≥ 3 times in one week"
+   },
+   "rule": {
+    "metric": "meetings_done",
+    "window": "week",
+    "op": ">=",
+    "value": 3
+   },
+   "image": "team_player.png",
+   "prompt": "two tiny paws giving a high five with a sparkle"
+  },
+  {
+   "id": "study_with_teacher",
+   "category": "learning",
+   "tier": "silver",
+   "name": {
+    "vi": "Học cùng thầy",
+    "en": "Teacher's Student"
+   },
+   "desc": {
+    "vi": "Học với thầy cô ≥ 3 buổi",
+    "en": "Study with a teacher ≥ 3 sessions"
+   },
+   "rule": {
+    "metric": "teacher_sessions",
+    "window": "lifetime",
+    "op": ">=",
+    "value": 3
+   },
+   "image": "study_with_teacher.png",
+   "prompt": "a tiny graduation cap on top of a red apple and a small book"
+  },
+  {
+   "id": "steady_connection",
+   "category": "engagement",
+   "tier": "gold",
+   "name": {
+    "vi": "Kết nối bền bỉ",
+    "en": "Steady Connection"
+   },
+   "desc": {
+    "vi": "Họp / học nhóm ≥ 10 buổi",
+    "en": "Meet or study together ≥ 10 sessions"
+   },
+   "rule": {
+    "metric": "meetings_done",
+    "window": "lifetime",
+    "op": ">=",
+    "value": 10
+   },
+   "image": "steady_connection.png",
+   "prompt": "two small linked chain rings with a tiny heart in the middle"
+  }
+ ]
+}
