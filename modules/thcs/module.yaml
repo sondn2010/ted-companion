@@ -1,0 +1,8 @@
+id: thcs
+name: "Học Cấp 2"
+icon: "📚"
+engine: coach
+connection: thcs
+enabled: false
+order: 20
+learner_id: con

@@ -1,0 +1,8 @@
+id: duhoc
+name: "Du học Trung Quốc"
+icon: "🇨🇳"
+engine: coach
+connection: duhoc
+enabled: false
+order: 30
+learner_id: con

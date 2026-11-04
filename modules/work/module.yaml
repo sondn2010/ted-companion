@@ -1,0 +1,29 @@
+id: work
+name: "Công việc"
+icon: "💼"
+engine: work
+connection: work
+enabled: true
+order: 10
+prompts:
+  briefing: prompts/briefing.md                 # phase 04
+  calendar_request: prompts/calendar-request.md # phase 05
+  email_digest_request: prompts/email-digest-request.md
+  eisenhower_classify: prompts/eisenhower-classify.md
+  cheer: prompts/cheer.md
+  cheers: prompts/cheers.md
+settings:
+  calendar_poll_mins: 30
+  remind_before_mins: [15, 5]
+  rock_stale_days: 3
+  calendar_days_ahead: 7
+  email_digest_enabled: true
+  email_lookback_hours: 16          # slot sáng: email từ 16h trước
+  midday_email_lookback_hours: 6    # slot trưa
+  email_max_items: 8
+  morning_briefing_time: "08:00"
+  morning_briefing_cutoff: "12:00"
+  midday_briefing_time: "12:00"
+  midday_briefing_cutoff: "17:00"
+  speak_briefing: true
+  share_meeting_titles: false  # true: gửi tên cuộc họp cho gia sư (busy_slots); mặc định ẩn thành "Bận"

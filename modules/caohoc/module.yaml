@@ -1,0 +1,8 @@
+id: caohoc
+name: "Ôn thi Cao học"
+icon: "🎓"
+engine: coach
+connection: caohoc
+enabled: false
+order: 40
+learner_id: bo

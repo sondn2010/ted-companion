@@ -1,0 +1,40 @@
+# Câu động viên của Ted (pool local, mỗi dòng gạch đầu dòng là 1 câu)
+
+- Ted ở đây rồi nè, làm tiếp thôi nào!
+- Một pomodoro nhỏ xíu thôi, xong rồi Ted thưởng cá khô!
+- Giỏi lắm luôn á, cứ thế phát huy nha!
+- Hít một hơi thật sâu, rồi mình đi tiếp nhé.
+- Việc khó thì chia nhỏ ra, Ted tin bạn làm được!
+- Meo meo, tập trung nào, Ted canh cho!
+- Đứng dậy vươn vai một chút cho đỡ mỏi nha.
+- Uống ngụm nước đi bạn ơi, Ted nhắc đó!
+- Mỗi bước nhỏ đều là tiến bộ, đừng coi thường nha.
+- Hôm nay bạn đã làm được nhiều hơn bạn nghĩ rồi đó!
+- Điện thoại cất đi nào, Ted đang nhìn nha (hihi).
+- Xong việc này là được nghỉ giải lao, cố lên!
+- Ted vỗ tay bồm bộp cho bạn nè!
+- Đừng lo, từng việc một thôi, không vội đâu.
+- Bạn đỉnh thật sự, Ted nói thiệt đó!
+- Còn một chút xíu nữa thôi là xong rồi!
+- Việc nhỏ hay việc to, Ted cũng đồng hành cùng bạn.
+- Sai cũng không sao, sửa là xong, Ted ở bên cạnh mà.
+- Ngồi thẳng lưng lên nào, lưng bạn cảm ơn đó.
+- Chớp mắt vài cái cho đỡ mỏi mắt nha.
+- Hôm nay mình cùng chọn ra một việc quan trọng nhất nhé?
+- Ted đang cổ vũ nhiệt tình đây, ra đây ra đây!
+- Tập trung 25 phút thôi, rồi muốn làm gì cũng được.
+- Cá khô ngon lắm, nhưng hoàn thành việc còn ngon hơn!
+- Bạn không một mình đâu, có Ted đây rồi.
+- Cứ từ từ, chắc chắn rồi sẽ tới đích thôi.
+- Gõ thêm vài dòng nữa là thấy ánh sáng cuối đường hầm!
+- Nghỉ ngơi cũng là một phần của làm việc, đừng quên nha.
+- Ôi chà, nhìn bạn làm việc mà Ted cũng hăng theo!
+- Cố thêm chút nữa, Ted đếm ngược cùng bạn: 3, 2, 1, tới!
+- Mỗi ngày tiến một chút, cuối tuần bạn sẽ bất ngờ đó.
+- Việc tồn đọng à? Mình xử từng cái một, Ted hỗ trợ!
+- 💡 Mẹo nhỏ: Đang làm mà chợt nhớ việc khác? Click đúp vào Ted rồi gõ vào Bãi đỗ nhé!
+- 🍅 Pomodoro chuẩn là 25 phút làm việc và 5 phút nghỉ ngơi vươn vai.
+- 🎯 Deep Work: Làm 1 việc trong 1 thời điểm hiệu quả hơn gấp nhiều lần đa nhiệm.
+- 🖱️ Bạn có thể giữ chuột trái để kéo Ted đến góc màn hình thuận mắt nhất.
+- 🌧️ Bật tiếng mưa rơi bằng cách click chuột phải vào Ted nè!
+- ⭐ Click chuột phải để đổi sang bạn Cú Đêm, Gấu Trúc hay Cún Shiba bất cứ lúc nào!
