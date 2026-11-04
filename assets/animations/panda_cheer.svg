@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgIdle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2D3142" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#191B24" stop-opacity="0.98"/>
+    </radialGradient>
+    <radialGradient id="bgFocus" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#143628" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#081C15" stop-opacity="0.98"/>
+    </radialGradient>
+    <radialGradient id="bgNudge" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3A2352" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#1C112A" stop-opacity="0.98"/>
+    </radialGradient>
+    <radialGradient id="bgCheer" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4A2840" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#251222" stop-opacity="0.98"/>
+    </radialGradient>
+    <radialGradient id="bgRest" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1C2D44" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0D1826" stop-opacity="0.98"/>
+    </radialGradient>
+
+    <!-- Shading Gradients -->
+    <linearGradient id="blushPink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF9EAA" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#FF6B8B" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFE066"/>
+      <stop offset="100%" stop-color="#F77F00"/>
+    </linearGradient>
+    <linearGradient id="cyberGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#70E000"/>
+      <stop offset="100%" stop-color="#38B000"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="62" r="48" fill="url(#bgCheer)" stroke="#FF9E64" stroke-width="3"/>
+  <g id="panda_character">
+    <!-- Tai gấu tròn đen -->
+    <circle cx="28" cy="34" r="14" fill="#2B2D42"/>
+    <circle cx="92" cy="34" r="14" fill="#2B2D42"/>
+    <circle cx="28" cy="34" r="8" fill="#4A4E69"/>
+    <circle cx="92" cy="34" r="8" fill="#4A4E69"/>
+
+    <!-- Đầu & thân Panda tròn xoe như Mochi -->
+    <ellipse cx="60" cy="65" rx="40" ry="35" fill="#FFFFFF" stroke="#2B2D42" stroke-width="2.5"/>
+
+    <!-- Quầng mắt đen đặc trưng của Panda -->
+    <ellipse cx="43" cy="60" rx="12" ry="10" fill="#2B2D42" transform="rotate(-15 43 60)"/>
+    <ellipse cx="77" cy="60" rx="12" ry="10" fill="#2B2D42" transform="rotate(15 77 60)"/>
+
+    <!-- Mắt Anime Chibi lấp lánh bên trong -->
+    <path d="M 37 61 Q 43 53 49 61" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 71 61 Q 77 53 83 61" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Má hồng phúng phính -->
+    <ellipse cx="29" cy="72" rx="7" ry="4" fill="url(#blushPink)"/>
+    <ellipse cx="91" cy="72" rx="7" ry="4" fill="url(#blushPink)"/>
+
+    <!-- Mũi gấu tròn nhỏ -->
+    <ellipse cx="60" cy="70" rx="4" ry="2.8" fill="#2B2D42"/>
+
+    <!-- Miệng nhỏ -->
+    <path d="M 53 74 Q 60 84 67 74 Z" fill="#FF8FA3" stroke="#1F2937" stroke-width="1.8"/>
+
+    <!-- Nhánh lá trúc xanh nhỏ kẹp bên má (đặc trưng Panda) -->
+    <path d="M 88 78 Q 96 74 102 78 Q 96 82 88 78 Z" fill="#52B788"/>
+    <path d="M 88 78 Q 94 85 98 90 Q 92 88 88 78 Z" fill="#40916C"/>
+
+    <!-- 2 tay đen múp míp ôm ngực -->
+    <ellipse cx="38" cy="92" rx="10" ry="7" fill="#2B2D42"/>
+    <ellipse cx="82" cy="92" rx="10" ry="7" fill="#2B2D42"/>
+
+    <!-- Cheer Stars & Sparkles -->
+    <polygon points="20,25 22,18 28,19 23,23 25,29 20,25" fill="#FFD166"/>
+    <polygon points="100,28 102,21 108,22 103,26 105,32 100,28" fill="#FFD166"/>
+    <circle cx="18" cy="45" r="2.5" fill="#EF476F"/>
+    <circle cx="104" cy="48" r="2.5" fill="#06D6A0"/>
+    <path d="M 28 36 Q 32 30 36 36" fill="none" stroke="#118AB2" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 84 36 Q 88 30 92 36" fill="none" stroke="#FFD166" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgIdle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2D3142" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#191B24" stop-opacity="0.98"/>
+    </radialGradient>
+    <radialGradient id="bgFocus" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#143628" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#081C15" stop-opacity="0.98"/>
+    </radialGradient>
+    <radialGradient id="bgNudge" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3A2352" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#1C112A" stop-opacity="0.98"/>
+    </radialGradient>
+    <radialGradient id="bgCheer" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4A2840" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#251222" stop-opacity="0.98"/>
+    </radialGradient>
+    <radialGradient id="bgRest" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1C2D44" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0D1826" stop-opacity="0.98"/>
+    </radialGradient>
+
+    <!-- Shading Gradients -->
+    <linearGradient id="blushPink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF9EAA" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#FF6B8B" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFE066"/>
+      <stop offset="100%" stop-color="#F77F00"/>
+    </linearGradient>
+    <linearGradient id="cyberGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#70E000"/>
+      <stop offset="100%" stop-color="#38B000"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="62" r="48" fill="url(#bgNudge)" stroke="#BB9AF7" stroke-width="3"/>
+  <g id="owl_character">
+    <!-- Tai lông nhọn nhỏ -->
+    <polygon points="26,36 30,18 44,30" fill="#BC6C25" stroke="#283618" stroke-width="2" stroke-linejoin="round"/>
+    <polygon points="94,36 90,18 76,30" fill="#BC6C25" stroke="#283618" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- Thân cú tròn vo múp míp -->
+    <ellipse cx="60" cy="64" rx="40" ry="36" fill="#DDA15E" stroke="#283618" stroke-width="2.5"/>
+
+    <!-- Bụng lông kem mịn -->
+    <ellipse cx="60" cy="74" rx="26" ry="22" fill="#FEFAE0"/>
+    <!-- Họa tiết lông bụng chữ v -->
+    <path d="M 52 70 Q 56 74 60 70 M 60 70 Q 64 74 68 70 M 56 78 Q 60 82 64 78" fill="none" stroke="#DDA15E" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- 2 vòng mắt to tròn biểu tượng của Cú -->
+    <circle cx="43" cy="56" r="15" fill="#FFFFFF" stroke="#BC6C25" stroke-width="2"/>
+    <circle cx="77" cy="56" r="15" fill="#FFFFFF" stroke="#BC6C25" stroke-width="2"/>
+
+    <!-- Mắt Anime Chibi -->
+    <circle cx="44" cy="56" r="7.5" fill="#606C38"/>
+    <circle cx="78" cy="56" r="7.5" fill="#606C38"/>
+    <!-- Điểm sáng mắt Anime -->
+    <circle cx="46" cy="54" r="2.8" fill="#FFFFFF"/>
+    <circle cx="80" cy="54" r="2.8" fill="#FFFFFF"/>
+    <circle cx="43" cy="58.5" r="1.3" fill="#FFFFFF"/>
+    <circle cx="77" cy="58.5" r="1.3" fill="#FFFFFF"/>
+
+    <!-- Má hồng -->
+    <ellipse cx="25" cy="68" rx="6" ry="4" fill="url(#blushPink)"/>
+    <ellipse cx="95" cy="68" rx="6" ry="4" fill="url(#blushPink)"/>
+
+    <!-- Mỏ cú cam xinh xắn -->
+    <polygon points="56,64 64,64 60,72" fill="#E76F51"/>
+
+    <!-- Cánh cú 2 bên ôm bụng -->
+    <ellipse cx="23" cy="68" rx="6" ry="16" fill="#BC6C25" transform="rotate(-15 23 68)"/>
+    <ellipse cx="97" cy="68" rx="6" ry="16" fill="#BC6C25" transform="rotate(15 97 68)"/>
+
+    <!-- 2 chân cam nhỏ -->
+    <ellipse cx="48" cy="98" rx="6" ry="3.5" fill="#E76F51"/>
+    <ellipse cx="72" cy="98" rx="6" ry="3.5" fill="#E76F51"/>
+
+    <!-- Nudge Question mark -->
+    <g transform="translate(86, 18) scale(0.75)">
+      <circle cx="12" cy="12" r="13" fill="#F72585"/>
+      <text x="12" y="18" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">?</text>
+    </g>
+  </g>
+</svg>

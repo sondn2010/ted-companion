@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgIdle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2D3142" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#191B24" stop-opacity="0.98"/>
+    </radialGradient>
+    <radialGradient id="bgFocus" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#143628" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#081C15" stop-opacity="0.98"/>
+    </radialGradient>
+    <radialGradient id="bgNudge" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3A2352" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#1C112A" stop-opacity="0.98"/>
+    </radialGradient>
+    <radialGradient id="bgCheer" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4A2840" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#251222" stop-opacity="0.98"/>
+    </radialGradient>
+    <radialGradient id="bgRest" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1C2D44" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0D1826" stop-opacity="0.98"/>
+    </radialGradient>
+
+    <!-- Shading Gradients -->
+    <linearGradient id="blushPink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF9EAA" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#FF6B8B" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFE066"/>
+      <stop offset="100%" stop-color="#F77F00"/>
+    </linearGradient>
+    <linearGradient id="cyberGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#70E000"/>
+      <stop offset="100%" stop-color="#38B000"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="62" r="48" fill="url(#bgFocus)" stroke="#52B788" stroke-width="3"/>
+  <g id="shiba_character">
+    <!-- Tai Shiba đứng vểnh -->
+    <polygon points="23,48 18,17 44,30" fill="#E07A5F" stroke="#3D2619" stroke-width="2.5" stroke-linejoin="round"/>
+    <polygon points="97,48 102,17 76,30" fill="#E07A5F" stroke="#3D2619" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Lòng tai trắng kem -->
+    <polygon points="26,43 23,24 40,32" fill="#FFF3B0"/>
+    <polygon points="94,43 97,24 80,32" fill="#FFF3B0"/>
+
+    <!-- Đầu Shiba vàng bánh mì -->
+    <ellipse cx="60" cy="65" rx="40" ry="34" fill="#F4A261" stroke="#3D2619" stroke-width="2.5"/>
+
+    <!-- Má trắng bánh bao (Urajiro) phúng phính -->
+    <ellipse cx="42" cy="74" rx="16" ry="14" fill="#FFFDF9"/>
+    <ellipse cx="78" cy="74" rx="16" ry="14" fill="#FFFDF9"/>
+    <ellipse cx="60" cy="74" rx="18" ry="13" fill="#FFFDF9"/>
+
+    <!-- Vệt lông mày tròn trắng đặc trưng Shiba -->
+    <ellipse cx="44" cy="48" rx="4" ry="3.2" fill="#FFFDF9"/>
+    <ellipse cx="76" cy="48" rx="4" ry="3.2" fill="#FFFDF9"/>
+
+    <!-- Má hồng -->
+    <ellipse cx="30" cy="75" rx="7" ry="4.5" fill="url(#blushPink)"/>
+    <ellipse cx="90" cy="75" rx="7" ry="4.5" fill="url(#blushPink)"/>
+
+    <!-- Mắt Anime Chibi -->
+    <ellipse cx="43" cy="61" rx="6.2" ry="6.820000000000001" fill="#3D2619"/>
+    <ellipse cx="77" cy="61" rx="6.2" ry="6.820000000000001" fill="#3D2619"/>
+    <!-- Lấp lánh lớn -->
+    <circle cx="41.5" cy="58.5" r="2.6" fill="#FFFFFF"/>
+    <circle cx="75.5" cy="58.5" r="2.6" fill="#FFFFFF"/>
+    <!-- Lấp lánh nhỏ -->
+    <circle cx="45" cy="63.5" r="1.3" fill="#FFFFFF"/>
+    <circle cx="79" cy="63.5" r="1.3" fill="#FFFFFF"/>
+
+    <!-- Mũi cún đen tròn bóng -->
+    <ellipse cx="60" cy="69" rx="4.5" ry="3.5" fill="#1F2421"/>
+    <circle cx="58.5" cy="68" r="1.2" fill="#FFFFFF"/>
+
+    <!-- Miệng cún -->
+    <path d="M 54 75 Q 57 78 60 75 Q 63 78 66 75" fill="none" stroke="#283618" stroke-width="2.2" stroke-linecap="round"/>
+    
+
+    <!-- Khăn quàng bandana đỏ thắt nơ kiểu Nhật -->
+    <path d="M 38 90 Q 60 98 82 90 L 74 100 Q 60 104 46 100 Z" fill="#E63946" stroke="#3D2619" stroke-width="2"/>
+    <circle cx="60" cy="98" r="3" fill="#FFE3E0"/>
+
+    <!-- Focus Gaming Headphones -->
+    <path d="M 22 58 A 40 38 0 0 1 98 58" fill="none" stroke="#52B788" stroke-width="5" stroke-linecap="round"/>
+    <!-- Đệm tai nghe trái/phải -->
+    <rect x="15" y="48" width="10" height="24" rx="5" fill="#1E293B" stroke="#52B788" stroke-width="2"/>
+    <rect x="95" y="48" width="10" height="24" rx="5" fill="#1E293B" stroke="#52B788" stroke-width="2"/>
+    <!-- Đèn LED tai nghe -->
+    <circle cx="20" cy="60" r="3" fill="#00F5D4"/>
+    <circle cx="100" cy="60" r="3" fill="#00F5D4"/>
+    <!-- Kính cận tập trung nhỏ -->
+    <circle cx="43" cy="63" r="11" fill="none" stroke="#64748B" stroke-width="1.8"/>
+    <circle cx="77" cy="63" r="11" fill="none" stroke="#64748B" stroke-width="1.8"/>
+    <line x1="54" y1="63" x2="66" y2="63" stroke="#64748B" stroke-width="1.8"/>
+  </g>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgIdle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2D3142" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#191B24" stop-opacity="0.98"/>
+    </radialGradient>
+    <radialGradient id="bgFocus" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#143628" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#081C15" stop-opacity="0.98"/>
+    </radialGradient>
+    <radialGradient id="bgNudge" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3A2352" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#1C112A" stop-opacity="0.98"/>
+    </radialGradient>
+    <radialGradient id="bgCheer" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4A2840" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#251222" stop-opacity="0.98"/>
+    </radialGradient>
+    <radialGradient id="bgRest" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1C2D44" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0D1826" stop-opacity="0.98"/>
+    </radialGradient>
+
+    <!-- Shading Gradients -->
+    <linearGradient id="blushPink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF9EAA" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#FF6B8B" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFE066"/>
+      <stop offset="100%" stop-color="#F77F00"/>
+    </linearGradient>
+    <linearGradient id="cyberGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#70E000"/>
+      <stop offset="100%" stop-color="#38B000"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="62" r="48" fill="url(#bgIdle)" stroke="#7AA2F7" stroke-width="3"/>
+  <g id="penguin_character">
+    <!-- Thân cánh cụt hình quả lê múp míp xanh navy -->
+    <path d="M 32 45 C 32 20 88 20 88 45 C 98 62 100 88 88 98 C 76 104 44 104 32 98 C 20 88 22 62 32 45 Z" fill="#1D3557" stroke="#0D1B2A" stroke-width="2.5"/>
+
+    <!-- Bụng tuyết trắng tròn mềm mại -->
+    <ellipse cx="60" cy="74" rx="26" ry="24" fill="#FFFFFF"/>
+
+    <!-- 2 cánh tay vẫy lạch bạch -->
+    <path d="M 24 58 C 14 66 12 80 20 86 C 24 82 28 72 26 62 Z" fill="#1D3557" stroke="#0D1B2A" stroke-width="2"/>
+    <path d="M 96 58 C 106 66 108 80 100 86 C 96 82 92 72 94 62 Z" fill="#1D3557" stroke="#0D1B2A" stroke-width="2"/>
+
+    <!-- Má hồng cánh cụt -->
+    <ellipse cx="34" cy="68" rx="6.5" ry="4" fill="url(#blushPink)"/>
+    <ellipse cx="86" cy="68" rx="6.5" ry="4" fill="url(#blushPink)"/>
+
+    <!-- Mắt Anime Chibi to tròn -->
+    <ellipse cx="44" cy="55" rx="6.2" ry="6.820000000000001" fill="#0D1B2A"/>
+    <ellipse cx="76" cy="55" rx="6.2" ry="6.820000000000001" fill="#0D1B2A"/>
+    <!-- Lấp lánh lớn -->
+    <circle cx="42.5" cy="52.5" r="2.6" fill="#FFFFFF"/>
+    <circle cx="74.5" cy="52.5" r="2.6" fill="#FFFFFF"/>
+    <!-- Lấp lánh nhỏ -->
+    <circle cx="46" cy="57.5" r="1.3" fill="#FFFFFF"/>
+    <circle cx="78" cy="57.5" r="1.3" fill="#FFFFFF"/>
+
+    <!-- Mỏ vàng cam nhỏ xinh hình thoi -->
+    <polygon points="54,63 66,63 60,71" fill="#F4A261"/>
+    <polygon points="56,63 64,63 60,60" fill="#E76F51"/>
+
+    <!-- Khăn len ấm áp quàng cổ sọc đỏ - vàng -->
+    <path d="M 33 76 Q 60 84 87 76 L 86 84 Q 60 92 34 84 Z" fill="#E63946"/>
+    <!-- Tua rua khăn len rủ xuống -->
+    <path d="M 40 82 L 42 98 L 50 96 L 47 84 Z" fill="#E63946" stroke="#0D1B2A" stroke-width="1.5"/>
+
+    <!-- 2 chân cam ngắn cũn cỡn -->
+    <ellipse cx="46" cy="101" rx="8" ry="4.5" fill="#F4A261" stroke="#0D1B2A" stroke-width="1.8"/>
+    <ellipse cx="74" cy="101" rx="8" ry="4.5" fill="#F4A261" stroke="#0D1B2A" stroke-width="1.8"/>
+
+
+  </g>
+</svg>
