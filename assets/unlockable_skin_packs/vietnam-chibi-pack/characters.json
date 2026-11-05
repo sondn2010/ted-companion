@@ -1,0 +1,1133 @@
+{
+  "id": "vietnam-chibi-pack",
+  "title": "Sáu Người Bạn Việt Nam (Áo Dài & Học Đường)",
+  "subtitle": "Bộ 6 nhân vật nguyên bản phong cách 2D anime/chibi: 3 nữ, 3 nam; 4 bộ áo dài truyền thống & cách tân và 2 bộ đồng phục học sinh thanh lịch, tích hợp trọn bộ 30 hoạt cảnh PNG cho 5 trạng thái cảm xúc tương tác Pomodoro",
+  "style_badge": "Vietnam Chibi 2D Anime PNG",
+  "format": "100% PNG (512x512 Transparent PNG)",
+  "folder_name": "vietnam-chibi-pack",
+  "schema_version": "1.0.0",
+  "pack_id": "vietnam-chibi-pack",
+  "language": "vi-VN",
+  "character_count": 6,
+  "default_character_id": "linh",
+  "asset_base_path": ".",
+  "state_ids": [
+    "idle",
+    "focus",
+    "cheer",
+    "rest",
+    "nudge"
+  ],
+  "asset_status": "production_ready",
+  "animations_available": true,
+  "animations_count": 30,
+  "characters": [
+    {
+      "id": "linh",
+      "name": "Linh (Áo Dài Trắng Ngà)",
+      "display_name": "Linh",
+      "title": "Thiếu Nữ Hoa Sen Dịu Dàng",
+      "role": "Gentle Companion & Empathetic Listener",
+      "gender": "female",
+      "locale": "vi-VN",
+      "nationality": "Vietnamese",
+      "tagline": "Dịu dàng, tinh tế, biết lắng nghe",
+      "description": "Linh là nhân vật Việt Nam phong cách anime/chibi, dịu dàng, tinh tế, biết lắng nghe.",
+      "personality_key": "sweet",
+      "personality": "Linh mang nét đẹp dịu dàng và tinh tế. Mái tóc đen dài suôn mượt cài chiếc kẹp hoa sen hồng, tà áo dài trắng ngà cổ cao thêu sen tinh tế ở tà áo, quần dài trắng ngà và giày bệt thêu sen. Hai tay giữ cuốn sổ hồng trước eo, mỉm cười nhẹ nhàng và luôn biết lắng nghe.",
+      "personality_details": {
+        "traits": [
+          "dịu dàng",
+          "kiên nhẫn",
+          "tinh tế"
+        ],
+        "companion_role": "Người bạn đồng hành nhẹ nhàng",
+        "interests": [
+          "Hoa sen",
+          "Viết nhật ký",
+          "Lắng nghe"
+        ],
+        "communication_style": "Nhẹ nhàng, rõ ràng, nhịp nói chậm vừa",
+        "pronouns": {
+          "self": "mình",
+          "user": "bạn"
+        }
+      },
+      "speech_style": "Giọng nữ nhẹ nhàng, ấm áp, nhịp nói chậm vừa, phát âm chuẩn ngọt ngào, xưng 'mình' gọi 'bạn', truyền tải sự thấu hiểu và nâng đỡ tinh thần.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-HoaiMyNeural",
+        "voice_en": "shimmer",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-amy-medium",
+        "speed": 0.98,
+        "pitch": "+1Hz",
+        "sample_text": "Chào bạn, mình là Linh. Mình cùng bắt đầu nhé, mình ở đây khi bạn cần."
+      },
+      "catchphrases": [
+        "Từng đóa sen nở đều bắt đầu từ hạt mầm kiên nhẫn.",
+        "Từng việc nhỏ một thôi, bạn đang tiến bộ đấy.",
+        "Mình luôn ở đây lắng nghe và đồng hành cùng bạn."
+      ],
+      "expressions": {
+        "idle": [
+          "Mình ở đây khi bạn cần nhé.",
+          "Hương sen thoang thoảng giúp tâm trí an yên hơn nhiều."
+        ],
+        "focus": [
+          "Từng việc nhỏ một thôi, bạn đang tiến bộ đấy.",
+          "Giữ tâm trí bình lặng như mặt hồ sen, tập trung từng nét viết nhé."
+        ],
+        "cheer": [
+          "Bạn làm tốt lắm, mình vui cùng bạn!",
+          "Thành quả tuyệt vời đã nở hoa ngát hương rồi, chúc mừng bạn nhé!"
+        ],
+        "rest": [
+          "Thả lỏng vai và nghỉ một chút nhé.",
+          "Nhắm mắt thư giãn 5 phút, hít thở thật sâu cùng Linh nào."
+        ],
+        "nudge": [
+          "Mình quay lại việc đang làm nhé, chỉ một bước nhỏ thôi.",
+          "Linh khẽ nhắc nè: Đến giờ tiếp tục rồi bạn ơi, chỉ một chặng ngắn nữa thôi."
+        ]
+      },
+      "avatar_file": "linh.png",
+      "mood_images": {
+        "idle": "linh_idle.png",
+        "focus": "linh_focus.png",
+        "cheer": "linh_cheer.png",
+        "rest": "linh_rest.png",
+        "nudge": "linh_nudge.png"
+      },
+      "appearance": {
+        "style": "2D anime/chibi",
+        "hair": "Tóc đen dài, mái lệch; kẹp hoa sen hồng",
+        "eyes": "Nâu ấm",
+        "skin": "Tông da Việt Nam tự nhiên, sắc ấm",
+        "default_expression": "Mỉm cười nhẹ, ánh mắt ấm áp",
+        "default_pose": "Đứng hơi nghiêng, hai tay giữ sổ trước eo"
+      },
+      "outfit": {
+        "category": "ao_dai",
+        "description": "Áo dài trắng ngà cổ cao, tay dài, họa tiết hoa sen hồng; quần dài trắng ngà; giày bệt thêu sen",
+        "accessories": [
+          "Kẹp hoa sen",
+          "Sổ hồng"
+        ]
+      },
+      "palette": {
+        "primary": "#E9A6B4",
+        "secondary": "#FFF8EF",
+        "detail": "#29313D",
+        "note": "Màu thiết kế tham chiếu, không phải màu lấy mẫu chính xác từ PNG."
+      },
+      "assets": {
+        "full_body": {
+          "path": "assets/linh.png",
+          "mime_type": "image/png",
+          "width": 1024,
+          "height": 1536,
+          "alpha": true,
+          "content_bounds_alpha_128_px": [
+            191,
+            14,
+            812,
+            1517
+          ],
+          "sha256": "e499f9b3e71e80e20a5da5e827e4e75ac46d0a947a64804ef581ad3ba1d53956"
+        },
+        "animations": {
+          "idle": "animations/linh_idle.png",
+          "focus": "animations/linh_focus.png",
+          "cheer": "animations/linh_cheer.png",
+          "rest": "animations/linh_rest.png",
+          "nudge": "animations/linh_nudge.png"
+        }
+      },
+      "rendering": {
+        "object_fit": "contain",
+        "object_position": "center bottom",
+        "anchor_normalized": {
+          "x": 0.5,
+          "y": 1.0
+        },
+        "recommended_alt_text": "Linh: Áo dài trắng ngà cổ cao, tay dài, họa tiết hoa sen hồng; quần dài trắng ngà; giày bệt thêu sen; đứng hơi nghiêng, hai tay giữ sổ trước eo.",
+        "background": "transparent"
+      },
+      "dialogue": {
+        "greeting": "Chào bạn, mình là Linh. Mình cùng bắt đầu nhé.",
+        "states": {
+          "idle": {
+            "lines": [
+              "Mình ở đây khi bạn cần nhé."
+            ],
+            "image": "animations/linh_idle.png",
+            "visual_variant_available": true
+          },
+          "focus": {
+            "lines": [
+              "Từng việc nhỏ một thôi, bạn đang tiến bộ đấy."
+            ],
+            "image": "animations/linh_focus.png",
+            "visual_variant_available": true
+          },
+          "cheer": {
+            "lines": [
+              "Bạn làm tốt lắm, mình vui cùng bạn!"
+            ],
+            "image": "animations/linh_cheer.png",
+            "visual_variant_available": true
+          },
+          "rest": {
+            "lines": [
+              "Thả lỏng vai và nghỉ một chút nhé."
+            ],
+            "image": "animations/linh_rest.png",
+            "visual_variant_available": true
+          },
+          "nudge": {
+            "lines": [
+              "Mình quay lại việc đang làm nhé, chỉ một bước nhỏ thôi."
+            ],
+            "image": "animations/linh_nudge.png",
+            "visual_variant_available": true
+          }
+        }
+      },
+      "voice_direction": {
+        "language": "vi-VN",
+        "style": "Nhẹ nhàng, rõ ràng, nhịp nói chậm vừa",
+        "provider": null,
+        "voice_id": null,
+        "audio_assets": []
+      },
+      "generation": {
+        "tool": "built-in image_gen",
+        "prompt": "Use case: stylized-concept. Asset type: app character PNG. Create ONE original Vietnamese anime/chibi human character, full body, exactly 3.5 heads tall, large expressive warm brown eyes, dark ink fine linework, polished soft cel shading, subtle pastel highlights, charming premium 2D mobile game character art. Warm natural Vietnamese skin tone. Front three-quarter view, feet aligned near bottom, entire hair and shoes visible, comfortable transparent padding, single centered figure occupies 85% of portrait canvas. Real transparent alpha background, no scenery, no floor, no ground shadow, no text, no watermark, no frame, no other characters. Tasteful fully covered clothing, friendly wholesome nonsexual design. Keep anatomy and fingers clean. Subject: Linh, Vietnamese girl, gentle thoughtful personality. Long straight black hair with soft side fringe, tiny pale pink lotus hair clip. Graceful traditional Vietnamese WHITE AO DAI with high mandarin collar, fitted long sleeves, long front and back panels over full length ivory wide trousers, pale pink lotus embroidery only on lower hem, cream flats. She holds a closed pale pink notebook with both hands at waist; relaxed small smile, modest upright posture. Accent palette blush pink #E9A6B4, ivory #FFF8EF.",
+        "notes": "Ảnh tĩnh demo; tỷ lệ hình thể do mô hình diễn giải, không phải model sheet hoặc rig animation."
+      }
+    },
+    {
+      "id": "mai",
+      "name": "Mai (Đồng Phục Năng Động)",
+      "display_name": "Mai",
+      "title": "Nữ Sinh Tiếp Sức Tích Cực",
+      "role": "High-Energy Motivator & Cheerleader",
+      "gender": "female",
+      "locale": "vi-VN",
+      "nationality": "Vietnamese",
+      "tagline": "Năng động, lạc quan, giàu năng lượng",
+      "description": "Mai là nhân vật Việt Nam phong cách anime/chibi, năng động, lạc quan, giàu năng lượng.",
+      "personality_key": "cheerful",
+      "personality": "Mai tràn đầy năng lượng tươi sáng và lạc quan. Mái tóc đen buộc đuôi ngựa cao thắt nơ xanh teal, áo sơ mi trắng ngắn tay sơ vin quần navy, sneaker trắng phối teal năng động. Một tay giơ chữ V đầy tự tin, một tay nắm quai balo teal, nụ cười rạng rỡ truyền lửa.",
+      "personality_details": {
+        "traits": [
+          "năng động",
+          "lạc quan",
+          "cởi mở"
+        ],
+        "companion_role": "Người tiếp sức tích cực",
+        "interests": [
+          "Thể thao",
+          "Hoạt động nhóm",
+          "Khám phá"
+        ],
+        "communication_style": "Tươi sáng, nhanh vừa, đầy năng lượng",
+        "pronouns": {
+          "self": "mình",
+          "user": "bạn"
+        }
+      },
+      "speech_style": "Giọng nữ tươi vui, hào hứng, tốc độ vừa nhanh, đầy nhiệt huyết và tiếng cười, xưng 'mình' hoặc 'Mai', gọi 'bạn', luôn tiếp thêm năng lượng tích cực.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-HoaiMyNeural",
+        "voice_en": "nova",
+        "local_voice_vi": "piper-vi-25hours-low",
+        "local_voice_en": "piper-en-amy-medium",
+        "speed": 1.08,
+        "pitch": "+2Hz",
+        "sample_text": "Mai đây! Sẵn sàng cho một ngày thật vui và tràn đầy năng lượng chưa nè?"
+      },
+      "catchphrases": [
+        "Việc gì khó, có nụ cười là xong ngay!",
+        "Chinh phục từng mục tiêu như bắn trúng hồng tâm!",
+        "Năng lượng tích cực lan tỏa đến mọi việc chúng mình làm!"
+      ],
+      "expressions": {
+        "idle": [
+          "Hôm nay mình thử điều gì thú vị nhỉ?",
+          "Mai đang khởi động nhẹ để sẵn sàng bứt phá cùng bạn nè!"
+        ],
+        "focus": [
+          "Tập trung một chặng ngắn nào, mình cổ vũ bạn!",
+          "Bật chế độ turbo siêu tập trung! Không gì làm khó được chúng mình!"
+        ],
+        "cheer": [
+          "Tuyệt vời! Thêm một việc đã hoàn thành!",
+          "Yeah! Đỉnh của chóp luôn á! Mai đập tay chúc mừng bạn nè!"
+        ],
+        "rest": [
+          "Đứng dậy vươn vai cùng mình nhé!",
+          "Uống một ngụm nước mát, lắc lư vài nhịp cho cơ thể sảng khoái nào!"
+        ],
+        "nudge": [
+          "Nào, quay lại mục tiêu tiếp theo thôi!",
+          "Nhanh nhanh bạn ơi, chiếc cúp mục tiêu hôm nay đang chờ chúng mình rinh về đó!"
+        ]
+      },
+      "avatar_file": "mai.png",
+      "mood_images": {
+        "idle": "mai_idle.png",
+        "focus": "mai_focus.png",
+        "cheer": "mai_cheer.png",
+        "rest": "mai_rest.png",
+        "nudge": "mai_nudge.png"
+      },
+      "appearance": {
+        "style": "2D anime/chibi",
+        "hair": "Tóc đen buộc đuôi ngựa cao, nơ xanh teal",
+        "eyes": "Nâu ấm",
+        "skin": "Tông da Việt Nam tự nhiên, sắc ấm",
+        "default_expression": "Cười tươi, ánh mắt hào hứng",
+        "default_pose": "Một tay giơ chữ V, tay còn lại nắm quai balo; đứng nghiêng vui vẻ"
+      },
+      "outfit": {
+        "category": "school_uniform",
+        "description": "Áo sơ mi trắng ngắn tay sơ vin, quần dài xanh navy, giày sneaker trắng phối teal",
+        "accessories": [
+          "Balo teal",
+          "Nơ tóc teal"
+        ]
+      },
+      "palette": {
+        "primary": "#28A99E",
+        "secondary": "#24374D",
+        "detail": "#FFFFFF",
+        "note": "Màu thiết kế tham chiếu, không phải màu lấy mẫu chính xác từ PNG."
+      },
+      "assets": {
+        "full_body": {
+          "path": "assets/mai.png",
+          "mime_type": "image/png",
+          "width": 1024,
+          "height": 1536,
+          "alpha": true,
+          "content_bounds_alpha_128_px": [
+            237,
+            12,
+            850,
+            1521
+          ],
+          "sha256": "b389ea5502162d7c69791e6656ee44a7f890d81e904788ed584922e7b10f74be"
+        },
+        "animations": {
+          "idle": "animations/mai_idle.png",
+          "focus": "animations/mai_focus.png",
+          "cheer": "animations/mai_cheer.png",
+          "rest": "animations/mai_rest.png",
+          "nudge": "animations/mai_nudge.png"
+        }
+      },
+      "rendering": {
+        "object_fit": "contain",
+        "object_position": "center bottom",
+        "anchor_normalized": {
+          "x": 0.5,
+          "y": 1.0
+        },
+        "recommended_alt_text": "Mai: Áo sơ mi trắng ngắn tay sơ vin, quần dài xanh navy, giày sneaker trắng phối teal; một tay giơ chữ v, tay còn lại nắm quai balo; đứng nghiêng vui vẻ.",
+        "background": "transparent"
+      },
+      "dialogue": {
+        "greeting": "Mai đây! Sẵn sàng cho một ngày thật vui chưa?",
+        "states": {
+          "idle": {
+            "lines": [
+              "Hôm nay mình thử điều gì thú vị nhỉ?"
+            ],
+            "image": "animations/mai_idle.png",
+            "visual_variant_available": true
+          },
+          "focus": {
+            "lines": [
+              "Tập trung một chặng ngắn nào, mình cổ vũ bạn!"
+            ],
+            "image": "animations/mai_focus.png",
+            "visual_variant_available": true
+          },
+          "cheer": {
+            "lines": [
+              "Tuyệt vời! Thêm một việc đã hoàn thành!"
+            ],
+            "image": "animations/mai_cheer.png",
+            "visual_variant_available": true
+          },
+          "rest": {
+            "lines": [
+              "Đứng dậy vươn vai cùng mình nhé!"
+            ],
+            "image": "animations/mai_rest.png",
+            "visual_variant_available": true
+          },
+          "nudge": {
+            "lines": [
+              "Nào, quay lại mục tiêu tiếp theo thôi!"
+            ],
+            "image": "animations/mai_nudge.png",
+            "visual_variant_available": true
+          }
+        }
+      },
+      "voice_direction": {
+        "language": "vi-VN",
+        "style": "Tươi sáng, nhanh vừa, đầy năng lượng",
+        "provider": null,
+        "voice_id": null,
+        "audio_assets": []
+      },
+      "generation": {
+        "tool": "built-in image_gen",
+        "prompt": "Use case: stylized-concept. Asset type: app character PNG. Create ONE original Vietnamese anime/chibi human character, full body, exactly 3.5 heads tall, large expressive warm brown eyes, dark ink fine linework, polished soft cel shading, subtle pastel highlights, charming premium 2D mobile game character art. Warm natural Vietnamese skin tone. Front three-quarter view, feet aligned near bottom, entire hair and shoes visible, comfortable transparent padding, single centered figure occupies 85% of portrait canvas. Real transparent alpha background, no scenery, no floor, no ground shadow, no text, no watermark, no frame, no other characters. Tasteful fully covered clothing, friendly wholesome nonsexual design. Keep anatomy and fingers clean. Subject: Mai, Vietnamese schoolgirl, lively optimistic sporty personality. Black hair in high ponytail tied with teal ribbon. Authentic Vietnamese school uniform: short-sleeved white collared button shirt neatly tucked into navy full-length straight trousers, white sneakers with teal accents, small teal backpack with both straps on shoulders. One hand makes cheerful V sign near shoulder and other holds backpack strap; broad happy smile, lively slight lean, both feet visible. No badges or letters. Accent palette teal #28A99E and navy #24374D.",
+        "notes": "Ảnh tĩnh demo; tỷ lệ hình thể do mô hình diễn giải, không phải model sheet hoặc rig animation."
+      }
+    },
+    {
+      "id": "an",
+      "name": "An (Áo Dài Trắng Thêu Tím)",
+      "display_name": "An",
+      "title": "Nữ Sinh Mọt Sách Trầm Tĩnh",
+      "role": "Thoughtful Study Buddy & Deep Thinker",
+      "gender": "female",
+      "locale": "vi-VN",
+      "nationality": "Vietnamese",
+      "tagline": "Trầm tĩnh, ham đọc, quan sát tinh tế",
+      "description": "An là nhân vật Việt Nam phong cách anime/chibi, trầm tĩnh, ham đọc, quan sát tinh tế.",
+      "personality_key": "calm_wise",
+      "personality": "An sâu sắc, ham học hỏi và trầm tĩnh. Mái tóc bob đen ngắn ngang cằm, mái bằng nhẹ, đôi mắt nâu ấm áp sau cặp kính tròn tri thức. Tà áo dài trắng thanh khiết điểm xuyết hoa tím lavender tinh tế ở cổ tay, hai tay ôm cuốn sách màu tím nhạt trước ngực, đầu hơi nghiêng lắng đọng.",
+      "personality_details": {
+        "traits": [
+          "trầm tĩnh",
+          "chăm chỉ",
+          "sâu sắc"
+        ],
+        "companion_role": "Người bạn học tập",
+        "interests": [
+          "Đọc sách",
+          "Ghi chú",
+          "Không gian yên tĩnh"
+        ],
+        "communication_style": "Điềm tĩnh, mềm, phát âm rõ",
+        "pronouns": {
+          "self": "mình",
+          "user": "bạn"
+        }
+      },
+      "speech_style": "Giọng nữ điềm đạm, êm dịu, phát âm tròn vành rõ chữ, từ tốn, gợi mở tư duy logic và suy ngẫm sâu sắc.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-HoaiMyNeural",
+        "voice_en": "shimmer",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-amy-medium",
+        "speed": 0.95,
+        "pitch": "-1Hz",
+        "sample_text": "Mình là An. Cùng đọc sách, khám phá và tìm hiểu từng chút một nhé bạn."
+      },
+      "catchphrases": [
+        "Mỗi trang sách mở ra một chân trời mới.",
+        "Chia nhỏ bài toán phức tạp thành từng bước giản đơn.",
+        "Hiểu rõ bản chất mang lại sự tự tin vững vàng."
+      ],
+      "expressions": {
+        "idle": [
+          "Có một điều hay mình muốn cùng bạn khám phá.",
+          "An đang đọc một chương sách rất thú vị về tư duy sáng tạo."
+        ],
+        "focus": [
+          "Mình chia việc này thành những bước nhỏ nhé.",
+          "Tĩnh tâm suy ngẫm, mọi nút thắt sẽ dần được tháo gỡ."
+        ],
+        "cheer": [
+          "Một bước tiến rất đáng ghi nhận đấy.",
+          "Lời giải xuất sắc! Tư duy mạch lạc của bạn rất đáng ngưỡng mộ."
+        ],
+        "rest": [
+          "Cho mắt nghỉ một chút rồi mình tiếp tục nhé.",
+          "Đặt kính xuống, nhìn ra xa vào những tán lá xanh để mắt thư giãn nào."
+        ],
+        "nudge": [
+          "Bạn còn nhớ bước tiếp theo không? Mình cùng xem lại nhé.",
+          "An khẽ nhắc: Trang sách hiện tại sắp hoàn thành rồi, mình làm nốt phần kết nhé."
+        ]
+      },
+      "avatar_file": "an.png",
+      "mood_images": {
+        "idle": "an_idle.png",
+        "focus": "an_focus.png",
+        "cheer": "an_cheer.png",
+        "rest": "an_rest.png",
+        "nudge": "an_nudge.png"
+      },
+      "appearance": {
+        "style": "2D anime/chibi",
+        "hair": "Tóc bob đen ngang cằm, mái bằng nhẹ",
+        "eyes": "Nâu ấm sau kính tròn",
+        "skin": "Tông da Việt Nam tự nhiên, sắc ấm",
+        "default_expression": "Mỉm cười kín đáo, ánh mắt hiền",
+        "default_pose": "Ôm sách trước ngực, đầu hơi nghiêng"
+      },
+      "outfit": {
+        "category": "ao_dai",
+        "description": "Áo dài trắng cổ cao, tay dài với hoa tím nhạt ở cổ tay; quần dài trắng; giày bệt nâu",
+        "accessories": [
+          "Kính tròn",
+          "Sách tím lavender"
+        ]
+      },
+      "palette": {
+        "primary": "#A496CD",
+        "secondary": "#FFF8EF",
+        "detail": "#493B39",
+        "note": "Màu thiết kế tham chiếu, không phải màu lấy mẫu chính xác từ PNG."
+      },
+      "assets": {
+        "full_body": {
+          "path": "assets/an.png",
+          "mime_type": "image/png",
+          "width": 1024,
+          "height": 1536,
+          "alpha": true,
+          "content_bounds_alpha_128_px": [
+            208,
+            14,
+            904,
+            1521
+          ],
+          "sha256": "c2988c4e85a288be8720e7f1df387e1fc5501cfc3b408679d7fb9266fbd775c0"
+        },
+        "animations": {
+          "idle": "animations/an_idle.png",
+          "focus": "animations/an_focus.png",
+          "cheer": "animations/an_cheer.png",
+          "rest": "animations/an_rest.png",
+          "nudge": "animations/an_nudge.png"
+        }
+      },
+      "rendering": {
+        "object_fit": "contain",
+        "object_position": "center bottom",
+        "anchor_normalized": {
+          "x": 0.5,
+          "y": 1.0
+        },
+        "recommended_alt_text": "An: Áo dài trắng cổ cao, tay dài với hoa tím nhạt ở cổ tay; quần dài trắng; giày bệt nâu; ôm sách trước ngực, đầu hơi nghiêng.",
+        "background": "transparent"
+      },
+      "dialogue": {
+        "greeting": "Mình là An. Cùng tìm hiểu từng chút một nhé.",
+        "states": {
+          "idle": {
+            "lines": [
+              "Có một điều hay mình muốn cùng bạn khám phá."
+            ],
+            "image": "animations/an_idle.png",
+            "visual_variant_available": true
+          },
+          "focus": {
+            "lines": [
+              "Mình chia việc này thành những bước nhỏ nhé."
+            ],
+            "image": "animations/an_focus.png",
+            "visual_variant_available": true
+          },
+          "cheer": {
+            "lines": [
+              "Một bước tiến rất đáng ghi nhận đấy."
+            ],
+            "image": "animations/an_cheer.png",
+            "visual_variant_available": true
+          },
+          "rest": {
+            "lines": [
+              "Cho mắt nghỉ một chút rồi mình tiếp tục nhé."
+            ],
+            "image": "animations/an_rest.png",
+            "visual_variant_available": true
+          },
+          "nudge": {
+            "lines": [
+              "Bạn còn nhớ bước tiếp theo không? Mình cùng xem lại nhé."
+            ],
+            "image": "animations/an_nudge.png",
+            "visual_variant_available": true
+          }
+        }
+      },
+      "voice_direction": {
+        "language": "vi-VN",
+        "style": "Điềm tĩnh, mềm, phát âm rõ",
+        "provider": null,
+        "voice_id": null,
+        "audio_assets": []
+      },
+      "generation": {
+        "tool": "built-in image_gen",
+        "prompt": "Use case: stylized-concept. Asset type: app character PNG. Create ONE original Vietnamese anime/chibi human character, full body, exactly 3.5 heads tall, large expressive warm brown eyes, dark ink fine linework, polished soft cel shading, subtle pastel highlights, charming premium 2D mobile game character art. Warm natural Vietnamese skin tone. Front three-quarter view, feet aligned near bottom, entire hair and shoes visible, comfortable transparent padding, single centered figure occupies 85% of portrait canvas. Real transparent alpha background, no scenery, no floor, no ground shadow, no text, no watermark, no frame, no other characters. Tasteful fully covered clothing, friendly wholesome nonsexual design. Keep anatomy and fingers clean. Subject: An, Vietnamese girl, quiet intelligent book-loving personality. Straight black chin-length bob haircut with neat bangs, thin round dark brown eyeglasses. Vietnamese high school WHITE AO DAI: high mandarin collar, long sleeves, flowing front and back long panels over full-length white wide trousers, dark brown flats; subtle tiny lavender floral embroidery on sleeve cuffs. She hugs a closed lavender hardcover book to chest, head tilted slightly with shy warm smile. Accent palette lavender #A496CD, ivory #FFF8EF.",
+        "notes": "Ảnh tĩnh demo; tỷ lệ hình thể do mô hình diễn giải, không phải model sheet hoặc rig animation."
+      }
+    },
+    {
+      "id": "minh",
+      "name": "Minh (Áo Dài Xanh Chàm)",
+      "display_name": "Minh",
+      "title": "Chàng Trai Dẫn Nhịp Tự Tin",
+      "role": "Visionary Leader & Rhythm Master",
+      "gender": "male",
+      "locale": "vi-VN",
+      "nationality": "Vietnamese",
+      "tagline": "Tự tin, chủ động, thân thiện",
+      "description": "Minh là nhân vật Việt Nam phong cách anime/chibi, tự tin, chủ động, thân thiện.",
+      "personality_key": "disciplined",
+      "personality": "Minh đĩnh đạc, tự tin và mang phong thái người dẫn dắt. Mái tóc đen ngắn rẽ ngôi bồng bềnh, khoác áo dài nam màu xanh chàm hoàng gia thêu họa tiết hình học kỷ hà viền chỉ vàng sang trọng, quần dài kem và giày loafer nâu. Một tay mở ra chào đón đầy phong độ, nụ cười tự tin và ánh mắt kiên định.",
+      "personality_details": {
+        "traits": [
+          "tự tin",
+          "quyết đoán",
+          "thân thiện"
+        ],
+        "companion_role": "Người dẫn nhịp",
+        "interests": [
+          "Lập kế hoạch",
+          "Làm việc nhóm",
+          "Giúp bạn bè"
+        ],
+        "communication_style": "Rõ ràng, vững vàng, thân thiện",
+        "pronouns": {
+          "self": "mình",
+          "user": "bạn"
+        }
+      },
+      "speech_style": "Giọng nam trầm ấm, đĩnh đạc, rõ ràng, dứt khoát, mang tinh thần lãnh đạo truyền cảm hứng và tin cậy.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-NamMinhNeural",
+        "voice_en": "onyx",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-ryan-medium",
+        "speed": 1.02,
+        "pitch": "0Hz",
+        "sample_text": "Chào bạn, Minh đây. Chúng ta hãy bắt đầu từ mục tiêu quan trọng nhất của ngày hôm nay nhé."
+      },
+      "catchphrases": [
+        "Xác định đúng mục tiêu, kiên định dẫn đầu.",
+        "Kỷ luật hôm nay là tự do của ngày mai.",
+        "Dẫn nhịp vững vàng, biến tầm nhìn thành hiện thực."
+      ],
+      "expressions": {
+        "idle": [
+          "Bạn muốn chinh phục mục tiêu nào hôm nay?",
+          "Minh đang rà soát lộ trình kế hoạch, mọi mốc quan trọng đều sẵn sàng."
+        ],
+        "focus": [
+          "Chọn một việc ưu tiên rồi làm đến nơi nhé.",
+          "Tập trung cao độ vào nhiệm vụ cốt lõi, loại bỏ mọi điều xao nhãng."
+        ],
+        "cheer": [
+          "Làm tốt lắm! Bạn đã giữ đúng nhịp rồi.",
+          "Chiến thắng thuyết phục! Tinh thần quyết đoán của bạn đem lại kết quả phi thường!"
+        ],
+        "rest": [
+          "Nghỉ đúng lúc cũng là một phần của kế hoạch.",
+          "Dừng chân nạp lại năng lượng để chặng đường tiếp theo bứt tốc mạnh mẽ hơn."
+        ],
+        "nudge": [
+          "Mình kiểm tra tiến độ và tiếp tục nhé.",
+          "Minh nhắc nhẹ: Đồng hồ đang đếm, chúng ta quay lại vạch xuất phát để hoàn thành mục tiêu nhé."
+        ]
+      },
+      "avatar_file": "minh.png",
+      "mood_images": {
+        "idle": "minh_idle.png",
+        "focus": "minh_focus.png",
+        "cheer": "minh_cheer.png",
+        "rest": "minh_rest.png",
+        "nudge": "minh_nudge.png"
+      },
+      "appearance": {
+        "style": "2D anime/chibi",
+        "hair": "Tóc đen ngắn, mái lệch bồng nhẹ",
+        "eyes": "Nâu ấm",
+        "skin": "Tông da Việt Nam tự nhiên, sắc ấm",
+        "default_expression": "Nụ cười tự tin, ánh mắt hướng về người xem",
+        "default_pose": "Một tay mở ra chào đón, tay còn lại thả tự nhiên"
+      },
+      "outfit": {
+        "category": "ao_dai",
+        "description": "Áo dài nam xanh chàm, cổ đứng, tay dài, họa tiết hình học và viền vàng; quần dài kem; giày loafer nâu",
+        "accessories": []
+      },
+      "palette": {
+        "primary": "#314B86",
+        "secondary": "#D5B36B",
+        "detail": "#FFF8EF",
+        "note": "Màu thiết kế tham chiếu, không phải màu lấy mẫu chính xác từ PNG."
+      },
+      "assets": {
+        "full_body": {
+          "path": "assets/minh.png",
+          "mime_type": "image/png",
+          "width": 1024,
+          "height": 1536,
+          "alpha": true,
+          "content_bounds_alpha_128_px": [
+            239,
+            17,
+            882,
+            1518
+          ],
+          "sha256": "24718fb0b322447e12d6c52ab5aa4e51ef9bfa5ba3903b2af7cf45e39c87be73"
+        },
+        "animations": {
+          "idle": "animations/minh_idle.png",
+          "focus": "animations/minh_focus.png",
+          "cheer": "animations/minh_cheer.png",
+          "rest": "animations/minh_rest.png",
+          "nudge": "animations/minh_nudge.png"
+        }
+      },
+      "rendering": {
+        "object_fit": "contain",
+        "object_position": "center bottom",
+        "anchor_normalized": {
+          "x": 0.5,
+          "y": 1.0
+        },
+        "recommended_alt_text": "Minh: Áo dài nam xanh chàm, cổ đứng, tay dài, họa tiết hình học và viền vàng; quần dài kem; giày loafer nâu; một tay mở ra chào đón, tay còn lại thả tự nhiên.",
+        "background": "transparent"
+      },
+      "dialogue": {
+        "greeting": "Chào bạn, Minh đây. Mình bắt đầu từ mục tiêu quan trọng nhất nhé.",
+        "states": {
+          "idle": {
+            "lines": [
+              "Bạn muốn chinh phục mục tiêu nào hôm nay?"
+            ],
+            "image": "animations/minh_idle.png",
+            "visual_variant_available": true
+          },
+          "focus": {
+            "lines": [
+              "Chọn một việc ưu tiên rồi làm đến nơi nhé."
+            ],
+            "image": "animations/minh_focus.png",
+            "visual_variant_available": true
+          },
+          "cheer": {
+            "lines": [
+              "Làm tốt lắm! Bạn đã giữ đúng nhịp rồi."
+            ],
+            "image": "animations/minh_cheer.png",
+            "visual_variant_available": true
+          },
+          "rest": {
+            "lines": [
+              "Nghỉ đúng lúc cũng là một phần của kế hoạch."
+            ],
+            "image": "animations/minh_rest.png",
+            "visual_variant_available": true
+          },
+          "nudge": {
+            "lines": [
+              "Mình kiểm tra tiến độ và tiếp tục nhé."
+            ],
+            "image": "animations/minh_nudge.png",
+            "visual_variant_available": true
+          }
+        }
+      },
+      "voice_direction": {
+        "language": "vi-VN",
+        "style": "Rõ ràng, vững vàng, thân thiện",
+        "provider": null,
+        "voice_id": null,
+        "audio_assets": []
+      },
+      "generation": {
+        "tool": "built-in image_gen",
+        "prompt": "Use case: stylized-concept. Asset type: app character PNG. Create ONE original Vietnamese anime/chibi human character, full body, exactly 3.5 heads tall, large expressive warm brown eyes, dark ink fine linework, polished soft cel shading, subtle pastel highlights, charming premium 2D mobile game character art. Warm natural Vietnamese skin tone. Front three-quarter view, feet aligned near bottom, entire hair and shoes visible, comfortable transparent padding, single centered figure occupies 85% of portrait canvas. Real transparent alpha background, no scenery, no floor, no ground shadow, no text, no watermark, no frame, no other characters. Tasteful fully covered clothing, friendly wholesome nonsexual design. Keep anatomy and fingers clean. Subject: Minh, Vietnamese boy, confident friendly leader personality. Neat short black hair with side part. Traditional men's Vietnamese AO DAI in deep indigo blue, high standing collar, long sleeves, straight loose knee-length panels and discrete tonal geometric embroidery near chest, cream full-length straight trousers, dark brown loafers. No headdress. One open hand held outward in a welcoming gesture, other hand relaxed by side; warm confident smile, balanced open stance. Accent palette indigo #314B86 and antique gold #D5B36B.",
+        "notes": "Ảnh tĩnh demo; tỷ lệ hình thể do mô hình diễn giải, không phải model sheet hoặc rig animation."
+      }
+    },
+    {
+      "id": "khoa",
+      "name": "Khoa (Đồng Phục Sáng Tạo)",
+      "display_name": "Khoa",
+      "title": "Chàng Trai Khám Phá & Đố Vui",
+      "role": "Creative Problem Solver & Tech Innovator",
+      "gender": "male",
+      "locale": "vi-VN",
+      "nationality": "Vietnamese",
+      "tagline": "Tò mò, sáng tạo, thích giải bài toán",
+      "description": "Khoa là nhân vật Việt Nam phong cách anime/chibi, tò mò, sáng tạo, thích giải bài toán.",
+      "personality_key": "energetic",
+      "personality": "Khoa thông minh, tò mò và giàu óc sáng tạo. Mái tóc đen hơi rối tự nhiên bồng bềnh, cặp kính tròn viền navy tinh nghịch, áo sơ mi trắng đồng phục ngắn tay sơ vin quần navy và sneaker navy phối vàng. Một tay cầm cuốn sổ tay vàng mở sẵn, tay kia giữ bút chì chạm cằm suy ngẫm, mắt sáng ngời ý tưởng.",
+      "personality_details": {
+        "traits": [
+          "tò mò",
+          "sáng tạo",
+          "tỉ mỉ"
+        ],
+        "companion_role": "Người bạn khám phá",
+        "interests": [
+          "Khoa học",
+          "Câu đố",
+          "Phác thảo ý tưởng"
+        ],
+        "communication_style": "Linh hoạt, hào hứng khi giải thích, rõ ràng",
+        "pronouns": {
+          "self": "mình",
+          "user": "bạn"
+        }
+      },
+      "speech_style": "Giọng nam trẻ trung, nhanh nhẹn, dí dỏm, đầy tính tò mò và đam mê tìm ra cách giải quyết vấn đề độc đáo.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-NamMinhNeural",
+        "voice_en": "fable",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-ryan-medium",
+        "speed": 1.05,
+        "pitch": "+1Hz",
+        "sample_text": "Mình là Khoa! Có câu đố hoặc bài toán nào hóc búa không? Cùng tìm giải pháp đột phá nhé!"
+      },
+      "catchphrases": [
+        "Nếu thử một góc nhìn khác, điều bất ngờ sẽ xuất hiện!",
+        "Mỗi bài toán hóc búa là một cánh cửa mở ra khám phá.",
+        "Sáng tạo bắt đầu từ sự tò mò không ngừng."
+      ],
+      "expressions": {
+        "idle": [
+          "Nếu thử một góc nhìn khác thì sao nhỉ?",
+          "Khoa đang phác thảo một thuật toán tối ưu mới trong sổ tay nè."
+        ],
+        "focus": [
+          "Mình kiểm tra giả thuyết đầu tiên trước nhé.",
+          "Tập trung giải mã từng biến số, tìm chìa khóa mở nút thắt nào!"
+        ],
+        "cheer": [
+          "Tìm ra rồi! Cách bạn giải quyết hay thật đấy.",
+          "Bingo! Giải pháp chuẩn không cần chỉnh! Bạn đúng là một thiên tài sáng tạo!"
+        ],
+        "rest": [
+          "Để ý tưởng nghỉ một lát, đôi khi sẽ có lời giải mới.",
+          "Thư giãn đầu óc một chút, biết đâu tia sáng Eureka sẽ lóe lên đó!"
+        ],
+        "nudge": [
+          "Quay lại ghi chú gần nhất nào, mình đang đến gần rồi.",
+          "Khoa gõ nhẹ bút chì: Chỉ còn một bước thử nghiệm cuối cùng thôi, tiếp tục nào bạn ơi!"
+        ]
+      },
+      "avatar_file": "khoa.png",
+      "mood_images": {
+        "idle": "khoa_idle.png",
+        "focus": "khoa_focus.png",
+        "cheer": "khoa_cheer.png",
+        "rest": "khoa_rest.png",
+        "nudge": "khoa_nudge.png"
+      },
+      "appearance": {
+        "style": "2D anime/chibi",
+        "hair": "Tóc đen ngắn hơi rối, mái bồng",
+        "eyes": "Nâu ấm sau kính tròn navy",
+        "skin": "Tông da Việt Nam tự nhiên, sắc ấm",
+        "default_expression": "Cười tò mò, ánh mắt sáng và tinh nghịch",
+        "default_pose": "Một tay cầm sổ mở, tay kia giữ bút gần cằm"
+      },
+      "outfit": {
+        "category": "school_uniform",
+        "description": "Áo sơ mi trắng ngắn tay sơ vin, quần dài navy, thắt lưng nâu, sneaker navy phối vàng",
+        "accessories": [
+          "Kính tròn navy",
+          "Sổ vàng đang mở",
+          "Bút chì"
+        ]
+      },
+      "palette": {
+        "primary": "#E3B64B",
+        "secondary": "#24374D",
+        "detail": "#FFFFFF",
+        "note": "Màu thiết kế tham chiếu, không phải màu lấy mẫu chính xác từ PNG."
+      },
+      "assets": {
+        "full_body": {
+          "path": "assets/khoa.png",
+          "mime_type": "image/png",
+          "width": 1024,
+          "height": 1536,
+          "alpha": true,
+          "content_bounds_alpha_128_px": [
+            212,
+            9,
+            833,
+            1519
+          ],
+          "sha256": "c9197d33a17aeeceb7ed8d07b5dd0a7bf74fd9400382b36fbdd54bd0c76e5200"
+        },
+        "animations": {
+          "idle": "animations/khoa_idle.png",
+          "focus": "animations/khoa_focus.png",
+          "cheer": "animations/khoa_cheer.png",
+          "rest": "animations/khoa_rest.png",
+          "nudge": "animations/khoa_nudge.png"
+        }
+      },
+      "rendering": {
+        "object_fit": "contain",
+        "object_position": "center bottom",
+        "anchor_normalized": {
+          "x": 0.5,
+          "y": 1.0
+        },
+        "recommended_alt_text": "Khoa: Áo sơ mi trắng ngắn tay sơ vin, quần dài navy, thắt lưng nâu, sneaker navy phối vàng; một tay cầm sổ mở, tay kia giữ bút gần cằm.",
+        "background": "transparent"
+      },
+      "dialogue": {
+        "greeting": "Mình là Khoa! Cùng tìm một cách làm hay hơn nhé.",
+        "states": {
+          "idle": {
+            "lines": [
+              "Nếu thử một góc nhìn khác thì sao nhỉ?"
+            ],
+            "image": "animations/khoa_idle.png",
+            "visual_variant_available": true
+          },
+          "focus": {
+            "lines": [
+              "Mình kiểm tra giả thuyết đầu tiên trước nhé."
+            ],
+            "image": "animations/khoa_focus.png",
+            "visual_variant_available": true
+          },
+          "cheer": {
+            "lines": [
+              "Tìm ra rồi! Cách bạn giải quyết hay thật đấy."
+            ],
+            "image": "animations/khoa_cheer.png",
+            "visual_variant_available": true
+          },
+          "rest": {
+            "lines": [
+              "Để ý tưởng nghỉ một lát, đôi khi sẽ có lời giải mới."
+            ],
+            "image": "animations/khoa_rest.png",
+            "visual_variant_available": true
+          },
+          "nudge": {
+            "lines": [
+              "Quay lại ghi chú gần nhất nào, mình đang đến gần rồi."
+            ],
+            "image": "animations/khoa_nudge.png",
+            "visual_variant_available": true
+          }
+        }
+      },
+      "voice_direction": {
+        "language": "vi-VN",
+        "style": "Linh hoạt, hào hứng khi giải thích, rõ ràng",
+        "provider": null,
+        "voice_id": null,
+        "audio_assets": []
+      },
+      "generation": {
+        "tool": "built-in image_gen",
+        "prompt": "Use case: stylized-concept. Asset type: app character PNG. Create ONE original Vietnamese anime/chibi human character, full body, exactly 3.5 heads tall, large expressive warm brown eyes, dark ink fine linework, polished soft cel shading, subtle pastel highlights, charming premium 2D mobile game character art. Warm natural Vietnamese skin tone. Front three-quarter view, feet aligned near bottom, entire hair and shoes visible, comfortable transparent padding, single centered figure occupies 85% of portrait canvas. Real transparent alpha background, no scenery, no floor, no ground shadow, no text, no watermark, no frame, no other characters. Tasteful fully covered clothing, friendly wholesome nonsexual design. Keep anatomy and fingers clean. Subject: Khoa, Vietnamese schoolboy, inquisitive clever inventive personality. Slightly tousled short black hair, thin round navy glasses. Authentic Vietnamese school uniform: crisp short-sleeved white collared button shirt neatly tucked into full-length navy straight trousers, brown belt, navy sneakers with mustard yellow detail. He holds a small mustard yellow notebook open in one hand and pencil thoughtfully near chin in other hand. Bright curious smile and slightly raised eyebrow, relaxed stance. No badges or letters. Accent palette mustard yellow #E3B64B and navy #24374D.",
+        "notes": "Ảnh tĩnh demo; tỷ lệ hình thể do mô hình diễn giải, không phải model sheet hoặc rig animation."
+      }
+    },
+    {
+      "id": "nam",
+      "name": "Nam (Áo Dài Xanh Tre)",
+      "display_name": "Nam",
+      "title": "Chàng Trai Điềm Đạm & Kiên Định",
+      "role": "Steadfast Companion & Mindful Anchor",
+      "gender": "male",
+      "locale": "vi-VN",
+      "nationality": "Vietnamese",
+      "tagline": "Điềm đạm, chu đáo, đáng tin cậy",
+      "description": "Nam là nhân vật Việt Nam phong cách anime/chibi, điềm đạm, chu đáo, đáng tin cậy.",
+      "personality_key": "calm_wise",
+      "personality": "Nam sở hữu khí chất điềm đạm, ấm áp và đáng tin cậy. Mái tóc đen ngắn tỉa gọn gàng mềm mại, mặc chiếc áo dài nam màu xanh ngọc lục bảo trầm thêu họa tiết rặng tre Việt Nam màu kem thanh nhã, quần dài kem và giày loafer nâu sẫm. Một tay đặt trước ngực chào chân thành, tay kia giữ cuốn sách bìa tre mộc mạc bên hông.",
+      "personality_details": {
+        "traits": [
+          "điềm đạm",
+          "chu đáo",
+          "kiên định"
+        ],
+        "companion_role": "Người đồng hành bền bỉ",
+        "interests": [
+          "Chăm cây",
+          "Đọc sách",
+          "Giúp đỡ bạn bè"
+        ],
+        "communication_style": "Ấm áp, chậm vừa, chắc chắn",
+        "pronouns": {
+          "self": "mình",
+          "user": "bạn"
+        }
+      },
+      "speech_style": "Giọng nam trầm ấm, chân thành, nhịp nói điềm đạm, mang lại cảm giác an tâm, vững chãi và sự nâng đỡ kiên trì.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-NamMinhNeural",
+        "voice_en": "echo",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-ryan-medium",
+        "speed": 0.96,
+        "pitch": "-1Hz",
+        "sample_text": "Chào bạn, mình là Nam. Mình sẽ luôn đồng hành bền bỉ bên bạn trên mọi nẻo đường."
+      },
+      "catchphrases": [
+        "Vững như tre xanh trước mọi giông bão.",
+        "Cứ kiên trì từng bước một, đích đến sẽ tự hiện ra.",
+        "Điềm đạm nuôi dưỡng sức mạnh nội tâm vô tận."
+      ],
+      "expressions": {
+        "idle": [
+          "Cứ theo nhịp của bạn, mình vẫn ở đây.",
+          "Nam đang lắng nghe tiếng gió rì rào qua khóm tre, bình yên và thư thái."
+        ],
+        "focus": [
+          "Bình tĩnh làm từng bước, việc khó cũng sẽ rõ dần.",
+          "Giữ tâm thế kiên định, chuyên chú hoàn thành từng việc nhỏ."
+        ],
+        "cheer": [
+          "Nỗ lực của bạn đã có kết quả rồi, chúc mừng nhé.",
+          "Sự bền bỉ kiên gan của bạn thật đáng trân trọng, quả ngọt hôm nay xứng đáng 100%!"
+        ],
+        "rest": [
+          "Uống chút nước và nghỉ ngơi một lát nhé.",
+          "Ngồi thẳng lưng, hít một hơi sâu và để tâm trí lắng đọng cùng Nam."
+        ],
+        "nudge": [
+          "Mình tiếp tục phần còn lại khi bạn sẵn sàng nhé.",
+          "Nam khẽ nhắc: Chúng ta đi được hơn nửa chặng đường rồi, hoàn tất nốt phần cuối cùng nhé bạn."
+        ]
+      },
+      "avatar_file": "nam.png",
+      "mood_images": {
+        "idle": "nam_idle.png",
+        "focus": "nam_focus.png",
+        "cheer": "nam_cheer.png",
+        "rest": "nam_rest.png",
+        "nudge": "nam_nudge.png"
+      },
+      "appearance": {
+        "style": "2D anime/chibi",
+        "hair": "Tóc đen ngắn có độ bồng, mái mềm",
+        "eyes": "Nâu ấm",
+        "skin": "Tông da Việt Nam tự nhiên, sắc ấm",
+        "default_expression": "Mỉm cười bình thản, vai thả lỏng",
+        "default_pose": "Một tay đặt trước ngực chào chân thành, tay kia cầm sách bên hông"
+      },
+      "outfit": {
+        "category": "ao_dai",
+        "description": "Áo dài nam xanh ngọc trầm, cổ đứng, tay dài, họa tiết tre màu kem; quần dài kem; giày loafer nâu",
+        "accessories": [
+          "Sách màu kem họa tiết tre"
+        ]
+      },
+      "palette": {
+        "primary": "#578D7A",
+        "secondary": "#FFF8EF",
+        "detail": "#594238",
+        "note": "Màu thiết kế tham chiếu, không phải màu lấy mẫu chính xác từ PNG."
+      },
+      "assets": {
+        "full_body": {
+          "path": "assets/nam.png",
+          "mime_type": "image/png",
+          "width": 1024,
+          "height": 1536,
+          "alpha": true,
+          "content_bounds_alpha_128_px": [
+            264,
+            15,
+            769,
+            1514
+          ],
+          "sha256": "d25f55cb5e44b6f78732aeb5149c08091330ffaa81f713ae574519cdbf036116"
+        },
+        "animations": {
+          "idle": "animations/nam_idle.png",
+          "focus": "animations/nam_focus.png",
+          "cheer": "animations/nam_cheer.png",
+          "rest": "animations/nam_rest.png",
+          "nudge": "animations/nam_nudge.png"
+        }
+      },
+      "rendering": {
+        "object_fit": "contain",
+        "object_position": "center bottom",
+        "anchor_normalized": {
+          "x": 0.5,
+          "y": 1.0
+        },
+        "recommended_alt_text": "Nam: Áo dài nam xanh ngọc trầm, cổ đứng, tay dài, họa tiết tre màu kem; quần dài kem; giày loafer nâu; một tay đặt trước ngực chào chân thành, tay kia cầm sách bên hông.",
+        "background": "transparent"
+      },
+      "dialogue": {
+        "greeting": "Chào bạn, mình là Nam. Mình sẽ đồng hành cùng bạn.",
+        "states": {
+          "idle": {
+            "lines": [
+              "Cứ theo nhịp của bạn, mình vẫn ở đây."
+            ],
+            "image": "animations/nam_idle.png",
+            "visual_variant_available": true
+          },
+          "focus": {
+            "lines": [
+              "Bình tĩnh làm từng bước, việc khó cũng sẽ rõ dần."
+            ],
+            "image": "animations/nam_focus.png",
+            "visual_variant_available": true
+          },
+          "cheer": {
+            "lines": [
+              "Nỗ lực của bạn đã có kết quả rồi, chúc mừng nhé."
+            ],
+            "image": "animations/nam_cheer.png",
+            "visual_variant_available": true
+          },
+          "rest": {
+            "lines": [
+              "Uống chút nước và nghỉ ngơi một lát nhé."
+            ],
+            "image": "animations/nam_rest.png",
+            "visual_variant_available": true
+          },
+          "nudge": {
+            "lines": [
+              "Mình tiếp tục phần còn lại khi bạn sẵn sàng nhé."
+            ],
+            "image": "animations/nam_nudge.png",
+            "visual_variant_available": true
+          }
+        }
+      },
+      "voice_direction": {
+        "language": "vi-VN",
+        "style": "Ấm áp, chậm vừa, chắc chắn",
+        "provider": null,
+        "voice_id": null,
+        "audio_assets": []
+      },
+      "generation": {
+        "tool": "built-in image_gen",
+        "prompt": "Use case: stylized-concept. Asset type: app character PNG. Create ONE original Vietnamese anime/chibi human character, full body, exactly 3.5 heads tall, large expressive warm brown eyes, dark ink fine linework, polished soft cel shading, subtle pastel highlights, charming premium 2D mobile game character art. Warm natural Vietnamese skin tone. Front three-quarter view, feet aligned near bottom, entire hair and shoes visible, comfortable transparent padding, single centered figure occupies 85% of portrait canvas. Real transparent alpha background, no scenery, no floor, no ground shadow, no text, no watermark, no frame, no other characters. Tasteful fully covered clothing, friendly wholesome nonsexual design. Keep anatomy and fingers clean. Subject: Nam, Vietnamese boy, calm reliable caring personality. Short softly textured black hair with gentle fringe. Traditional men's Vietnamese AO DAI in muted jade green, standing mandarin collar, long sleeves, straight loose knee-length panels, small subtle tonal bamboo embroidery on lower panel, cream full-length trousers, simple brown loafers. He holds a closed cream book at his side with left hand, right hand gently rests over chest in sincere greeting. Peaceful warm smile, relaxed shoulders and upright grounded posture. No headdress. Accent palette jade green #578D7A and ivory #FFF8EF.",
+        "notes": "Ảnh tĩnh demo; tỷ lệ hình thể do mô hình diễn giải, không phải model sheet hoặc rig animation."
+      }
+    }
+  ]
+}

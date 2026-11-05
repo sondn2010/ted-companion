@@ -1,0 +1,389 @@
+{
+  "version": 1,
+  "skins": [
+    {
+      "key": "01_chibi_adult_mature/mai_chi_vest",
+      "pack": "01_chibi_adult_mature",
+      "name_vi": "Mai Chi (Vest Công Sở)",
+      "name_en": "Mai Chi (Vest Công Sở)",
+      "unlock": {
+        "type": "badges",
+        "count": 1
+      }
+    },
+    {
+      "key": "01_chibi_adult_mature/thanh_huong_aodai",
+      "pack": "01_chibi_adult_mature",
+      "name_vi": "Thanh Hương (Áo Dài Trắng)",
+      "name_en": "Thanh Hương (Áo Dài Trắng)",
+      "unlock": {
+        "type": "metric",
+        "metric": "focus_sessions",
+        "value": 3
+      }
+    },
+    {
+      "key": "01_chibi_adult_mature/minh_an_vest",
+      "pack": "01_chibi_adult_mature",
+      "name_vi": "Minh An (Vest Xám Lịch Lãm)",
+      "name_en": "Minh An (Vest Xám Lịch Lãm)",
+      "unlock": {
+        "type": "badges",
+        "count": 2
+      }
+    },
+    {
+      "key": "01_chibi_adult_mature/duc_huy_aodai",
+      "pack": "01_chibi_adult_mature",
+      "name_vi": "Đức Huy (Áo Dài Cách Tân)",
+      "name_en": "Đức Huy (Áo Dài Cách Tân)",
+      "unlock": {
+        "type": "metric",
+        "metric": "tasks_done",
+        "value": 5
+      }
+    },
+    {
+      "key": "01_chibi_adult_mature/hong_ngoc_aodai",
+      "pack": "01_chibi_adult_mature",
+      "name_vi": "Hồng Ngọc (Áo Dài Đỏ Sen)",
+      "name_en": "Hồng Ngọc (Áo Dài Đỏ Sen)",
+      "unlock": {
+        "type": "badges",
+        "count": 3
+      }
+    },
+    {
+      "key": "01_chibi_adult_mature/quoc_bao_suit",
+      "pack": "01_chibi_adult_mature",
+      "name_vi": "Quốc Bảo (Suit Vest Đen)",
+      "name_en": "Quốc Bảo (Suit Vest Đen)",
+      "unlock": {
+        "type": "metric",
+        "metric": "quiz_answered",
+        "value": 10
+      }
+    },
+    {
+      "key": "03_chibi_spicy_waifu/scarlett",
+      "pack": "03_chibi_spicy_waifu",
+      "name_vi": "Scarlett Catgirl",
+      "name_en": "Scarlett Catgirl",
+      "unlock": {
+        "type": "metric",
+        "metric": "untangle_sessions",
+        "value": 1
+      }
+    },
+    {
+      "key": "03_chibi_spicy_waifu/luna",
+      "pack": "03_chibi_spicy_waifu",
+      "name_vi": "Luna Kitsune",
+      "name_en": "Luna Kitsune",
+      "unlock": {
+        "type": "badges",
+        "count": 5
+      }
+    },
+    {
+      "key": "03_chibi_spicy_waifu/roxy",
+      "pack": "03_chibi_spicy_waifu",
+      "name_vi": "Roxy Succubus",
+      "name_en": "Roxy Succubus",
+      "unlock": {
+        "type": "metric",
+        "metric": "peak_level",
+        "value": 6
+      }
+    },
+    {
+      "key": "03_chibi_spicy_waifu/mia_maid",
+      "pack": "03_chibi_spicy_waifu",
+      "name_vi": "Mia Maid",
+      "name_en": "Mia Maid",
+      "unlock": {
+        "type": "metric",
+        "metric": "focus_sessions",
+        "value": 10
+      }
+    },
+    {
+      "key": "03_chibi_spicy_waifu/freya",
+      "pack": "03_chibi_spicy_waifu",
+      "name_vi": "Freya Bunny",
+      "name_en": "Freya Bunny",
+      "unlock": {
+        "type": "badges",
+        "count": 7
+      }
+    },
+    {
+      "key": "03_chibi_spicy_waifu/chloe_sec",
+      "pack": "03_chibi_spicy_waifu",
+      "name_vi": "Chloe Secretary",
+      "name_en": "Chloe Secretary",
+      "unlock": {
+        "type": "metric",
+        "metric": "tasks_done",
+        "value": 20
+      }
+    },
+    {
+      "key": "07_chibi_cute_snakes/noodly",
+      "pack": "07_chibi_cute_snakes",
+      "name_vi": "Noodly (Bé Rắn Lục)",
+      "name_en": "Noodly (Bé Rắn Lục)",
+      "unlock": {
+        "type": "metric",
+        "metric": "best_streak_days",
+        "value": 3
+      }
+    },
+    {
+      "key": "07_chibi_cute_snakes/ivy_snake",
+      "pack": "07_chibi_cute_snakes",
+      "name_vi": "Ivy (Bạch Xà Ngọc)",
+      "name_en": "Ivy (Bạch Xà Ngọc)",
+      "unlock": {
+        "type": "metric",
+        "metric": "quiz_correct",
+        "value": 20
+      }
+    },
+    {
+      "key": "07_chibi_cute_snakes/coba_king",
+      "pack": "07_chibi_cute_snakes",
+      "name_vi": "Coba (Bé Hổ Mang Hoàng Gia)",
+      "name_en": "Coba (Bé Hổ Mang Hoàng Gia)",
+      "unlock": {
+        "type": "badges",
+        "count": 10
+      }
+    },
+    {
+      "key": "07_chibi_cute_snakes/coral_candy",
+      "pack": "07_chibi_cute_snakes",
+      "name_vi": "Candy (Rắn Kẹo San Hô)",
+      "name_en": "Candy (Rắn Kẹo San Hô)",
+      "unlock": {
+        "type": "metric",
+        "metric": "untangle_sessions",
+        "value": 5
+      }
+    },
+    {
+      "key": "07_chibi_cute_snakes/pytho_choco",
+      "pack": "07_chibi_cute_snakes",
+      "name_vi": "Pytho (Trăn Gấm Mocha)",
+      "name_en": "Pytho (Trăn Gấm Mocha)",
+      "unlock": {
+        "type": "metric",
+        "metric": "quiz_answered",
+        "value": 30
+      }
+    },
+    {
+      "key": "07_chibi_cute_snakes/twiggy",
+      "pack": "07_chibi_cute_snakes",
+      "name_vi": "Twiggy (Thanh Xà Ngọc Lam)",
+      "name_en": "Twiggy (Thanh Xà Ngọc Lam)",
+      "unlock": {
+        "type": "metric",
+        "metric": "peak_level",
+        "value": 7
+      }
+    },
+    {
+      "key": "22_chibi_vietnamese_students/mai_linh_aodai_trang",
+      "pack": "22_chibi_vietnamese_students",
+      "name_vi": "Mai Linh (Áo Dài Trắng)",
+      "name_en": "Mai Linh (Áo Dài Trắng)",
+      "unlock": {
+        "type": "badges",
+        "count": 12
+      }
+    },
+    {
+      "key": "22_chibi_vietnamese_students/quang_huy_dong_phuc",
+      "pack": "22_chibi_vietnamese_students",
+      "name_vi": "Quang Huy (Áo Trắng Học Sinh)",
+      "name_en": "Quang Huy (Áo Trắng Học Sinh)",
+      "unlock": {
+        "type": "metric",
+        "metric": "focus_sessions",
+        "value": 25
+      }
+    },
+    {
+      "key": "22_chibi_vietnamese_students/ha_my_aodai_hong",
+      "pack": "22_chibi_vietnamese_students",
+      "name_vi": "Hà My (Áo Dài Hồng Sen)",
+      "name_en": "Hà My (Áo Dài Hồng Sen)",
+      "unlock": {
+        "type": "metric",
+        "metric": "best_streak_days",
+        "value": 7
+      }
+    },
+    {
+      "key": "22_chibi_vietnamese_students/tuan_kiet_lop_truong",
+      "pack": "22_chibi_vietnamese_students",
+      "name_vi": "Tuấn Kiệt (Lớp Trưởng Gương Mẫu)",
+      "name_en": "Tuấn Kiệt (Lớp Trưởng Gương Mẫu)",
+      "unlock": {
+        "type": "metric",
+        "metric": "tasks_done",
+        "value": 50
+      }
+    },
+    {
+      "key": "22_chibi_vietnamese_students/lan_anh_aodai_xanh",
+      "pack": "22_chibi_vietnamese_students",
+      "name_vi": "Lan Anh (Áo Dài Xanh Cốm)",
+      "name_en": "Lan Anh (Áo Dài Xanh Cốm)",
+      "unlock": {
+        "type": "badges",
+        "count": 15
+      }
+    },
+    {
+      "key": "22_chibi_vietnamese_students/hoang_nam_the_duc",
+      "pack": "22_chibi_vietnamese_students",
+      "name_vi": "Hoàng Nam (Đồng Phục Thể Dục)",
+      "name_en": "Hoàng Nam (Đồng Phục Thể Dục)",
+      "unlock": {
+        "type": "metric",
+        "metric": "quiz_answered",
+        "value": 100
+      }
+    },
+    {
+      "key": "25_chibi_vietnam_students_actions/char_01_bao_chau",
+      "pack": "25_chibi_vietnam_students_actions",
+      "name_vi": "Bảo Châu",
+      "name_en": "Bảo Châu",
+      "unlock": {
+        "type": "metric",
+        "metric": "writing_graded",
+        "value": 3
+      }
+    },
+    {
+      "key": "25_chibi_vietnam_students_actions/char_02_tuan_minh",
+      "pack": "25_chibi_vietnam_students_actions",
+      "name_vi": "Tuấn Minh",
+      "name_en": "Tuấn Minh",
+      "unlock": {
+        "type": "badges",
+        "count": 18
+      }
+    },
+    {
+      "key": "25_chibi_vietnam_students_actions/char_03_anh_duong",
+      "pack": "25_chibi_vietnam_students_actions",
+      "name_vi": "Ánh Dương",
+      "name_en": "Ánh Dương",
+      "unlock": {
+        "type": "metric",
+        "metric": "quiz_correct",
+        "value": 100
+      }
+    },
+    {
+      "key": "25_chibi_vietnam_students_actions/char_04_dang_khoa",
+      "pack": "25_chibi_vietnam_students_actions",
+      "name_vi": "Đăng Khoa",
+      "name_en": "Đăng Khoa",
+      "unlock": {
+        "type": "metric",
+        "metric": "peak_level",
+        "value": 9
+      }
+    },
+    {
+      "key": "25_chibi_vietnam_students_actions/char_05_huong_giang",
+      "pack": "25_chibi_vietnam_students_actions",
+      "name_vi": "Hương Giang",
+      "name_en": "Hương Giang",
+      "unlock": {
+        "type": "metric",
+        "metric": "best_streak_days",
+        "value": 14
+      }
+    },
+    {
+      "key": "25_chibi_vietnam_students_actions/char_06_hoang_nam",
+      "pack": "25_chibi_vietnam_students_actions",
+      "name_vi": "Hoàng Nam",
+      "name_en": "Hoàng Nam",
+      "unlock": {
+        "type": "badges",
+        "count": 22
+      }
+    },
+    {
+      "key": "vietnam-chibi-pack/linh",
+      "pack": "vietnam-chibi-pack",
+      "name_vi": "Linh",
+      "name_en": "Linh",
+      "unlock": {
+        "type": "metric",
+        "metric": "focus_sessions",
+        "value": 50
+      }
+    },
+    {
+      "key": "vietnam-chibi-pack/mai",
+      "pack": "vietnam-chibi-pack",
+      "name_vi": "Mai",
+      "name_en": "Mai",
+      "unlock": {
+        "type": "metric",
+        "metric": "tasks_done",
+        "value": 100
+      }
+    },
+    {
+      "key": "vietnam-chibi-pack/an",
+      "pack": "vietnam-chibi-pack",
+      "name_vi": "An",
+      "name_en": "An",
+      "unlock": {
+        "type": "badges",
+        "count": 26
+      }
+    },
+    {
+      "key": "vietnam-chibi-pack/minh",
+      "pack": "vietnam-chibi-pack",
+      "name_vi": "Minh",
+      "name_en": "Minh",
+      "unlock": {
+        "type": "metric",
+        "metric": "quiz_answered",
+        "value": 300
+      }
+    },
+    {
+      "key": "vietnam-chibi-pack/khoa",
+      "pack": "vietnam-chibi-pack",
+      "name_vi": "Khoa",
+      "name_en": "Khoa",
+      "unlock": {
+        "type": "badges",
+        "count": 30
+      }
+    },
+    {
+      "key": "vietnam-chibi-pack/nam",
+      "pack": "vietnam-chibi-pack",
+      "name_vi": "Nam",
+      "name_en": "Nam",
+      "unlock": {
+        "type": "metric",
+        "metric": "focus_minutes",
+        "value": 3000
+      }
+    }
+  ]
+}

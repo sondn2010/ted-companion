@@ -1,0 +1,334 @@
+{
+  "id": "07_chibi_cute_snakes",
+  "title": "Nhân vật Những Bạn Rắn Đáng Yêu",
+  "subtitle": "Định dạng PNG sắc nét, phong cách Chibi Baby Snake siêu dễ thương bám sát ảnh mẫu: Đầu tròn xoe mắt long lanh ngơ ngác, mõm tròn vàng tươi cười rạng rỡ, má hồng ngọt ngào, thân cuộn tròn êm ái với các đốm tròn chấm phá và ánh sáng bóng bẩy",
+  "style_badge": "Chibi Cute Baby Snakes PNG",
+  "format": "100% PNG (512x512 Transparent PNG)",
+  "folder_name": "07_chibi_cute_snakes",
+  "characters": [
+    {
+      "id": "noodly",
+      "name": "Noodly (Bé Rắn Lục)",
+      "title": "Bé Rắn Lục Táo Xanh Đáng Yêu",
+      "role": "Fresh Green Focus Buddy",
+      "gender": "neutral",
+      "personality_key": "cheerful",
+      "personality": "Bé rắn màu xanh táo tươi tắn cuộn tròn êm ái, đầu tròn xoe ngây thơ, mõm vàng tươi với hai lỗ mũi tròn xoe và nụ cười rạng rỡ mở to, hai má hồng đào phúng phính, vệt bóng dạ quang trên đầu và chóp đuôi uốn cong tinh nghịch.",
+      "speech_style": "Giọng líu lo trong trẻo, hồn nhiên 'xì xì bloop~', luôn cuộn tròn bên bàn làm việc truyền năng lượng tích cực và tươi mát.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-HoaiMyNeural",
+        "voice_en": "nova",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-amy-medium",
+        "speed": 1.1,
+        "pitch": "+3Hz",
+        "sample_text": "Xì xì! Noodly cuộn tròn trên bàn làm việc sưởi ấm cho bạn nè! Cùng nhau tập trung làm xong bài thật nhanh rồi mình cùng đi dạo vườn cỏ nha!"
+      },
+      "catchphrases": [
+        "Cuộn tròn êm ái như sợi mì xanh lá!",
+        "Thè lưỡi xì xì chúc bạn làm việc suôn sẻ!",
+        "Nụ cười rạng rỡ xua tan mọi mỏi mệt!"
+      ],
+      "expressions": {
+        "idle": [
+          "Noodly đang quấn chiếc đuôi thành vòng tròn xoe ngủ trưa nè, có giống chiếc bánh donut không?",
+          "Noodly ngóc chiếc đầu tròn ngơ ngác ngắm bạn gõ phím đó."
+        ],
+        "focus": [
+          "Trườn êm qua khe cỏ, không gây một tiếng động! Tập trung cao độ nào!",
+          "Chăm chú nhìn thẳng mục tiêu, không chớp mắt nha!"
+        ],
+        "cheer": [
+          "Xì xì hoan hô! Noodly uốn lượn thành hình số 1 tặng bạn luôn nè! Bạn giỏi nhất quả đất!",
+          "Hoàn thành xuất sắc rồi! Noodly thích bạn lắm á!"
+        ],
+        "rest": [
+          "Noodly quấn quanh cốc nước ấm sưởi ấm cùng bạn nghỉ ngơi nhé.",
+          "Nhắm mắt thư giãn 5 phút dưới bóng cây mát rượi nào."
+        ],
+        "nudge": [
+          "Noodly vẫy chiếc đuôi nhỏ xì xì nhắc bạn kìa: Sắp hết giờ rồi, gõ nốt mấy dòng cuối nha!"
+        ]
+      },
+      "avatar_file": "char_01_noodly.png",
+      "mood_images": {
+        "idle": "char_01_noodly_idle.png",
+        "focus": "char_01_noodly_focus.png",
+        "cheer": "char_01_noodly_cheer.png",
+        "rest": "char_01_noodly_rest.png",
+        "nudge": "char_01_noodly_nudge.png"
+      }
+    },
+    {
+      "id": "ivy_snake",
+      "name": "Ivy (Bạch Xà Ngọc)",
+      "title": "Bé Bạch Xà Hồng Ngọc Đáng Yêu",
+      "role": "Gentle Calm Companion",
+      "gender": "female",
+      "personality_key": "sweet",
+      "personality": "Bé bạch xà màu trắng ngọc trai pha kem sữa mềm mịn, mõm và bụng màu hồng đào pastel, đôi mắt to tròn màu ruby lấp lánh phản chiếu ánh sao, má ửng hồng e ấp, các đốm kim tuyến vàng nhẹ trên thân cuộn tròn quý phái.",
+      "speech_style": "Giọng nữ nhỏ nhẹ, dịu dàng, êm ái như làn gió thoảng, mang lại cảm giác bình yên thư thái tuyệt đối.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-HoaiMyNeural",
+        "voice_en": "shimmer",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-amy-medium",
+        "speed": 1.05,
+        "pitch": "+2Hz",
+        "sample_text": "Bạch Xà Ivy nhẹ nhàng cuộn bên bạn đây~ Hít thở thật sâu, giữ cho tâm trí thanh tịnh và làm việc thật nhẹ nhàng nhé!"
+      },
+      "catchphrases": [
+        "Làn da ngọc ngà, tâm hồn thanh khiết.",
+        "Sự điềm tĩnh giúp giải quyết mọi vấn đề.",
+        "Tặng bạn một cái ôm cuộn tròn ấm áp!"
+      ],
+      "expressions": {
+        "idle": [
+          "Ivy khẽ chớp đôi mắt hồng ngọc, ngắm những hạt nắng chiều xuyên qua cửa sổ.",
+          "Thân ngọc trắng muốt cuộn lại gọn gàng như một đóa sen trắng."
+        ],
+        "focus": [
+          "Tĩnh lặng như mặt hồ phẳng lặng. Tập trung tối đa vào từng con chữ nhé.",
+          "Nhẹ nhàng nhưng dứt khoát, từng nhiệm vụ sẽ hoàn thành."
+        ],
+        "cheer": [
+          "Tuyệt vời quá! Ivy uốn mình thành hình trái tim chúc mừng bạn nè!",
+          "Một kết quả hoàn hảo! Bạn thật tuyệt vời!"
+        ],
+        "rest": [
+          "Uống một ngụm trà hoa cúc ấm thơm cùng Ivy để đôi mắt thư giãn nhé.",
+          "Tựa lưng nghỉ ngơi thôi bạn ơi, Ivy canh chừng cho bạn."
+        ],
+        "nudge": [
+          "Ivy khẽ chạm nhẹ chóp đuôi nhắc bạn: Sắp đến giờ hoàn thành rồi đó bạn ngoan!"
+        ]
+      },
+      "avatar_file": "char_02_ivy_snake.png",
+      "mood_images": {
+        "idle": "char_02_ivy_snake_idle.png",
+        "focus": "char_02_ivy_snake_focus.png",
+        "cheer": "char_02_ivy_snake_cheer.png",
+        "rest": "char_02_ivy_snake_rest.png",
+        "nudge": "char_02_ivy_snake_nudge.png"
+      }
+    },
+    {
+      "id": "coba_king",
+      "name": "Coba (Bé Hổ Mang Hoàng Gia)",
+      "title": "Bé Hổ Mang Bành Đeo Vương Miện",
+      "role": "Energetic Leader Buddy",
+      "gender": "male",
+      "personality_key": "cheerful",
+      "personality": "Bé rắn hổ mang vàng óng ánh với chiếc mang bành tròn xoe hình trái tim ngộ nghĩnh, trên đầu đội chiếc vương miện hoàng gia nhỏ xíu, mắt to tròn lấp lánh nụ cười tự tin, bụng kem viền vàng, luôn tràn đầy năng lượng lãnh đạo.",
+      "speech_style": "Giọng nam nhí nhảnh dõng dạc, hào hứng xưng 'Coba' gọi 'bạn', nói chuyện đầy khí thế của một vị vua rừng xanh nhí.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-NamMinhNeural",
+        "voice_en": "echo",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-ryan-medium",
+        "speed": 1.1,
+        "pitch": "+1Hz",
+        "sample_text": "Ta là Vua Hổ Mang Coba đây! Đội vương miện lên, ngẩng cao đầu và cùng ta chinh phục mục tiêu công việc ngày hôm nay nào!"
+      },
+      "catchphrases": [
+        "Bành mang trái tim lan tỏa niềm vui!",
+        "Khí thế hoàng gia, không gì làm khó được!",
+        "Mục tiêu đã định, tiến lên bắt gọn!"
+      ],
+      "expressions": {
+        "idle": [
+          "Coba đang bành chiếc mang tròn xoe tập thể dục buổi sáng nè!",
+          "Chỉnh lại chiếc vương miện nhỏ cho ngay ngắn nào."
+        ],
+        "focus": [
+          "Tập trung như một cú mổ bách phát bách trúng của hổ mang chúa!",
+          "Khóa chặt mục tiêu trên màn hình, giải quyết dứt điểm!"
+        ],
+        "cheer": [
+          "Haha! Xuất sắc lắm chiến hữu! Coba phong tặng bạn huân chương chăm chỉ nhất ngày!",
+          "Thắng lợi rực rỡ! Đúng là phong thái của nhà vô địch!"
+        ],
+        "rest": [
+          "Hạ mang xuống, cùng Coba ngả lưng sưởi ấm dưới ánh mặt trời nào.",
+          "Uống ngụm nước lấy lại phong độ vương giả nhé."
+        ],
+        "nudge": [
+          "Coba vẫy mang gọi bạn: Còi báo hiệu sắp vang lên rồi, tăng tốc về đích ngay!"
+        ]
+      },
+      "avatar_file": "char_03_coba_king.png",
+      "mood_images": {
+        "idle": "char_03_coba_king_idle.png",
+        "focus": "char_03_coba_king_focus.png",
+        "cheer": "char_03_coba_king_cheer.png",
+        "rest": "char_03_coba_king_rest.png",
+        "nudge": "char_03_coba_king_nudge.png"
+      }
+    },
+    {
+      "id": "coral_candy",
+      "name": "Candy (Rắn Kẹo San Hô)",
+      "title": "Bé Rắn Kẹo Ngọt Sọc Dâu",
+      "role": "Sweet Tooth Motivator",
+      "gender": "female",
+      "personality_key": "sweet",
+      "personality": "Bé rắn sọc kẹo kẹo mút dâu sữa với các khoang màu hồng dâu, trắng kem và đỏ mận ngọt ngào, mắt tròn xoe lấp lánh hạt đường, má ửng hồng phấn, thân cuộn tròn như một chiếc kẹo mút xoắn lốc xoáy ngon mắt.",
+      "speech_style": "Giọng ngọt ngào như kẹo dẻo mạch nha, hay dùng các từ ngữ về đồ ngọt để cổ vũ tinh thần sảng khoái.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-HoaiMyNeural",
+        "voice_en": "nova",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-amy-medium",
+        "speed": 1.12,
+        "pitch": "+4Hz",
+        "sample_text": "Kẹo ngọt Candy mang vị dâu tây ngọt ngào tiếp năng lượng cho bạn đây nè~ Mỗi một task làm xong là một viên kẹo ngọt ngào tan trong miệng nha!"
+      },
+      "catchphrases": [
+        "Ngọt ngào như kẹo mút dâu tây!",
+        "Sọc kẹo xoắn tròn niềm vui bất tận!",
+        "Thêm một chút ngọt ngào cho ngày làm việc."
+      ],
+      "expressions": {
+        "idle": [
+          "Candy đang uốn mình thành hình chiếc kẹo mút xoắn ốc xinh xắn nè.",
+          "Mùi dâu tây thơm lừng lan tỏa khắp góc làm việc rồi đó."
+        ],
+        "focus": [
+          "Nạp năng lượng ngọt ngào, tập trung giải quyết bài tập thật ngon lành!",
+          "Chuyên tâm làm việc, phần thưởng kẹo ngọt đang chờ ở đích!"
+        ],
+        "cheer": [
+          "Yumm! Bạn làm quá tuyệt vời luôn á! Candy tặng bạn tràng pháo hoa kẹo dẻo nổ lách tách!",
+          "Đỉnh chóp ngọt ngào! Bạn là số 1 trong lòng Candy!"
+        ],
+        "rest": [
+          "Nghỉ tay nhâm nhi chiếc bánh quy thơm giòn cùng Candy nha.",
+          "Thư giãn chút nào, đừng để đầu óc căng thẳng nhé."
+        ],
+        "nudge": [
+          "Viên kẹo sắp tan hết rồi kìa, nhanh tay hoàn thành nốt công việc nào bạn ơi!"
+        ]
+      },
+      "avatar_file": "char_04_coral_candy.png",
+      "mood_images": {
+        "idle": "char_04_coral_candy_idle.png",
+        "focus": "char_04_coral_candy_focus.png",
+        "cheer": "char_04_coral_candy_cheer.png",
+        "rest": "char_04_coral_candy_rest.png",
+        "nudge": "char_04_coral_candy_nudge.png"
+      }
+    },
+    {
+      "id": "pytho_choco",
+      "name": "Pytho (Trăn Gấm Mocha)",
+      "title": "Bé Trăn Gấm Sô-cô-la Múp Míp",
+      "role": "Cozy Warm Companion",
+      "gender": "male",
+      "personality_key": "gentle",
+      "personality": "Bé trăn gấm màu nâu cà phê sữa và sô-cô-la ấm áp, thân hình múp míp tròn trĩnh cuộn tròn như chiếc bánh quế sô-cô-la, mõm kem sữa tròn trịa, mắt nâu ấm áp mơ màng, tính cách từ tốn, ấm áp và vững chãi.",
+      "speech_style": "Giọng nam trầm ấm, chậm rãi êm đềm, luôn nhắc nhở làm việc vững vàng, từng bước chắc chắn.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-NamMinhNeural",
+        "voice_en": "onyx",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-ryan-medium",
+        "speed": 1.0,
+        "pitch": "-1Hz",
+        "sample_text": "Xin chào, Pytho cuộn tròn êm ái ở đây đồng hành cùng bạn. Cứ thong thả, tập trung làm từng việc một thật chắc chắn, không cần vội vã nhé."
+      },
+      "catchphrases": [
+        "Chậm mà chắc, ấm áp như tách sô-cô-la nóng.",
+        "Cuộn tròn bình yên vượt qua mọi bão táp.",
+        "Vững vàng như núi, mềm mại như lụa."
+      ],
+      "expressions": {
+        "idle": [
+          "Pytho gối đầu lên vòng cuộn thân hình múp míp ngủ gà ngủ gật.",
+          "Hít hà hương thơm nồng nàn của tách mocha sớm mai."
+        ],
+        "focus": [
+          "Giữ nhịp thở đều đặn, tập trung giải quyết từng vấn đề một cách thấu đáo.",
+          "Kiên nhẫn và bền bỉ, thành công sẽ đến."
+        ],
+        "cheer": [
+          "Làm tốt lắm bạn tôi! Một bước tiến vững chắc rất đáng tự hào!",
+          "Pytho vỗ vòng cuộn tán thưởng sự kiên trì tuyệt vời của bạn!"
+        ],
+        "rest": [
+          "Tựa vào vòng cuộn êm ái của Pytho chợp mắt 10 phút nhé, ấm lắm đó.",
+          "Thư giãn cổ và vai, để mọi mệt mỏi tan biến."
+        ],
+        "nudge": [
+          "Đến lúc chốt sổ rồi bạn ơi, hoàn thiện nốt bước cuối cùng nào."
+        ]
+      },
+      "avatar_file": "char_05_pytho_choco.png",
+      "mood_images": {
+        "idle": "char_05_pytho_choco_idle.png",
+        "focus": "char_05_pytho_choco_focus.png",
+        "cheer": "char_05_pytho_choco_cheer.png",
+        "rest": "char_05_pytho_choco_rest.png",
+        "nudge": "char_05_pytho_choco_nudge.png"
+      }
+    },
+    {
+      "id": "twiggy",
+      "name": "Twiggy (Thanh Xà Ngọc Lam)",
+      "title": "Bé Rắn Ngọc Lam Cỏ Bốn Lá",
+      "role": "Lucky Nature Companion",
+      "gender": "neutral",
+      "personality_key": "cheerful",
+      "personality": "Bé rắn màu xanh ngọc lam thiên thanh trong vắt, trên đầu cài nhánh cỏ 4 lá may mắn màu xanh ngọc bích, mõm và bụng màu vàng tươi rực rỡ, mắt to đen láy long lanh, các đốm ngọc lam đậm lấp lánh trên thân cuộn uốn lượn mang lại may mắn.",
+      "speech_style": "Giọng nói vui tươi, ríu rít như chim hót mùa xuân, luôn mang đến những lời chúc may mắn bất ngờ.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-HoaiMyNeural",
+        "voice_en": "nova",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-amy-medium",
+        "speed": 1.1,
+        "pitch": "+3Hz",
+        "sample_text": "Ting ting! Twiggy mang nhánh cỏ bốn lá may mắn đến cho bạn đây! Chúc bạn hôm nay làm việc hanh thông, vạn sự như ý nha!"
+      },
+      "catchphrases": [
+        "Cỏ bốn lá mang may mắn ngập tràn!",
+        "Sắc xanh ngọc lam thanh mát cả ngày dài.",
+        "Xì xì chúc bạn gặt hái thành công lớn!"
+      ],
+      "expressions": {
+        "idle": [
+          "Twiggy đang đung đưa nhánh cỏ bốn lá trên đầu, ngắm bầu trời trong xanh.",
+          "Cuộn tròn lấp lánh như một viên ngọc lam quý giá."
+        ],
+        "focus": [
+          "Vận may luôn mỉm cười với người nỗ lực! Tập trung tối đa nhé!",
+          "Chăm chỉ làm bài, cỏ bốn lá sẽ phù hộ cho bạn đạt điểm cao!"
+        ],
+        "cheer": [
+          "May mắn đại thắng! Bạn làm được rồi kìa! Twiggy chúc mừng bạn nha!",
+          "Quá xịn sò luôn! Cỏ bốn lá rung rinh nhảy múa cùng bạn nè!"
+        ],
+        "rest": [
+          "Hít một hơi thật sâu không khí trong lành cùng Twiggy nhé.",
+          "Uống ngụm nước mát, để tâm hồn nhẹ nhàng như mây trời."
+        ],
+        "nudge": [
+          "Nhánh cỏ bốn lá rung rinh báo hiệu sắp hết giờ rồi kìa, nhanh tay hoàn tất nào!"
+        ]
+      },
+      "avatar_file": "char_06_twiggy.png",
+      "mood_images": {
+        "idle": "char_06_twiggy_idle.png",
+        "focus": "char_06_twiggy_focus.png",
+        "cheer": "char_06_twiggy_cheer.png",
+        "rest": "char_06_twiggy_rest.png",
+        "nudge": "char_06_twiggy_nudge.png"
+      }
+    }
+  ]
+}

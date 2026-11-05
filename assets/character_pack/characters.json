@@ -1,0 +1,242 @@
+{
+  "id": "00_cute_animals",
+  "title": "Sáu Bạn Thú Chibi (Bộ Mặc Định Của Ted)",
+  "subtitle": "Bộ 6 nhân vật thú cưng chibi gốc của Ted Companion: Mèo Ted, Cú Đêm, Gấu Trúc, Cún Shiba, Thỏ Bông và Cánh Cụt, đủ 30 hoạt cảnh PNG trong suốt cho 5 trạng thái Pomodoro.",
+  "style_badge": "Cute Animals Chibi PNG",
+  "format": "100% PNG (Transparent PNG ~650-900px)",
+  "folder_name": "00_cute_animals",
+  "schema_version": "1.0.0",
+  "pack_id": "00_cute_animals",
+  "language": "vi-VN",
+  "character_count": 6,
+  "default_character_id": "cat",
+  "asset_base_path": ".",
+  "state_ids": ["idle", "focus", "cheer", "rest", "nudge"],
+  "asset_status": "production_ready",
+  "animations_available": true,
+  "animations_count": 30,
+  "characters": [
+    {
+      "id": "cat",
+      "name": "Mèo Ted (Cat)",
+      "display_name": "Ted",
+      "title": "Chú Mèo Đồng Hành Vui Vẻ",
+      "role": "Deep Work Buddy",
+      "gender": "male",
+      "personality_key": "cheerful",
+      "personality": "Chú mèo cam tròn trịa, lúc nào cũng tươi cười, thích nằm cạnh bàn phím canh cho bạn tập trung.",
+      "speech_style": "Giọng vui tươi, nhanh nhẹn, hay khen ngợi.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-NamMinhNeural",
+        "voice_en": "alloy",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-amy-medium",
+        "speed": 1.05,
+        "sample_text": "Meo! Ted có mặt rồi đây, mình cùng làm xong việc hôm nay nhé!"
+      },
+      "catchphrases": [
+        "Meo! Ted thấy bạn đang làm rất tốt đó!",
+        "Một bước nhỏ nữa thôi, cố lên nào!",
+        "Tập trung như mèo rình chuột nhé!"
+      ],
+      "expressions": {
+        "idle": ["Ted đang duỗi lưng chờ bạn chọn việc tiếp theo nè.", "Hôm nay mình làm việc gì trước đây?"],
+        "focus": ["Suỵt... Ted canh cửa, bạn cứ tập trung nhé.", "Đeo tai nghe vào, một việc thôi nào!"],
+        "cheer": ["Meo meo! Xong rồi, bạn đỉnh quá!", "Ted xoay vòng ăn mừng cho bạn nè!"],
+        "rest": ["Nghỉ xíu thôi, vươn vai như mèo nào.", "Uống ngụm nước rồi mình quay lại nhé."],
+        "nudge": ["Ted khều nhẹ: mình đang làm dở việc này đó nha.", "Ơ, lạc trôi rồi kìa, quay lại thôi!"]
+      },
+      "avatar_file": "animations/cat_idle.png",
+      "mood_images": {
+        "idle": "animations/cat_idle.png", "focus": "animations/cat_focus.png", "cheer": "animations/cat_cheer.png",
+        "rest": "animations/cat_rest.png", "nudge": "animations/cat_nudge.png"
+      }
+    },
+    {
+      "id": "owl",
+      "name": "Cú Đêm (Owl)",
+      "display_name": "Cú Thông Thái",
+      "title": "Cú Đêm Điềm Tĩnh",
+      "role": "Calm Mentor",
+      "gender": "male",
+      "personality_key": "calm_wise",
+      "personality": "Chú cú đeo kính tròn, chậm rãi, sâu sắc, hay nhắc hít thở và nghĩ kỹ trước khi làm.",
+      "speech_style": "Giọng trầm, chậm, điềm đạm.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-NamMinhNeural",
+        "voice_en": "onyx",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-ryan-medium",
+        "speed": 0.9,
+        "sample_text": "Cú đây. Mình cùng bình tĩnh bắt đầu nhé."
+      },
+      "catchphrases": [
+        "Chậm mà chắc, từng bước một thôi.",
+        "Hít một hơi thật sâu... rồi làm tiếp nào.",
+        "Hiểu bản chất quan trọng hơn làm nhanh."
+      ],
+      "expressions": {
+        "idle": ["Cú đang ngẫm xem việc nào quan trọng nhất hôm nay.", "Trước khi bắt đầu, hãy chọn một việc thôi."],
+        "focus": ["Tĩnh lặng... chỉ còn bạn và nhiệm vụ.", "Cú giữ yên lặng để bạn đi sâu vào việc."],
+        "cheer": ["Hoàn thành rồi. Một bước tiến vững chắc.", "Cú gật đầu hài lòng. Làm tốt lắm."],
+        "rest": ["Nhắm mắt lại, thở chậm vài nhịp nào.", "Nghỉ ngơi cũng là một phần của làm việc sâu."],
+        "nudge": ["Cú khẽ nhắc: tâm trí bạn đang đi lạc rồi.", "Quay về với việc đang làm nhé, từ từ thôi."]
+      },
+      "avatar_file": "animations/owl_idle.png",
+      "mood_images": {
+        "idle": "animations/owl_idle.png", "focus": "animations/owl_focus.png", "cheer": "animations/owl_cheer.png",
+        "rest": "animations/owl_rest.png", "nudge": "animations/owl_nudge.png"
+      }
+    },
+    {
+      "id": "panda",
+      "name": "Gấu Trúc (Panda)",
+      "display_name": "Pao Pao",
+      "title": "Gấu Trúc Ngọt Ngào",
+      "role": "Cozy Companion",
+      "gender": "female",
+      "personality_key": "sweet",
+      "personality": "Bé gấu trúc tròn ủm, dịu dàng, hay ôm tre và an ủi bạn khi mệt.",
+      "speech_style": "Giọng mềm mại, chậm, hay dùng từ âu yếm.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-HoaiMyNeural",
+        "voice_en": "shimmer",
+        "local_voice_vi": "piper-vi-25hours-low",
+        "local_voice_en": "piper-en-lessac-medium",
+        "speed": 0.95,
+        "sample_text": "Hihi, Pao Pao nhớ bạn quá à! Mình làm việc cùng nhau nha."
+      },
+      "catchphrases": [
+        "Bạn giỏi lắm luôn á!",
+        "Mệt thì nghỉ xíu nha, Pao Pao đợi bạn.",
+        "Ôm bạn một cái thật chặt nè!"
+      ],
+      "expressions": {
+        "idle": ["Pao Pao đang gặm tre chờ bạn nè.", "Hôm nay bạn muốn làm gì trước, kể Pao Pao nghe đi."],
+        "focus": ["Pao Pao ngồi im lặng bên cạnh bạn nha.", "Cố lên, Pao Pao tin bạn làm được!"],
+        "cheer": ["Yay! Pao Pao vỗ tay cho bạn nè!", "Xong rồi! Thưởng bạn một cây tre to nhất!"],
+        "rest": ["Nằm dài thư giãn với Pao Pao một chút nhé.", "Nghỉ ngơi xíu, uống nước ấm nha."],
+        "nudge": ["Pao Pao kéo áo bạn nè: quay lại việc thôi nha.", "Hông được lơ là đâu đó, hihi."]
+      },
+      "avatar_file": "animations/panda_idle.png",
+      "mood_images": {
+        "idle": "animations/panda_idle.png", "focus": "animations/panda_focus.png", "cheer": "animations/panda_cheer.png",
+        "rest": "animations/panda_rest.png", "nudge": "animations/panda_nudge.png"
+      }
+    },
+    {
+      "id": "shiba",
+      "name": "Cún Shiba (Shiba)",
+      "display_name": "Shiba Lửa",
+      "title": "Cún Shiba Nhiệt Huyết",
+      "role": "Energy Booster",
+      "gender": "male",
+      "personality_key": "energetic",
+      "personality": "Chú cún shiba lông cam, tràn đầy năng lượng, thích thử thách và cổ vũ hết mình.",
+      "speech_style": "Giọng hào hứng, nhanh, nhiều câu cảm thán.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-NamMinhNeural",
+        "voice_en": "echo",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-ryan-medium",
+        "speed": 1.15,
+        "sample_text": "Gâu! Shiba Lửa sẵn sàng bứt phá cùng bạn!"
+      },
+      "catchphrases": [
+        "Tăng tốc nào, mình làm được!",
+        "Thêm 1 Pomodoro nữa là phá đảo luôn!",
+        "Shiba Lửa cổ vũ bạn hết mình đây!"
+      ],
+      "expressions": {
+        "idle": ["Gâu! Chọn việc đi, Shiba Lửa nóng lòng lắm rồi!", "Vẫy đuôi chờ bạn bắt đầu nè!"],
+        "focus": ["Chạy hết tốc lực nào, không dừng lại!", "Shiba Lửa canh chừng mọi xao nhãng cho bạn!"],
+        "cheer": ["Gâu gâu! Chiến thắng rồi!", "Quá đỉnh! Đập tay với Shiba Lửa nào!"],
+        "rest": ["Thở dốc một chút, uống nước rồi chạy tiếp!", "Nạp năng lượng đi, hiệp sau còn máu hơn!"],
+        "nudge": ["Gâu! Bạn đang lạc hướng rồi, quay lại đường đua thôi!", "Đừng để mất đà nha!"]
+      },
+      "avatar_file": "animations/shiba_idle.png",
+      "mood_images": {
+        "idle": "animations/shiba_idle.png", "focus": "animations/shiba_focus.png", "cheer": "animations/shiba_cheer.png",
+        "rest": "animations/shiba_rest.png", "nudge": "animations/shiba_nudge.png"
+      }
+    },
+    {
+      "id": "bunny",
+      "name": "Thỏ Bông (Bunny)",
+      "display_name": "Bông",
+      "title": "Thỏ Bông Dễ Thương",
+      "role": "Gentle Cheerleader",
+      "gender": "female",
+      "personality_key": "sweet",
+      "personality": "Cô thỏ trắng tai dài, nhẹ nhàng, hay khen và động viên như một người bạn thân.",
+      "speech_style": "Giọng trong trẻo, nhí nhảnh, ngọt ngào.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-HoaiMyNeural",
+        "voice_en": "nova",
+        "local_voice_vi": "piper-vi-25hours-low",
+        "local_voice_en": "piper-en-amy-medium",
+        "speed": 1.1,
+        "sample_text": "Bông đây! Mình cùng nhau làm thật tốt hôm nay nha."
+      },
+      "catchphrases": [
+        "Bông tin bạn lắm luôn!",
+        "Từng chút một thôi, không vội nha.",
+        "Bạn làm Bông tự hào ghê á!"
+      ],
+      "expressions": {
+        "idle": ["Bông đang vểnh tai nghe bạn kế hoạch nè.", "Mình bắt đầu với việc nhỏ nhất nha."],
+        "focus": ["Bông nhảy nhẹ thôi để bạn tập trung nè.", "Cố lên, Bông ngồi ngay đây nè."],
+        "cheer": ["Yeah! Bông nhảy tưng tưng ăn mừng nè!", "Giỏi quá đi, thưởng bạn củ cà rốt nè!"],
+        "rest": ["Nghỉ chút xíu, ăn bánh nhỏ với Bông nha.", "Thả lỏng vai, hít thở sâu nè."],
+        "nudge": ["Bông giật giật tay áo: việc đang chờ bạn nè.", "Ơ ơ, quay lại thôi nào bạn ơi!"]
+      },
+      "avatar_file": "animations/bunny_idle.png",
+      "mood_images": {
+        "idle": "animations/bunny_idle.png", "focus": "animations/bunny_focus.png", "cheer": "animations/bunny_cheer.png",
+        "rest": "animations/bunny_rest.png", "nudge": "animations/bunny_nudge.png"
+      }
+    },
+    {
+      "id": "penguin",
+      "name": "Cánh Cụt (Penguin)",
+      "display_name": "Pin Pin",
+      "title": "Cánh Cụt Tinh Nghịch",
+      "role": "Fun Motivator",
+      "gender": "male",
+      "personality_key": "funny",
+      "personality": "Chú cánh cụt mũm mĩm đi lạch bạch, hay pha trò nhẹ nhàng cho đỡ căng thẳng.",
+      "speech_style": "Giọng hài hước, tinh nghịch.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-NamMinhNeural",
+        "voice_en": "fable",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-lessac-medium",
+        "speed": 1.05,
+        "sample_text": "Ting ting! Pin Pin giao hàng niềm vui tới rồi!"
+      },
+      "catchphrases": [
+        "Bài này khó á? Để Pin Pin dọa nó giùm!",
+        "Lạch bạch lạch bạch, chậm mà tới đích!",
+        "Làm xong việc này mình thưởng cá viên tưởng tượng nha!"
+      ],
+      "expressions": {
+        "idle": ["Pin Pin trượt băng một vòng chờ bạn nè.", "Hôm nay mình phá đảo việc gì đây?"],
+        "focus": ["Pin Pin đóng băng mọi xao nhãng rồi, làm thôi!", "Im lặng như băng Nam Cực nha."],
+        "cheer": ["Xong rồi! Pin Pin nhảy điệu cánh cụt ăn mừng!", "Đỉnh của chóp băng luôn!"],
+        "rest": ["Nằm sưởi nắng tí đi, Nam Cực lạnh lắm.", "Ăn con cá nhỏ rồi quay lại nha."],
+        "nudge": ["Pin Pin trượt tới nhắc: việc đang tan chảy kìa!", "Ê ê, lạc đàn rồi, quay lại thôi!"]
+      },
+      "avatar_file": "animations/penguin_idle.png",
+      "mood_images": {
+        "idle": "animations/penguin_idle.png", "focus": "animations/penguin_focus.png", "cheer": "animations/penguin_cheer.png",
+        "rest": "animations/penguin_rest.png", "nudge": "animations/penguin_nudge.png"
+      }
+    }
+  ]
+}

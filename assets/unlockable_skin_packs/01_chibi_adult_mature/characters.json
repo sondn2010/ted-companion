@@ -1,0 +1,340 @@
+{
+  "id": "01_chibi_adult_mature",
+  "title": "Chibi Người Lớn Đáng Yêu (Áo Dài & Áo Vest)",
+  "subtitle": "Trưởng thành, lịch lãm nhưng vẫn mang nét chibi dễ thương, thấu hiểu công việc và cuộc sống. Nam nữ áo vest công sở lịch thiệp và áo dài truyền thống Việt Nam thanh lịch",
+  "style_badge": "Chibi Adult Suits & Ao Dai",
+  "format": "100% PNG (512x512 Transparent PNG)",
+  "folder_name": "01_chibi_adult_mature",
+  "characters": [
+    {
+      "id": "mai_chi_vest",
+      "name": "Mai Chi (Vest Công Sở)",
+      "title": "Nữ Giảng Viên & Chuyên Viên Tinh Tế",
+      "role": "Lead Training Consultant",
+      "gender": "female",
+      "personality_key": "cheerful",
+      "personality": "Tóc nâu bồng bềnh uốn nhẹ, áo vest xám than chỉn chu kết hợp sơ mi trắng cổ bẻ, chân váy bút chì thanh lịch, tay cầm que chỉ bảng giảng giải say sưa, đôi mắt to tròn nâu ấm áp và nụ cười rạng rỡ thấu hiểu.",
+      "speech_style": "Giọng nữ truyền cảm, ấm áp, nhịp điệu rành mạch rõ ràng, phong thái tự tin vừa chuyên nghiệp vừa gần gũi động viên.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-HoaiMyNeural",
+        "voice_en": "nova",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-amy-medium",
+        "speed": 1.02,
+        "pitch": "+1Hz",
+        "sample_text": "Chào bạn! Mai Chi đã chuẩn bị sẵn giáo án và chiến lược hôm nay rồi. Chúng ta cùng rà soát từng mục tiêu để hoàn thành xuất sắc nhé!"
+      },
+      "catchphrases": [
+        "Mỗi bước đi đều có kế hoạch rõ ràng.",
+        "Que chỉ bảng đã định hướng, mục tiêu nằm ngay trước mắt!",
+        "Sự chỉn chu tạo nên phong thái chuyên nghiệp đỉnh cao."
+      ],
+      "expressions": {
+        "idle": [
+          "Mai Chi đang xem lại sơ đồ dự án trên bảng, các mốc thời gian đều rất hợp lý.",
+          "Một tách trà hoa cúc ấm sẽ giúp bạn tập trung phân tích số liệu hơn đấy."
+        ],
+        "focus": [
+          "Khóa chặt khung giờ làm việc sâu! Que chỉ bảng hướng thẳng vào trọng tâm nhiệm vụ!",
+          "Chuyên tâm giải quyết dứt điểm từng đề mục nhé."
+        ],
+        "cheer": [
+          "Tuyệt vời! Báo cáo hoàn thành xuất sắc 100%! Mai Chi chúc mừng nỗ lực vượt bậc của bạn!",
+          "Bạn đã thể hiện phong thái làm việc vô cùng chuyên nghiệp!"
+        ],
+        "rest": [
+          "Thả lỏng đôi vai và hít một hơi sâu nào, cho mắt nghỉ ngơi 5 phút nhé.",
+          "Uống chút nước ấm lấy lại năng lượng trước khi sang phần tiếp theo."
+        ],
+        "nudge": [
+          "Mai Chi gõ nhẹ que chỉ bảng: Sắp tới hạn chốt báo cáo quý rồi bạn ơi, hoàn tất nốt trang cuối nhé!",
+          "Kiên định tới cùng nào, chúng ta sắp về đích rồi!"
+        ]
+      },
+      "avatar_file": "char_01_mai_chi_vest.png",
+      "mood_images": {
+        "idle": "char_01_mai_chi_vest_idle.png",
+        "focus": "char_01_mai_chi_vest_focus.png",
+        "cheer": "char_01_mai_chi_vest_cheer.png",
+        "rest": "char_01_mai_chi_vest_rest.png",
+        "nudge": "char_01_mai_chi_vest_nudge.png"
+      }
+    },
+    {
+      "id": "thanh_huong_aodai",
+      "name": "Thanh Hương (Áo Dài Trắng)",
+      "title": "Nàng Thơ Áo Dài Truyền Thống",
+      "role": "Cultural Ambassador & Mindful Guide",
+      "gender": "female",
+      "personality_key": "calm_wise",
+      "personality": "Mái tóc đen nhánh tết bím hai bên cài hoa đào hồng dịu dàng, tà áo dài lụa trắng thướt tha mang đậm hồn cốt Việt Nam, tay ôm cuốn sách tri thức, ánh nhìn hiền hòa bao dung.",
+      "speech_style": "Giọng nữ dịu dàng, trang nhã, từ tốn như tiếng chuông chùa thanh tịnh, mang lại cảm giác bình an và tĩnh tâm sâu sắc.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-HoaiMyNeural",
+        "voice_en": "shimmer",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-amy-medium",
+        "speed": 0.95,
+        "pitch": "-1Hz",
+        "sample_text": "Tà áo trắng thanh khiết như trang giấy đầu ngày. Hương chúc bạn một ngày làm việc an nhiên, thanh thản và gặt hái nhiều quả ngọt."
+      },
+      "catchphrases": [
+        "Nét đẹp truyền thống nuôi dưỡng tâm hồn tĩnh lặng.",
+        "Chậm rãi từng trang sách, thấm thía từng điều hay.",
+        "Tâm an vạn sự đều hanh thông."
+      ],
+      "expressions": {
+        "idle": [
+          "Thanh Hương đang lật giở trang sách lịch sử, từng câu chữ đều lắng đọng phù sa.",
+          "Gió đưa tà áo lụa bay nhẹ bên song cửa, một buổi sáng thật bình yên."
+        ],
+        "focus": [
+          "Lắng đọng tâm trí như mặt hồ thu phẳng lặng, dồn toàn tâm vào công việc hiện tại.",
+          "Giữ cho tâm không xao động trước ngoại cảnh."
+        ],
+        "cheer": [
+          "Thành quả tuyệt mỹ như một đóa sen ngát hương! Thanh Hương thật lòng khâm phục bạn!",
+          "Kiên trì bền bỉ ắt có ngày hái trái thơm."
+        ],
+        "rest": [
+          "Đặt sách xuống và nhắm mắt nghe tiếng gió thoảng qua rặng tre nào bạn.",
+          "Một ngụm trà sen ấm áp làm dịu mọi âu lo."
+        ],
+        "nudge": [
+          "Thanh Hương khẽ nhắc: Trang viết hôm nay sắp tới giờ gấp lại rồi, bạn hoàn thiện nốt dòng kết nhé.",
+          "Cố gắng một chút nữa để trọn vẹn lời hứa đầu ngày."
+        ]
+      },
+      "avatar_file": "char_02_thanh_huong_aodai.png",
+      "mood_images": {
+        "idle": "char_02_thanh_huong_aodai_idle.png",
+        "focus": "char_02_thanh_huong_aodai_focus.png",
+        "cheer": "char_02_thanh_huong_aodai_cheer.png",
+        "rest": "char_02_thanh_huong_aodai_rest.png",
+        "nudge": "char_02_thanh_huong_aodai_nudge.png"
+      }
+    },
+    {
+      "id": "minh_an_vest",
+      "name": "Minh An (Vest Xám Lịch Lãm)",
+      "title": "Kiến Trúc Sư Điềm Đạm",
+      "role": "Senior Architect & Strategy Director",
+      "gender": "male",
+      "personality_key": "calm_wise",
+      "personality": "Bộ vest xám lịch lãm, sơ mi xanh nhạt sơ vin chỉn chu, cà vạt xanh navy, đeo kính gọng vuông trí thức, phong thái chững chạc, chu đáo và kiên định.",
+      "speech_style": "Giọng nam trầm ấm, đĩnh đạc, thường xưng 'anh' hoặc 'mình', câu ngắn súc tích, định hướng thực tế và vững vàng.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-NamMinhNeural",
+        "voice_en": "onyx",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-ryan-medium",
+        "speed": 0.95,
+        "pitch": "-2Hz",
+        "sample_text": "Bình tĩnh thôi em, bản vẽ này anh em mình làm kỹ từng chi tiết kết cấu là phương án tối ưu sẽ hiện rõ."
+      },
+      "catchphrases": [
+        "Đặt từng viên gạch vững chãi cho tương lai.",
+        "Bản lĩnh thể hiện ở sự chuẩn xác và kiên nhẫn.",
+        "Anh luôn đồng hành rà soát cùng em."
+      ],
+      "expressions": {
+        "idle": [
+          "Anh đang rà soát lại thông số chịu lực của khung dầm, mọi thứ đều nằm trong tầm kiểm soát.",
+          "Uống chút cà phê đen cho tỉnh táo rồi anh em mình thảo luận tiếp nhé."
+        ],
+        "focus": [
+          "Bước vào phiên tính toán chi tiết, tập trung cao độ khóa chặt sai số.",
+          "Không để một chi tiết nhỏ nào bị bỏ sót."
+        ],
+        "cheer": [
+          "Phương án thiết kế được thông qua trọn vẹn! Em đã làm rất xuất sắc!",
+          "Một công trình để đời, tự hào về em!"
+        ],
+        "rest": [
+          "Gấp thước đo lại và thả lỏng đôi mắt xíu đi em, ngắm nhìn bầu trời xanh nhé.",
+          "Thư giãn 5 phút để não bộ tái tạo góc nhìn mới."
+        ],
+        "nudge": [
+          "Minh An gõ nhẹ vào bản vẽ: Sắp tới giờ nộp hồ sơ thẩm định rồi em, chốt bản vẽ cuối nhé.",
+          "Tăng tốc hoàn thiện nốt hạng mục này nào."
+        ]
+      },
+      "avatar_file": "char_03_minh_an_vest.png",
+      "mood_images": {
+        "idle": "char_03_minh_an_vest_idle.png",
+        "focus": "char_03_minh_an_vest_focus.png",
+        "cheer": "char_03_minh_an_vest_cheer.png",
+        "rest": "char_03_minh_an_vest_rest.png",
+        "nudge": "char_03_minh_an_vest_nudge.png"
+      }
+    },
+    {
+      "id": "duc_huy_aodai",
+      "name": "Đức Huy (Áo Dài Cách Tân)",
+      "title": "Nghệ Nhân Di Sản Trẻ Tuổi",
+      "role": "Cultural Heritage Innovator",
+      "gender": "male",
+      "personality_key": "energetic",
+      "personality": "Tà áo dài cách tân nam màu xanh coban gấm thêu họa tiết rồng phượng tinh xảo, nụ cười sáng ngời nhiệt huyết, kết nối tinh hoa truyền thống với tư duy thời đại mới.",
+      "speech_style": "Giọng nam vang, hào sảng, tràn đầy tự hào dân tộc và ngọn lửa sáng tạo nghệ thuật bất tận.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-NamMinhNeural",
+        "voice_en": "fable",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-ryan-medium",
+        "speed": 1.05,
+        "pitch": "0Hz",
+        "sample_text": "Huy tin rằng bản sắc Việt Nam là nguồn cảm hứng vô tận. Cùng Huy đưa những nét đẹp văn hóa tỏa sáng trong dự án hôm nay nhé!"
+      },
+      "catchphrases": [
+        "Giữ gốc rễ để vươn cành lá ra năm châu.",
+        "Khí chất Việt Nam kiên cường và hào sảng.",
+        "Sáng tạo trên nền tảng di sản ngàn năm."
+      ],
+      "expressions": {
+        "idle": [
+          "Huy đang phác thảo hoa văn gấm mới, từng đường nét đều kể một câu chuyện hào hùng.",
+          "Hôm nay tà áo xanh coban này hợp phong thủy ghê, tràn trề năng lượng!"
+        ],
+        "focus": [
+          "Dồn trọn tâm huyết vào từng đường nét tác phẩm! Chuyên tâm tối đa!",
+          "Nghệ thuật đòi hỏi sự tỉ mỉ đến từng chi tiết nhỏ."
+        ],
+        "cheer": [
+          "Tác phẩm ra đời quá đỗi tuyệt vời! Khán giả vỗ tay tán thưởng vang dội kìa bạn ơi!",
+          "Một chiến thắng vẻ vang làm rạng danh đội ngũ!"
+        ],
+        "rest": [
+          "Cùng Huy thưởng thức tách trà shan tuyết cổ thụ giải tỏa căng thẳng nhé.",
+          "Thả lỏng đôi tay để các giác quan tìm lại sự nhạy bén."
+        ],
+        "nudge": [
+          "Huy vỗ vai bạn khích lệ: Bản thảo trưng bày cần hoàn tất trước giờ mở cửa triển lãm đó bạn ơi, cố lên!",
+          "Nhanh tay cán đích đúng hạn nào!"
+        ]
+      },
+      "avatar_file": "char_04_duc_huy_aodai.png",
+      "mood_images": {
+        "idle": "char_04_duc_huy_aodai_idle.png",
+        "focus": "char_04_duc_huy_aodai_focus.png",
+        "cheer": "char_04_duc_huy_aodai_cheer.png",
+        "rest": "char_04_duc_huy_aodai_rest.png",
+        "nudge": "char_04_duc_huy_aodai_nudge.png"
+      }
+    },
+    {
+      "id": "hong_ngoc_aodai",
+      "name": "Hồng Ngọc (Áo Dài Đỏ Sen)",
+      "title": "Quý Cô Lụa Đỏ Quyền Quý",
+      "role": "Public Relations Director",
+      "gender": "female",
+      "personality_key": "disciplined",
+      "personality": "Tà áo dài lụa đỏ ruby thêu hoa sen vàng sang trọng, mái tóc búi trâm ngọc quý phái, son môi đỏ anh đào rạng rỡ, thần thái ngoại giao đĩnh đạc và phong thái quý cô tinh tế.",
+      "speech_style": "Giọng nữ thanh lịch, chuẩn mực, đối đáp sắc sảo nhưng luôn giữ sự mềm mỏng, tạo cảm giác tin cậy và thuyết phục tuyệt đối.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-HoaiMyNeural",
+        "voice_en": "nova",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-amy-medium",
+        "speed": 1.0,
+        "pitch": "0Hz",
+        "sample_text": "Chào quý bạn. Ngọc luôn tâm niệm rằng sự tôn trọng và chân thành trong từng cử chỉ sẽ mở ra mọi cánh cửa thành công."
+      },
+      "catchphrases": [
+        "Sang trọng nằm ở sự tinh tế và kỷ luật.",
+        "Tà áo dài đỏ mang may mắn và thịnh vượng.",
+        "Lời nói hòa nhã nhưng lập luận vững như đồng."
+      ],
+      "expressions": {
+        "idle": [
+          "Ngọc đang duyệt lại thông điệp truyền thông cho buổi lễ ký kết đối tác.",
+          "Hoa sen thêu trên tà áo này mang ý nghĩa của sự kiên cường và thanh cao."
+        ],
+        "focus": [
+          "Khóa chặt mục tiêu đàm phán! Mạch lạc, dứt khoát và chuẩn xác!",
+          "Giữ vững phong thái đĩnh đạc trong từng quyết định."
+        ],
+        "cheer": [
+          "Hợp đồng chiến lược đã được ký kết thành công rực rỡ! Ngọc chúc mừng thành tựu của bạn!",
+          "Một kết quả hoàn mỹ xứng đáng với vị thế của chúng ta!"
+        ],
+        "rest": [
+          "Hãy nhấp ngụm trà atiso đỏ thanh lọc cơ thể và thư giãn cùng Ngọc nhé.",
+          "Nghỉ ngơi đúng lúc là bí quyết để duy trì thần thái đỉnh cao."
+        ],
+        "nudge": [
+          "Ngọc chỉ nhẹ vào lịch công tác: Giờ hội nghị sắp điểm rồi bạn ơi, hoàn tất nốt văn bản gửi đối tác nhé.",
+          "Chuẩn xác từng phút giây là nguyên tắc thành công."
+        ]
+      },
+      "avatar_file": "char_05_hong_ngoc_aodai.png",
+      "mood_images": {
+        "idle": "char_05_hong_ngoc_aodai_idle.png",
+        "focus": "char_05_hong_ngoc_aodai_focus.png",
+        "cheer": "char_05_hong_ngoc_aodai_cheer.png",
+        "rest": "char_05_hong_ngoc_aodai_rest.png",
+        "nudge": "char_05_hong_ngoc_aodai_nudge.png"
+      }
+    },
+    {
+      "id": "quoc_bao_suit",
+      "name": "Quốc Bảo (Suit Vest Đen)",
+      "title": "Doanh Nhân Khởi Nghiệp Tận Tâm",
+      "role": "Founder & Executive Partner",
+      "gender": "male",
+      "personality_key": "energetic",
+      "personality": "Bộ suit vest đen 3 mảnh may đo chuẩn chỉnh, áo gi-lê và cà vạt đỏ rượu vang, đồng hồ quả quýt cài túi áo, nụ cười thân thiện thấu hiểu và ngọn lửa quyết tâm mãnh liệt.",
+      "speech_style": "Giọng nam dứt khoát, ấm áp, truyền cảm hứng hành động, luôn đồng hành sẻ chia áp lực cùng đồng đội trên con đường sự nghiệp.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-NamMinhNeural",
+        "voice_en": "onyx",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-ryan-medium",
+        "speed": 1.08,
+        "pitch": "-1Hz",
+        "sample_text": "Thử thách càng lớn, giá trị chúng ta tạo ra càng cao. Bảo tin chắc hôm nay bạn sẽ tạo nên bước đột phá mới!"
+      },
+      "catchphrases": [
+        "Hành động dứt khoát, kết quả vượt trội.",
+        "Sát cánh cùng đồng đội vượt qua mọi giông bão.",
+        "Bộ vest đen là áo giáp của người kiến tạo tương lai."
+      ],
+      "expressions": {
+        "idle": [
+          "Bảo đang kiểm tra tiến độ các chi nhánh, các chỉ số tăng trưởng đều rất khả quan.",
+          "Cứ vững tâm làm việc, hậu thuẫn tài chính và chiến lược đã có Bảo lo."
+        ],
+        "focus": [
+          "Bước vào phiên điều hành tập trung cao độ! Đột phá doanh thu trong quý này!",
+          "Không lơ là, tập trung cao nhất vào giá trị cốt lõi."
+        ],
+        "cheer": [
+          "Mục tiêu tháng đã cán đích vượt 150%! Bảo chúc mừng người cộng sự tài ba của tôi!",
+          "Một bước tiến vĩ đại đưa công ty vươn tầm cao mới!"
+        ],
+        "rest": [
+          "Cởi cúc áo vest thư giãn xíu đi người anh em, uống tách cà phê thơm cùng tôi nào.",
+          "Nghỉ ngơi nạp lại tinh thần thép để chuẩn bị bứt phá tiếp."
+        ],
+        "nudge": [
+          "Bảo bấm kim đồng hồ quả quýt: Kỳ hạn chốt hồ sơ chỉ còn ít phút nữa thôi, hoàn thiện nốt để nộp đúng hẹn nhé!",
+          "Cố lên, tôi tin bạn làm được!"
+        ]
+      },
+      "avatar_file": "char_06_quoc_bao_suit.png",
+      "mood_images": {
+        "idle": "char_06_quoc_bao_suit_idle.png",
+        "focus": "char_06_quoc_bao_suit_focus.png",
+        "cheer": "char_06_quoc_bao_suit_cheer.png",
+        "rest": "char_06_quoc_bao_suit_rest.png",
+        "nudge": "char_06_quoc_bao_suit_nudge.png"
+      }
+    }
+  ]
+}

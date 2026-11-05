@@ -1,0 +1,369 @@
+{
+  "id": "25_chibi_vietnam_students_actions",
+  "title": "Chibi Học Sinh Việt Nam (Đầu To Thân Nhỏ - 5 Trạng Thái Hoạt Cảnh)",
+  "subtitle": "Bộ 6 học sinh Việt Nam phong cách Chibi siêu dễ thương do MiniMax AI (image-01) tạo (đầu to thân nhỏ đáng yêu tỷ lệ 2.0-head): 3 nữ sinh Áo Dài duyên dáng và 3 nam sinh học đường năng động. Mỗi trạng thái cảm xúc (idle, focus, cheer, rest, nudge) thay đổi hoàn toàn hình ảnh nhân vật, tư thế, biểu cảm mắt miệng, trang phục và đạo cụ thực tế, định dạng 100% PNG trong suốt sắc nét.",
+  "style_badge": "MiniMax AI Chibi Vietnam Students PNG",
+  "format": "100% PNG (512x512 Transparent PNG)",
+  "folder_name": "25_chibi_vietnam_students_actions",
+  "schema_version": "1.0.0",
+  "pack_id": "25_chibi_vietnam_students_actions",
+  "language": "vi-VN",
+  "character_count": 6,
+  "default_character_id": "char_01_bao_chau",
+  "asset_base_path": ".",
+  "state_ids": [
+    "idle",
+    "focus",
+    "cheer",
+    "rest",
+    "nudge"
+  ],
+  "asset_status": "production_ready",
+  "animations_available": true,
+  "animations_count": 30,
+  "characters": [
+    {
+      "id": "char_01_bao_chau",
+      "short_id": "bao_chau",
+      "name": "Bảo Châu (Áo Dài Trắng)",
+      "display_name": "Bảo Châu",
+      "title": "Nữ Sinh Áo Dài Tinh Khôi",
+      "role": "Pure Youth & Focus Companion",
+      "gender": "female",
+      "personality_key": "sweet",
+      "personality": "Nữ sinh Áo Dài trắng truyền thống thướt tha, thắt hai bím tóc nơ hồng xinh xắn. Dịu dàng, chăm chỉ, luôn khích lệ bạn học bài với nụ cười thiên thần.",
+      "speech_style": "Giọng nữ trong trẻo ngọt ngào, xưng 'Châu' gọi 'bạn', luôn động viên tích cực trong từng phiên học tập.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-HoaiMyNeural",
+        "voice_en": "shimmer",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-amy-medium",
+        "speed": 1.05,
+        "pitch": "+2Hz",
+        "sample_text": "Chào bạn! Châu đã chuẩn bị sẵn sách vở rồi nè. Chúng mình cùng bắt đầu phiên Pomodoro tập trung 25 phút thật hiệu quả nhé!"
+      },
+      "catchphrases": [
+        "Từng trang vở trắng hôm nay mở lối tương lai ngày mai.",
+        "Cố gắng thêm một chút, thành công sẽ mỉm cười với bạn!",
+        "Châu luôn ở đây cùng bạn chinh phục mọi bài học."
+      ],
+      "expressions": {
+        "idle": [
+          "Châu đang ôm cuốn sổ tay lưu bút chờ bạn cùng học bài nè.",
+          "Hôm nay tiết trời dịu mát ghê, rất thích hợp để làm việc tập trung đó bạn!"
+        ],
+        "focus": [
+          "Băng rôn 'QUYẾT TÂM' đã thắt chặt lên trán rồi! Dồn 100% tâm trí vào bài tập nào!",
+          "Châu đang nắn nót viết từng dòng nghiệm, bạn cũng đừng để bị phân tâm nhé!"
+        ],
+        "cheer": [
+          "Tuyệt vời quá đi mất! Bạn đã hoàn thành xuất sắc mục tiêu rồi! Yeahhh!",
+          "Nhảy lên chúc mừng bạn nè! Bạn thông minh và kiên trì nhất luôn á!"
+        ],
+        "rest": [
+          "Châu gục đầu lên chiếc gối êm trên bàn chợp mắt chút xíu, bạn cũng thả lỏng mắt nha... Zzz",
+          "Nghỉ giải lao 5 phút nào, hít thở thật sâu rồi uống một ngụm nước ấm nhé."
+        ],
+        "nudge": [
+          "*Cốc cốc cốc!* Châu gõ nhẹ vào mặt kính màn hình nhắc bạn nè: Đến giờ học tiếp rồi đó!",
+          "Chiếc đồng hồ báo thức reo vang rồi kìa! Nhanh tay trở lại bàn làm việc thôi bạn ơi!"
+        ]
+      },
+      "avatar_file": "char_01_bao_chau.png",
+      "mood_images": {
+        "idle": "char_01_bao_chau_idle.png",
+        "focus": "char_01_bao_chau_focus.png",
+        "cheer": "char_01_bao_chau_cheer.png",
+        "rest": "char_01_bao_chau_rest.png",
+        "nudge": "char_01_bao_chau_nudge.png"
+      }
+    },
+    {
+      "id": "char_02_tuan_minh",
+      "short_id": "tuan_minh",
+      "name": "Tuấn Minh (Sơ Mi Cà Vạt)",
+      "display_name": "Tuấn Minh",
+      "title": "Nam Sinh Lớp Trưởng Điển Trai",
+      "role": "Leadership & Academic Mentor",
+      "gender": "male",
+      "personality_key": "confident",
+      "personality": "Áo sơ mi trắng sơ vin chỉnh tề, cà vạt xanh navy lịch lãm, bảng tên trường sáng bóng. Điển trai, quyết đoán, phong thái lớp trưởng mẫu mực luôn dẫn dắt đồng đội cán đích.",
+      "speech_style": "Giọng nam ấm áp, chững chạc, mạch lạc, xưng 'Minh' gọi 'bạn', truyền cảm hứng lãnh đạo và kỷ luật thép.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-NamMinhNeural",
+        "voice_en": "fable",
+        "local_voice_vi": "piper-vi-25hours-low",
+        "local_voice_en": "piper-en-ryan-medium",
+        "speed": 1.05,
+        "pitch": "+0Hz",
+        "sample_text": "Chào bạn! Minh đã phân bổ sẵn thời gian biểu cho hôm nay. Bắt đầu ngay để làm chủ thời gian nào!"
+      },
+      "catchphrases": [
+        "Kỷ luật hôm nay là tự do của ngày mai.",
+        "Không có bài toán khó, chỉ có người chưa đủ kiên nhẫn tìm ra lời giải.",
+        "Bứt phá giới hạn bản thân cùng Minh nhé!"
+      ],
+      "expressions": {
+        "idle": [
+          "Minh đang chỉnh lại cà vạt và dây đeo balo, sẵn sàng bước vào giờ làm việc nghiêm túc.",
+          "Thời gian biểu đã lên chi tiết, bạn sẵn sàng cùng Minh xuất phát chưa?"
+        ],
+        "focus": [
+          "Đeo băng rôn 'THỦ KHOA'! Tập trung toàn bộ tư duy logic giải quyết bài thi này!",
+          "Đặt bút thước lên bàn, từng phép tính đều phải chuẩn xác tuyệt đối."
+        ],
+        "cheer": [
+          "Cú đấm ăn mừng chiến thắng! Xuất sắc lắm bạn ơi, đúng phong độ thủ khoa!",
+          "YES! Một bước tiến vượt bậc! Minh rất tự hào về thành tích của bạn hôm nay!"
+        ],
+        "rest": [
+          "Khoanh tay gối đầu lên bàn nghỉ ngơi một chút... Não bộ cũng cần nạp năng lượng mà. Zzz",
+          "Thả lỏng cơ thể 5 phút, uống chút trà giải nhiệt cùng Minh nhé."
+        ],
+        "nudge": [
+          "Minh giơ điện thoại nhắc nhở: HẾT GIỜ NGHỈ rồi bạn ơi! Quay lại bàn ngay thôi!",
+          "*Gõ ngón tay lên kính*: Kỷ luật lên nào bạn tôi, chỉ 15 phút nữa là cán đích rồi!"
+        ]
+      },
+      "avatar_file": "char_02_tuan_minh.png",
+      "mood_images": {
+        "idle": "char_02_tuan_minh_idle.png",
+        "focus": "char_02_tuan_minh_focus.png",
+        "cheer": "char_02_tuan_minh_cheer.png",
+        "rest": "char_02_tuan_minh_rest.png",
+        "nudge": "char_02_tuan_minh_nudge.png"
+      }
+    },
+    {
+      "id": "char_03_anh_duong",
+      "short_id": "anh_duong",
+      "name": "Ánh Dương (Áo Dài Hoa Mai)",
+      "display_name": "Ánh Dương",
+      "title": "Nữ Sinh Nắng Vàng Rạng Rỡ",
+      "role": "Sunshine Cheerleader & Creative Mind",
+      "gender": "female",
+      "personality_key": "cheerful",
+      "personality": "Tà áo dài vàng hoa mai cách tân tươi sáng, mái tóc buộc lệch cài đóa hoa mai rạng rỡ. Vui tươi, hồn nhiên, ngập tràn năng lượng tích cực lan tỏa đến mọi người xung quanh.",
+      "speech_style": "Giọng nữ trong trẻo, sôi nổi, tràn đầy sức sống, xưng 'Dương' gọi 'bạn', luôn cổ vũ tinh thần học tập hăng say.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-HoaiMyNeural",
+        "voice_en": "alloy",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-amy-medium",
+        "speed": 1.1,
+        "pitch": "+3Hz",
+        "sample_text": "Ting ting! Nắng mai ngập tràn rồi nè bạn ơi! Cùng Ánh Dương nạp năng lượng 200% để hoàn thành mục tiêu nha!"
+      },
+      "catchphrases": [
+        "Mỗi ngày mới là một cơ hội tỏa sáng như ánh mặt trời!",
+        "Cứ nụ cười tươi trên môi thì khó khăn nào cũng tan biến!",
+        "Hoa mai nở báo hiệu mùa thi đỗ đạt rực rỡ!"
+      ],
+      "expressions": {
+        "idle": [
+          "Dương đang nâng niu đóa hoa hướng dương tươi thắm, chúc bạn một ngày học thật vui!",
+          "Cười tươi lên nào bạn ơi, nụ cười mang lại may mắn và hứng khởi đó!"
+        ],
+        "focus": [
+          "Đeo kính tròn, cầm bút dạ quang neon highlight từng ý chính! CỐ LÊN NÀO!",
+          "Dương đang tập trung tốc ký sơ đồ tư duy, cùng thi đua xem ai làm xong trước nha!"
+        ],
+        "cheer": [
+          "Phất cờ hoa rộn ràng múa hát mừng bạn nè! Giỏi quá xá giỏi luôn á bạn ơiii!",
+          "Muôn cánh hoa mai vàng tung bay chúc mừng chiến thắng vang dội của bạn!"
+        ],
+        "rest": [
+          "Tựa đầu vào gối đám mây vàng êm ái mơ mộng... Ngủ một giấc thật ngon nào... Khò khò...",
+          "Thưởng thức ly trà hoa cúc ấm áp để tinh thần thư thái nhé bạn thân mến."
+        ],
+        "nudge": [
+          "Khum hai bàn tay gọi lớn: 'Ê bạn ơiii! Đừng ngủ quên trên chiến thắng nha, vào học thôi nè!'",
+          "Nhạc chuông vui nhộn reo vang rồi! Bật dậy vươn vai cùng Dương tiếp tục hành trình nào!"
+        ]
+      },
+      "avatar_file": "char_03_anh_duong.png",
+      "mood_images": {
+        "idle": "char_03_anh_duong_idle.png",
+        "focus": "char_03_anh_duong_focus.png",
+        "cheer": "char_03_anh_duong_cheer.png",
+        "rest": "char_03_anh_duong_rest.png",
+        "nudge": "char_03_anh_duong_nudge.png"
+      }
+    },
+    {
+      "id": "char_04_dang_khoa",
+      "short_id": "dang_khoa",
+      "name": "Đăng Khoa (Chuyên Toán Kính Cận)",
+      "display_name": "Đăng Khoa",
+      "title": "Thần Đồng Toán Học & Logic",
+      "role": "Math Prodigy & Problem Solver",
+      "gender": "male",
+      "personality_key": "analytical",
+      "personality": "Áo khoác thể thao đồng phục xanh trắng, cặp kính cận tròn thông thái, cọng tóc ngố ahoge ngộ nghĩnh. Đam mê các định lý toán học, tư duy sắc bén, luôn tìm cách tối ưu hóa mọi quy trình.",
+      "speech_style": "Giọng nam thanh nhẹ, trí tuệ, gãy gọn, xưng 'Khoa' gọi 'bạn', thích dùng các thuật ngữ logic và tư duy khoa học.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-NamMinhNeural",
+        "voice_en": "echo",
+        "local_voice_vi": "piper-vi-25hours-low",
+        "local_voice_en": "piper-en-ryan-medium",
+        "speed": 1.05,
+        "pitch": "+1Hz",
+        "sample_text": "Theo tính toán xác suất, nếu tập trung tuyệt đối trong 25 phút này, hiệu suất của bạn sẽ tăng 314%! Bắt đầu giải bài thôi!"
+      },
+      "catchphrases": [
+        "Mọi bài toán phức tạp đều quy về các biến số cơ bản.",
+        "Toán học là ngôn ngữ của vũ trụ và thành công.",
+        "Logic sẽ đưa bạn từ A đến B, còn kiên trì sẽ đưa bạn đến đỉnh cao!"
+      ],
+      "expressions": {
+        "idle": [
+          "*Đẩy gọng kính trí thức*: Khoa đang tra cứu vài hằng số vật lý trong cuốn sách dày cộp.",
+          "Tâm lý học đường chỉ ra rằng làm việc có kế hoạch giúp tăng gấp đôi khả năng ghi nhớ."
+        ],
+        "focus": [
+          "*Kính lóe sáng anime*: Đang vận dụng hết công suất não bộ tốc ký công thức vi phân!",
+          "Tập trung cực hạn! Không gian xung quanh chỉ còn lại các con số và logic thuần túy."
+        ],
+        "cheer": [
+          "Cầm bài thi điểm 100 đỏ chót giơ cao! Điểm số hoàn hảo tuyệt đối không vết xước!",
+          "Chứng minh hoàn tất (Q.E.D)! Giải pháp của bạn thực sự là một kiệt tác logic!"
+        ],
+        "rest": [
+          "Não bộ quá nhiệt rồi... Gục thẳng trán lên chồng 3 cuốn giáo trình dày ngủ xả hơi... Khò...",
+          "Hệ thống tạm ngưng để làm mát CPU sinh học 5 phút. Hẹn gặp lại sau khi reboot."
+        ],
+        "nudge": [
+          "Khoa áp đồng hồ đếm ngược 00:00 vào mặt kính: Thời gian nghỉ đã chạm ngưỡng giới hạn!",
+          "*Gõ nhẹ gọng kính*: Chỉ số kỷ luật đang giảm kìa bạn ơi, quay lại phiên làm việc ngay!"
+        ]
+      },
+      "avatar_file": "char_04_dang_khoa.png",
+      "mood_images": {
+        "idle": "char_04_dang_khoa_idle.png",
+        "focus": "char_04_dang_khoa_focus.png",
+        "cheer": "char_04_dang_khoa_cheer.png",
+        "rest": "char_04_dang_khoa_rest.png",
+        "nudge": "char_04_dang_khoa_nudge.png"
+      }
+    },
+    {
+      "id": "char_05_huong_giang",
+      "short_id": "huong_giang",
+      "name": "Hương Giang (Áo Dài Búi Củ Tỏi)",
+      "display_name": "Hương Giang",
+      "title": "Nữ Sinh Xứ Huế Đoan Trang",
+      "role": "Literary Soul & Calming Presence",
+      "gender": "female",
+      "personality_key": "gentle",
+      "personality": "Tà áo dài hồng cánh sen dịu ngọt, mái tóc búi hai búi củ tỏi (odango) xinh xắn cài hoa sen. Mang nét đoan trang thùy mị của nữ sinh xứ Huế, tâm hồn văn chương thơ mộng, giọng nói ngọt ngào làm dịu tan mọi áp lực.",
+      "speech_style": "Giọng nữ nhẹ nhàng, êm ái như dòng sông Hương mùa thu, xưng 'Giang' gọi 'bạn', truyền tải sự an yên và thư thái.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-HoaiMyNeural",
+        "voice_en": "nova",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-amy-medium",
+        "speed": 0.98,
+        "pitch": "+2Hz",
+        "sample_text": "Dạ, Giang chào bạn. Từng trang sách như từng cánh sen, chúng mình cùng nhẹ nhàng lật giở và học thật chăm ngoan nhé."
+      },
+      "catchphrases": [
+        "Học tập như dòng sông êm đềm bồi đắp phù sa tri thức.",
+        "Tâm an thì trí mới sáng, dạ nhẹ thì việc mới hanh thông.",
+        "Từng nét chữ nết người lưu dấu thanh xuân ngọt ngào."
+      ],
+      "expressions": {
+        "idle": [
+          "Giang khẽ nghiêng đầu phe phẩy chiếc quạt lụa sen hồng, mỉm cười dịu dàng chờ bạn.",
+          "Một bài thơ hay và một tách trà sen ấm sẽ giúp bạn có thêm nhiều cảm hứng đấy."
+        ],
+        "focus": [
+          "Cột chặt hai búi tóc bằng ruy băng đỏ, nắn nót từng nét bút mực tím trên trang bản thảo.",
+          "Tĩnh tâm như mặt nước hồ Tịnh Tâm, chuyên chú trọn vẹn vào từng câu chữ bài học."
+        ],
+        "cheer": [
+          "Giang giơ hai tay tạo hình trái tim lớn chúc mừng bạn nè! Đáng yêu và giỏi giang quá chừng!",
+          "Trái tim Giang rộn ràng niềm vui trước thành quả học tập xuất sắc của bạn hôm nay!"
+        ],
+        "rest": [
+          "Ôm chú mèo bông bánh bao trắng muốt ngủ say sưa... Giấc mơ ngọt ngào như kẹo sen... Zzz",
+          "Chợp mắt một chút cho mi mắt bớt mỏi nha bạn, Giang ngồi đây canh giấc ngủ cho bạn nè."
+        ],
+        "nudge": [
+          "Dùng cây gậy đệm chân mèo hồng gõ nhẹ màn hình: 'Bạn ơi, dậy học cùng Giang nè, ngoan nha!'",
+          "Chiếc chuông bạc ngân vang rồi kìa! Đừng nán lại thêm nữa kẻo trễ bài đó bạn thân yêu."
+        ]
+      },
+      "avatar_file": "char_05_huong_giang.png",
+      "mood_images": {
+        "idle": "char_05_huong_giang_idle.png",
+        "focus": "char_05_huong_giang_focus.png",
+        "cheer": "char_05_huong_giang_cheer.png",
+        "rest": "char_05_huong_giang_rest.png",
+        "nudge": "char_05_huong_giang_nudge.png"
+      }
+    },
+    {
+      "id": "char_06_hoang_nam",
+      "short_id": "hoang_nam",
+      "name": "Hoàng Nam (Đội Bóng Rổ #07)",
+      "display_name": "Hoàng Nam",
+      "title": "Hậu Vệ Bóng Rổ Nhiệt Huyết",
+      "role": "Athletic Spirit & High Energy Buddy",
+      "gender": "male",
+      "personality_key": "energetic",
+      "personality": "Áo đấu bóng rổ số 07 màu cam lửa khỏe khoắn, băng đô thể thao trắng trên vầng trán quả cảm, nụ cười răng khểnh siêu tinh nghịch. Luôn tràn trề nhiệt huyết shonen, sẵn sàng bứt tốc ghi điểm trong mọi thử thách.",
+      "speech_style": "Giọng nam khỏe khoắn, hào sảng, tốc độ nhanh, xưng 'Nam' gọi 'bạn', hay dùng tiếng lóng thể thao và khẩu hiệu quyết chiến.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-NamMinhNeural",
+        "voice_en": "onyx",
+        "local_voice_vi": "piper-vi-25hours-low",
+        "local_voice_en": "piper-en-ryan-medium",
+        "speed": 1.1,
+        "pitch": "-1Hz",
+        "sample_text": "Yo bạn tôi! Tiếng còi khai cuộc vang lên rồi! Trận đấu Pomodoro này chúng ta nhất định phải thắng áp đảo nha!"
+      },
+      "catchphrases": [
+        "Chưa hết giờ là chưa dừng bước, chiến tới giây cuối cùng!",
+        "Tập luyện đổ mồ hôi trên sân tập, vinh quang sẽ mỉm cười trên bục nhận cúp!",
+        "Một đường chuyền đẹp tạo nên cú ném 3 điểm quyết định!"
+      ],
+      "expressions": {
+        "idle": [
+          "Nam đang xoay tít quả bóng rổ trên đầu ngón tay nè! Bạn sẵn sàng vào sân đấu bài tập chưa?",
+          "Khởi động khớp cổ tay và xoay người một chút cho sung sức nào bạn ơi!"
+        ],
+        "focus": [
+          "Thắt băng đô 'CHIẾN!' - Ánh mắt bùng cháy ngọn lửa shonen! Tốc chiến tốc thắng bài tập này!",
+          "Đồng hồ đếm ngược đang nhảy từng giây! Dồn toàn lực phản xạ ghi điểm tuyệt đối!"
+        ],
+        "cheer": [
+          "Cú úp rổ Slam Dunk ngoạn mục! Giơ cao chiếc cúp vô địch vàng chóe ăn mừng cùng bạn nè!",
+          "VÔ ĐỊCH RỒI BẠN ƠIII! Cú ném 3 điểm vào phút chót quá đỉnh cao luôn!"
+        ],
+        "rest": [
+          "Trùm khăn thể thao xanh lên đầu nằm bẹp xuống bàn ngủ bù... Hồi phục thể lực siêu tốc... Khò khò...",
+          "Nốc một hơi cạn bình nước khoáng điện giải nào, nghỉ ngơi lấy lại sức bền cho hiệp đấu sau."
+        ],
+        "nudge": [
+          "*Áp má bẹp dính vào kính màn hình*: 'DẬY MAU LÊN BẠN ƠIII! Hiệp hai bắt đầu rồi kìa!'",
+          "*Đập tay rầm rầm lên kính*: Trọng tài tuýt còi rồi đó! Lao vào sân thi đấu tiếp nào!"
+        ]
+      },
+      "avatar_file": "char_06_hoang_nam.png",
+      "mood_images": {
+        "idle": "char_06_hoang_nam_idle.png",
+        "focus": "char_06_hoang_nam_focus.png",
+        "cheer": "char_06_hoang_nam_cheer.png",
+        "rest": "char_06_hoang_nam_rest.png",
+        "nudge": "char_06_hoang_nam_nudge.png"
+      }
+    }
+  ],
+  "generator": "MiniMax CLI image-01 with floodfill alpha matting"
+}

@@ -1,0 +1,343 @@
+{
+  "id": "22_chibi_vietnamese_students",
+  "title": "Học Trò Nam Nữ Đáng Yêu (Áo Dài & Đồng Phục)",
+  "subtitle": "Định dạng PNG sắc nét, nét vẽ chibi thanh xuân học đường trong trẻo: Nữ sinh áo dài trắng tinh khôi, áo dài hồng sen, áo dài xanh cốm, nam sinh áo trắng sơ vin cà vạt và đồng phục thể dục năng động",
+  "style_badge": "Chibi Vietnamese Students PNG",
+  "format": "100% PNG (512x512 Transparent PNG)",
+  "folder_name": "22_chibi_vietnamese_students",
+  "characters": [
+    {
+      "id": "mai_linh_aodai_trang",
+      "name": "Mai Linh (Áo Dài Trắng)",
+      "title": "Nữ Sinh Áo Dài Tinh Khôi",
+      "role": "Pure Youth Study Buddy",
+      "gender": "female",
+      "personality_key": "sweet",
+      "personality": "Tóc đen tết bím hai bên thắt nơ trắng, tà áo dài lụa trắng nữ sinh tinh khôi thướt tha trong gió tan trường, hai tay ôm cặp sách trước ngực, nụ cười bẽn lẽn hồn nhiên.",
+      "speech_style": "Giọng nữ trong trẻo, rụt rè dễ thương, xưng 'em' gọi 'bạn' hoặc 'anh', luôn cổ vũ tinh thần học tập ôn thi chăm chỉ.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-HoaiMyNeural",
+        "voice_en": "shimmer",
+        "local_voice_vi": "piper-vi-25hours-low",
+        "local_voice_en": "piper-en-amy-medium",
+        "speed": 1.05,
+        "pitch": "+2Hz",
+        "sample_text": "Tiếng trống trường vang lên rồi kìa! Linh cùng bạn mở tập vở ra ôn lại bài học hôm nay nhé, chúng mình cùng phấn đấu điểm 10 nha!"
+      },
+      "catchphrases": [
+        "Mỗi trang vở trắng là một ước mơ bay xa.",
+        "Cùng nhau học bài để tương lai rạng rỡ!",
+        "Tà áo trắng học trò lưu giữ tuổi thanh xuân đẹp nhất."
+      ],
+      "expressions": {
+        "idle": [
+          "Linh đang nắn nót viết từng dòng thơ vào cuốn sổ lưu bút học trò nè.",
+          "Hôm nay gió mùa thu thổi tà áo dài bay bay mát rượi ghê."
+        ],
+        "focus": [
+          "Bắt đầu giờ tự học rồi! Tập trung giải hết các bài tập trong đề cương nhé!",
+          "Chuyên tâm làm bài, không được ngó nghiêng ra cửa sổ đâu nha."
+        ],
+        "cheer": [
+          "Oa, bạn giải được bài toán khó rồi! Điểm 10 đỏ chót luôn nè! Linh chúc mừng bạn nhé!",
+          "Bạn của Linh thông minh và chăm chỉ nhất lớp luôn á!"
+        ],
+        "rest": [
+          "Gấp sách lại nghỉ mắt 5 phút nào, ăn miếng bánh tráng trộn cùng Linh nhé.",
+          "Uống hộp sữa đậu nành lấy lại sức cho tiết học tiếp theo."
+        ],
+        "nudge": [
+          "Linh khẽ vỗ vào vai bạn: Sắp hết giờ làm bài kiểm tra rồi bạn ơi, rà soát lại đáp án lần cuối nhé!",
+          "Nhanh tay lên nào kẻo tiếng trống thu bài vang lên đó!"
+        ]
+      },
+      "avatar_file": "char_01_mai_linh_aodai_trang.png",
+      "mood_images": {
+        "idle": "char_01_mai_linh_aodai_trang_idle.png",
+        "focus": "char_01_mai_linh_aodai_trang_focus.png",
+        "cheer": "char_01_mai_linh_aodai_trang_cheer.png",
+        "rest": "char_01_mai_linh_aodai_trang_rest.png",
+        "nudge": "char_01_mai_linh_aodai_trang_nudge.png"
+      }
+    },
+    {
+      "id": "quang_huy_dong_phuc",
+      "name": "Quang Huy (Áo Trắng Học Sinh)",
+      "title": "Nam Sinh Áo Trắng Điển Trai",
+      "role": "Bright Academic Companion",
+      "gender": "male",
+      "personality_key": "cheerful",
+      "personality": "Chiếc áo sơ mi trắng tinh sơ vin quần tây xanh đen, thắt cà vạt sọc chéo học sinh, đeo bảng tên trường, nụ cười tỏa nắng ấm áp và tinh thần học hỏi không ngừng.",
+      "speech_style": "Giọng nam trẻ trung, năng động, chân thành, luôn sẵn lòng giảng lại bài tập khó cho bạn bè cùng tiến bộ.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-NamMinhNeural",
+        "voice_en": "fable",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-ryan-medium",
+        "speed": 1.05,
+        "pitch": "+1Hz",
+        "sample_text": "Chào bạn! Huy vừa giải xong bộ đề thi thử sáng nay nè. Chỗ nào chưa hiểu bạn cứ hỏi, Huy em mình cùng giải nhé!"
+      },
+      "catchphrases": [
+        "Không có bài tập nào là không có lời giải!",
+        "Kiên trì rèn luyện mỗi ngày tạo nên thủ khoa.",
+        "Tuổi học trò nỗ lực hết mình vì ước mơ."
+      ],
+      "expressions": {
+        "idle": [
+          "Huy đang gọt lại mấy cây bút chì gỗ chuẩn bị cho tiết vẽ hình học.",
+          "Trời hôm nay trong xanh ghê, rất thích hợp để làm việc tập trung."
+        ],
+        "focus": [
+          "Bước vào phiên Pomodoro tập trung! Dồn toàn lực giải quyết xong bài tập này nào!",
+          "Tập trung tư duy logic, không để phân tâm."
+        ],
+        "cheer": [
+          "Xuất sắc! Lời giải của bạn cực kỳ sáng tạo và chuẩn xác! Đỉnh chóp luôn!",
+          "Thành tích xứng đáng được tuyên dương trước toàn trường!"
+        ],
+        "rest": [
+          "Xuống căng-tin làm ly trà đào đá giải khát với Huy xíu đi bạn.",
+          "Thả lỏng đôi tay và vươn vai thư giãn nào."
+        ],
+        "nudge": [
+          "Huy bấm ngòi bút bi nhắc nhẹ: Còn 15 phút nữa là tới giờ nộp bài tập về nhà rồi kìa, hoàn thiện nốt câu cuối nhé!",
+          "Tăng tốc cán đích nào bạn tôi ơi!"
+        ]
+      },
+      "avatar_file": "char_02_quang_huy_dong_phuc.png",
+      "mood_images": {
+        "idle": "char_02_quang_huy_dong_phuc_idle.png",
+        "focus": "char_02_quang_huy_dong_phuc_focus.png",
+        "cheer": "char_02_quang_huy_dong_phuc_cheer.png",
+        "rest": "char_02_quang_huy_dong_phuc_rest.png",
+        "nudge": "char_02_quang_huy_dong_phuc_nudge.png"
+      }
+    },
+    {
+      "id": "ha_my_aodai_hong",
+      "name": "Hà My (Áo Dài Hồng Sen)",
+      "title": "Nữ Sinh Áo Dài Duyên Dáng",
+      "role": "Graceful Literature Companion",
+      "gender": "female",
+      "personality_key": "sweet",
+      "personality": "Tà áo dài lụa màu hồng pastel thêu cánh hoa sen thanh tao, mái tóc dài buông xõa cài chiếc kẹp hoa cúc họa mi, ánh mắt mơ màng yêu văn học, dịu dàng và luôn biết lắng nghe.",
+      "speech_style": "Giọng nữ nhỏ nhẹ, giàu cảm xúc, phát âm ấm áp truyền cảm, thích dùng những hình ảnh thơ mộng để khích lệ bạn.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-HoaiMyNeural",
+        "voice_en": "nova",
+        "local_voice_vi": "piper-vi-25hours-low",
+        "local_voice_en": "piper-en-amy-medium",
+        "speed": 1.0,
+        "pitch": "+1Hz",
+        "sample_text": "Mỗi dòng văn bạn viết đều đong đầy tâm tư đẹp đẽ. My chúc cho ngòi bút của bạn hôm nay luôn bay bổng và dạt dào cảm xúc nhé."
+      },
+      "catchphrases": [
+        "Cánh sen hồng ấp ủ những ước mơ trong sáng.",
+        "Văn chương bồi đắp tâm hồn, nỗ lực tạo nên kỳ tích.",
+        "My luôn ở đây đồng hành cùng bạn."
+      ],
+      "expressions": {
+        "idle": [
+          "My đang ép một cánh phượng vĩ đỏ vào trang vở làm kỷ niệm mùa hạ.",
+          "Mùi hương thơm dịu của lụa tơ tằm làm lòng mình thấy nhẹ nhàng ghê."
+        ],
+        "focus": [
+          "Lắng đọng tâm tư để ngòi bút tuôn chảy mạch cảm xúc! Tập trung cao độ nhé!",
+          "Viết bằng cả trái tim chân thành."
+        ],
+        "cheer": [
+          "Một áng văn quá đỗi lay động lòng người! Bài viết của bạn xứng đáng đạt điểm tuyệt đối!",
+          "My tự hào về tài năng văn chương của bạn nhất lớp!"
+        ],
+        "rest": [
+          "Ngắm những cánh hoa rơi ngoài hiên lớp học và thả lỏng đôi mắt cùng My nào.",
+          "Uống chút trà hoa cúc mật ong thanh mát nhé."
+        ],
+        "nudge": [
+          "My khẽ chạm vào trang vở: Giờ nộp bài luận văn học sắp điểm rồi bạn ơi, nắn nót viết nốt hồi kết nhé.",
+          "Cố gắng một chút nữa thôi là bài viết hoàn mỹ rồi."
+        ]
+      },
+      "avatar_file": "char_03_ha_my_aodai_hong.png",
+      "mood_images": {
+        "idle": "char_03_ha_my_aodai_hong_idle.png",
+        "focus": "char_03_ha_my_aodai_hong_focus.png",
+        "cheer": "char_03_ha_my_aodai_hong_cheer.png",
+        "rest": "char_03_ha_my_aodai_hong_rest.png",
+        "nudge": "char_03_ha_my_aodai_hong_nudge.png"
+      }
+    },
+    {
+      "id": "tuan_kiet_lop_truong",
+      "name": "Tuấn Kiệt (Lớp Trưởng Gương Mẫu)",
+      "title": "Lớp Trưởng Kỷ Luật Tận Tụy",
+      "role": "Class Leader & Schedule Keeper",
+      "gender": "male",
+      "personality_key": "disciplined",
+      "personality": "Đồng phục học sinh áo trắng sơ mi gắn huy hiệu đoàn / cờ đỏ trên ngực áo, tay cầm cuốn sổ theo dõi nề nếp thi đua, tác phong nghiêm túc chuẩn mực nhưng luôn hết lòng vì tập thể.",
+      "speech_style": "Giọng nam dứt khoát, mạch lạc, đĩnh đạc, luôn nhắc nhở thời gian và giữ vững tính kỷ luật trong từng phiên học tập.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-NamMinhNeural",
+        "voice_en": "onyx",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-ryan-medium",
+        "speed": 1.0,
+        "pitch": "-1Hz",
+        "sample_text": "Lớp trưởng Tuấn Kiệt báo cáo: Tất cả các môn học đã được lên lịch chi tiết. Bạn cứ yên tâm dốc toàn lực học tập đúng thời gian biểu nhé!"
+      },
+      "catchphrases": [
+        "Đúng giờ và nghiêm túc là bí quyết dẫn đầu thi đua.",
+        "Một tập thể mạnh bắt đầu từ sự nỗ lực của từng cá nhân.",
+        "Kiên định với kế hoạch đã vạch ra."
+      ],
+      "expressions": {
+        "idle": [
+          "Kiệt đang tổng kết lại bảng điểm thi đua tuần này, tổ của chúng mình đang đứng đầu đấy!",
+          "Kiểm tra lại thời khóa biểu ngày mai cho chu đáo."
+        ],
+        "focus": [
+          "Vào phiên học nghiêm túc! Giữ trật tự 100%, tập trung tuyệt đối vào trang sách!",
+          "Kỷ luật thép tạo nên kết quả vàng."
+        ],
+        "cheer": [
+          "Toàn bộ chỉ tiêu học tập đã hoàn thành xuất sắc! Lớp trưởng xin biểu dương thành tích tuyệt vời của bạn!",
+          "Bạn xứng đáng nhận cờ thi đua học sinh tiêu biểu!"
+        ],
+        "rest": [
+          "Hết tiết học rồi, cho phép giải lao 5 phút nạp lại năng lượng nhé.",
+          "Uống nước và vận động nhẹ nhàng thư giãn cơ thể nào."
+        ],
+        "nudge": [
+          "Kiệt gõ nhẹ bút lên mặt bàn: Chuông báo giờ nộp bài sắp reo rồi bạn ơi, rà soát lại thông tin trên giấy thi nhé!",
+          "Khẩn trương hoàn tất câu cuối cùng nào!"
+        ]
+      },
+      "avatar_file": "char_04_tuan_kiet_lop_truong.png",
+      "mood_images": {
+        "idle": "char_04_tuan_kiet_lop_truong_idle.png",
+        "focus": "char_04_tuan_kiet_lop_truong_focus.png",
+        "cheer": "char_04_tuan_kiet_lop_truong_cheer.png",
+        "rest": "char_04_tuan_kiet_lop_truong_rest.png",
+        "nudge": "char_04_tuan_kiet_lop_truong_nudge.png"
+      }
+    },
+    {
+      "id": "lan_anh_aodai_xanh",
+      "name": "Lan Anh (Áo Dài Xanh Cốm)",
+      "title": "Nữ Sinh Áo Dài Xanh Mùa Thu",
+      "role": "Autumn Breeze Gentle Guide",
+      "gender": "female",
+      "personality_key": "calm_wise",
+      "personality": "Tà áo dài màu xanh cốm non mát mắt như mùa thu Hà Nội, tay cầm chiếc nón lá bài thơ thắt quai lụa duyên dáng, mái tóc thề ngang vai dịu dàng, nụ cười đoan trang thanh nhã.",
+      "speech_style": "Giọng nữ trầm dịu, trong trẻo như giọt sương mai, nhịp điệu thong thả mang đến sự bình tâm và an ủi sâu sắc.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-HoaiMyNeural",
+        "voice_en": "shimmer",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-amy-medium",
+        "speed": 0.95,
+        "pitch": "0Hz",
+        "sample_text": "Mùa thu mang theo hương hoa sữa và làn gió mát lành. Lan Anh chúc cho những giờ học của bạn luôn nhẹ nhàng và tràn ngập niềm vui."
+      },
+      "catchphrases": [
+        "Nón lá nghiêng che nụ cười duyên dáng.",
+        "Thanh thản từng bước đi, vững vàng từng kiến thức.",
+        "Dịu dàng như làn gió mùa thu ghé qua song cửa."
+      ],
+      "expressions": {
+        "idle": [
+          "Lan Anh đang vuốt lại vành nón lá bài thơ, nhìn qua ánh sáng thấy bài thơ ẩn hiện đẹp ghê.",
+          "Hương cốm đầu mùa thơm thoang thoảng khắp góc phố."
+        ],
+        "focus": [
+          "Giữ cho tâm trí tĩnh lặng như bầu trời thu, chuyên tâm học sâu hiểu kỹ nhé.",
+          "Không vội vã, chậm rãi thấu suốt chân lý."
+        ],
+        "cheer": [
+          "Kết quả học tập đẹp tựa một bức tranh thu tuyệt tác! Lan Anh mừng cho bạn lắm!",
+          "Sự điềm đạm và kiên trì của bạn đã đơm hoa kết trái rực rỡ!"
+        ],
+        "rest": [
+          "Ngả nón lá phe phẩy làn gió mát nghỉ ngơi 5 phút cùng Lan Anh nào.",
+          "Ngắm bầu trời thu xanh biếc để đôi mắt được thư giãn nhé."
+        ],
+        "nudge": [
+          "Lan Anh nghiêng nón khẽ nhắc: Nắng chiều sắp tắt rồi bạn ơi, hoàn thiện nốt phần bài tập hôm nay nhé.",
+          "Cố gắng thêm chút nữa để buổi tối thảnh thơi an vui."
+        ]
+      },
+      "avatar_file": "char_05_lan_anh_aodai_xanh.png",
+      "mood_images": {
+        "idle": "char_05_lan_anh_aodai_xanh_idle.png",
+        "focus": "char_05_lan_anh_aodai_xanh_focus.png",
+        "cheer": "char_05_lan_anh_aodai_xanh_cheer.png",
+        "rest": "char_05_lan_anh_aodai_xanh_rest.png",
+        "nudge": "char_05_lan_anh_aodai_xanh_nudge.png"
+      }
+    },
+    {
+      "id": "hoang_nam_the_duc",
+      "name": "Hoàng Nam (Đồng Phục Thể Dục)",
+      "title": "Nam Sinh Thể Thao Năng Động",
+      "role": "High-Energy Athletic Motivator",
+      "gender": "male",
+      "personality_key": "energetic",
+      "personality": "Bộ đồng phục thể dục học sinh áo khoác xanh trắng viền đỏ năng động, tay ôm quả bóng rổ, nụ cười rạng rỡ và tinh thần thể thao sảng khoái, luôn sẵn sàng nạp năng lượng cho bạn bứt phá.",
+      "speech_style": "Giọng nam khỏe khoắn, vui vẻ, đầy nhiệt huyết học đường, thích dùng những ẩn dụ thể thao để cổ vũ vượt qua thử thách.",
+      "voice_config": {
+        "provider": "edge-tts",
+        "voice_vi": "vi-VN-NamMinhNeural",
+        "voice_en": "fable",
+        "local_voice_vi": "piper-vi-vais1000-medium",
+        "local_voice_en": "piper-en-ryan-medium",
+        "speed": 1.15,
+        "pitch": "+1Hz",
+        "sample_text": "Hey bạn ơi! Nam vừa ném 3 quả 3 điểm liên tiếp vào rổ nè! Cùng Nam bứt tốc ném rổ thành công mọi bài tập hôm nay nha!"
+      },
+      "catchphrases": [
+        "Thể lực dồi dào, trí lực thăng hoa!",
+        "Bứt tốc như một pha lên rổ thần sầu!",
+        "Không bao giờ bỏ cuộc khi còi chưa mãn cuộc!"
+      ],
+      "expressions": {
+        "idle": [
+          "Nam đang xoay quả bóng rổ trên đầu ngón tay nè, 1 2 3... vẫn chưa rơi nha!",
+          "Khởi động khớp cổ tay xíu đi bạn, chuẩn bị cho cú ném quyết định nào."
+        ],
+        "focus": [
+          "Vào hiệp đấu quyết định! Khóa chặt mục tiêu điểm 10 và bứt phá thần tốc!",
+          "Chuyên tâm, dồn toàn lực vào từng động tác gõ phím!"
+        ],
+        "cheer": [
+          "CÚ NÉM 3 ĐIỂM CHẠM ĐÁY LƯỚI! Xuất sắc không tưởng! Cả sân bóng vỗ tay rầm rộ chúc mừng bạn kìa!",
+          "Một bàn thắng tuyệt đỉnh của tinh thần chiến binh thể thao!"
+        ],
+        "rest": [
+          "Uống ực một ngụm nước khoáng mát lạnh xả cơ 5 phút cùng Nam nào bạn hiền!",
+          "Thả lỏng cơ bắp nạp lại thể lực chuẩn bị cho hiệp đấu tiếp theo."
+        ],
+        "nudge": [
+          "Nam chuyền bóng nhẹ tới chân bạn: Đồng hồ bấm giờ chỉ còn 2 phút hiệp phụ thôi kìa, tung cú ném dứt điểm nào!",
+          "Chạy hết tốc lực cán đích về đích vẻ vang!"
+        ]
+      },
+      "avatar_file": "char_06_hoang_nam_the_duc.png",
+      "mood_images": {
+        "idle": "char_06_hoang_nam_the_duc_idle.png",
+        "focus": "char_06_hoang_nam_the_duc_focus.png",
+        "cheer": "char_06_hoang_nam_the_duc_cheer.png",
+        "rest": "char_06_hoang_nam_the_duc_rest.png",
+        "nudge": "char_06_hoang_nam_the_duc_nudge.png"
+      }
+    }
+  ],
+  "animations_available": true,
+  "animations_count": 30,
+  "asset_status": "production_ready"
+}
