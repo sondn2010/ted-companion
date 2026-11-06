@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <!-- Secondary person (right/back) -->
+  <circle cx="16.5" cy="8" r="3.2" fill="#BA68C8"/>
+  <path d="M12.8 19.5v-1.8a4.2 4.2 0 0 1 4.2-4.2h1a4.2 4.2 0 0 1 4.2 4.2v1.8z" fill="#9C27B0"/>
+  <!-- Primary person (left/front) -->
+  <circle cx="8.5" cy="7.2" r="3.6" fill="#4DD0E1"/>
+  <path d="M3.5 19.5v-2.2a4.6 4.6 0 0 1 4.6-4.6h.8a4.6 4.6 0 0 1 4.6 4.6v2.2z" fill="#00ADEF"/>
+</svg>
