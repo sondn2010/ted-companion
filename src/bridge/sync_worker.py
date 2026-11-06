@@ -1,17 +1,20 @@
 import asyncio
 import logging
 
-from src.bridge.hermes_client import HermesRequestRejectedError, HermesUnavailableError
-from src.bridge.hermes_client_pool import hermes_client_pool
+from src.bridge.openai_client import OpenAIRequestRejectedError, OpenAIUnavailableError
+from src.bridge.openai_client_pool import openai_client_pool
 from src.core.models import db
 
 logger = logging.getLogger("ted")
 
+# Backward compatibility alias
+hermes_client_pool = openai_client_pool
 
-class HermesSyncWorker:
+
+class OpenAISyncWorker:
     """
     Đồng bộ các phiên tập trung (Focus Sessions) hoàn thành lúc Offline lên bộ nhớ dài hạn
-    của Hermes Agent (kết nối của module work) khi mạng hoặc VPS khả dụng trở lại.
+    của Não AI (kết nối của module work) khi mạng hoặc máy chủ khả dụng trở lại.
     """
 
     async def sync_completed_sessions(self) -> int:
@@ -19,7 +22,11 @@ class HermesSyncWorker:
         if not unsynced:
             return 0
 
-        client = hermes_client_pool.for_module("work")
+        pool = hermes_client_pool if hermes_client_pool is not openai_client_pool else openai_client_pool
+        client = pool.for_module("work")
+        if client is None:
+            return 0
+
         synced_count = 0
         for session in unsynced:
             summary_msg = (
@@ -30,7 +37,7 @@ class HermesSyncWorker:
             )
             try:
                 await client.complete_text([{"role": "user", "content": summary_msg}], timeout=25.0)
-            except (HermesUnavailableError, HermesRequestRejectedError) as exc:
+            except (OpenAIUnavailableError, OpenAIRequestRejectedError) as exc:
                 logger.info("Dừng đồng bộ phiên tập trung: %s", exc)
                 break
             db.mark_session_synced(session.id)
@@ -39,4 +46,7 @@ class HermesSyncWorker:
         return synced_count
 
 
-sync_worker = HermesSyncWorker()
+sync_worker = OpenAISyncWorker()
+
+# Backward compatibility alias
+HermesSyncWorker = OpenAISyncWorker

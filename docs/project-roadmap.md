@@ -10,7 +10,7 @@
   - Ra mắt cửa sổ thú cưng Chibi ảo (Mèo, Shiba, Cú, Gấu trúc).
   - Đồng hồ đếm ngược Pomodoro và quản lý task cục bộ.
 - [x] **v1.2.0: Cầu nối AI & Giao thức FastMCP**
-  - Tích hợp cầu nối Hermes Client với tính năng SSE Streaming.
+  - Tích hợp cầu nối AI Client với tính năng SSE Streaming.
   - Phân tích cú pháp thẻ tâm trạng `<mood:tag>` để đổi biểu cảm thú cưng theo ngữ cảnh thoại.
   - Xây dựng FastMCP Server cho phép các AI Agent bên ngoài điều khiển ứng dụng qua hàng đợi IPC.
 - [x] **v1.3.0: Động cơ kép Work & Coach Modules**

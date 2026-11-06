@@ -142,6 +142,7 @@ def _create_widget_with_bubble(bubble):
         focus_engine=focus,
         quick_chat=SimpleNamespace(
             show_mindful_ping=lambda t: popup_calls.append(("ping", t)),
+            show_ai_nudge=lambda m, s: popup_calls.append(("nudge", s)),
             show_hermes_nudge=lambda m, s: popup_calls.append(("nudge", s)),
             open_for=lambda mid: popup_calls.append(("open", mid)),
         ),

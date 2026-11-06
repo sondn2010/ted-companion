@@ -6,7 +6,7 @@ from typing import Optional
 
 from sqlmodel import Session, select
 
-from src.bridge.hermes_json_contract_request import request_json
+from src.bridge.openai_json_contract_request import request_openai_json_contract as request_json
 from src.core.background_task_spawner import spawn_background_task
 from src.core.i18n import tr
 from src.core.models import DatabaseManager, Task

@@ -5,7 +5,7 @@ import logging
 from datetime import datetime, timedelta
 from typing import Optional
 
-from src.bridge.hermes_json_contract_request import request_json
+from src.bridge.openai_json_contract_request import request_openai_json_contract as request_json
 from src.engines.work.email_digest_contract_schemas import EmailDigestResponse
 from src.engines.work.local_timezone_name import local_timezone_name
 from src.engines.work.work_briefing_due_window import MIDDAY

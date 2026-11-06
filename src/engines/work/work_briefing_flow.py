@@ -9,8 +9,8 @@ from typing import Optional
 
 from shiboken6 import isValid
 
-from src.bridge.hermes_client import HermesRequestRejectedError, HermesUnavailableError, sanitize_for_history
-from src.bridge.hermes_mood_tag_stream_parser import MOOD_TAG_RE
+from src.bridge.openai_client import OpenAIRequestRejectedError as HermesRequestRejectedError, OpenAIUnavailableError as HermesUnavailableError, sanitize_for_history
+from src.bridge.mood_tag_stream_parser import MOOD_TAG_RE
 from src.core.background_task_spawner import spawn_background_task
 from src.core.tts_service import tts_service
 from src.engines.work.daily_briefing_builder import (

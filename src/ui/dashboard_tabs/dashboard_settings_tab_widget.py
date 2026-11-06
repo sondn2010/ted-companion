@@ -26,7 +26,7 @@ from src.core.update_manager import update_manager
 from src.core.version_config import APP_VERSION, get_default_update_url
 from src.ui.button_text_escape import btn_text
 from src.ui.dashboard_tabs.database_sync_settings_group_widget import DatabaseSyncSettingsGroupWidget
-from src.ui.dashboard_tabs.hermes_connections_settings_widget import HermesConnectionsSettingsWidget
+from src.ui.dashboard_tabs.openai_connections_settings_widget import OpenAIConnectionsSettingsWidget
 from src.ui.dashboard_tabs.hotkey_settings_group_widget import HotkeySettingsGroupWidget
 from src.ui.dashboard_tabs.modules_toggle_settings_widget import ModulesToggleSettingsWidget
 from src.ui.dashboard_tabs.stt_settings_group_widget import SttSettingsGroupWidget
@@ -45,7 +45,7 @@ def _card_layout(parent_layout: QVBoxLayout) -> QVBoxLayout:
 
 
 class DashboardSettingsTabWidget(QScrollArea):
-    """Tab Cài đặt: (a) ngôn ngữ, nhân vật + timer, (b) TTS/STT offline hoặc máy chủ, (c) kết nối Hermes, (d) module."""
+    """Tab Cài đặt: (a) ngôn ngữ, nhân vật + timer, (b) TTS/STT offline hoặc máy chủ, (c) kết nối OpenAI, (d) module."""
 
     open_gallery_requested = Signal()   # DashboardWindow nối tới open_character_gallery
 
@@ -203,7 +203,7 @@ class DashboardSettingsTabWidget(QScrollArea):
         self.group_db_sync = DatabaseSyncSettingsGroupWidget()
         layout.addWidget(self.group_db_sync)
 
-        self.connections = HermesConnectionsSettingsWidget(settings, pool, registry)
+        self.connections = OpenAIConnectionsSettingsWidget(settings, pool, registry)
         self.modules = ModulesToggleSettingsWidget(settings, registry, pool=pool)
         self.connections.connections_changed.connect(self.modules.reload_connections)
         self.hotkeys = HotkeySettingsGroupWidget()

@@ -58,5 +58,5 @@ làm), `quiz_correct` (câu đúng), `writing_graded`, `agenda_done`, `untangle_
 (level cao nhất từng đạt), `best_streak_days`, `active_days`, `outings`, `xp_total`.
 
 Điều kiện được đánh giá mỗi lần Hub làm mới (sau phiên tập trung, xong việc, mỗi vài phút); nhân vật mới mở sẽ hiện
-bubble "🎭 Mở khóa nhân vật mới: ...". `FocusEngine.set_character` từ chối nhân vật chưa mở (cả lệnh MCP của Hermes).
+bubble "🎭 Mở khóa nhân vật mới: ...". `FocusEngine.set_character` từ chối nhân vật chưa mở (cả lệnh MCP bên ngoài).
 Biến môi trường `TED_UNLOCKABLE_SKIN_PACKS_DIR` đọc pack từ thư mục khác (test trỏ vào thư mục rỗng).

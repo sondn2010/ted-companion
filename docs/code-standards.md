@@ -78,7 +78,7 @@
    - Các cột bổ sung sau này phải đi qua hàm `ensure_columns(...)` trong `src.core.sqlite_add_missing_columns_migration`.
    - Không được thực hiện các lệnh xóa bảng (`DROP TABLE`) trên máy người dùng trong các bản cập nhật.
 3. **Mô hình Local-First**:
-   - Mọi thao tác CRUD người dùng phải được ghi nhận vào SQLite cục bộ trước khi đồng bộ lên máy chủ đám mây (Cloud PostgreSQL / Hermes AI).
+   - Mọi thao tác CRUD người dùng phải được ghi nhận vào SQLite cục bộ trước khi đồng bộ lên máy chủ đám mây (Cloud PostgreSQL / Não AI).
 
 ---
 

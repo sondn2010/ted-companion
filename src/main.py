@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Điểm khởi chạy chính của ứng dụng Ted Desktop Companion (PySide6 + qasync + Hermes Agent).
+Điểm khởi chạy chính của ứng dụng Ted Desktop Companion (PySide6 + qasync + OpenAI-compatible API).
 """
 
 import asyncio
@@ -38,7 +38,7 @@ from src.config import APP_ICON_RELATIVE_PATH, get_resource_path, settings
 from src.core.audio_manager import AudioManager
 from src.core.background_task_spawner import configure_ted_file_logging, spawn_background_task
 from src.core.update_manager import update_manager
-from src.bridge.hermes_client_pool import hermes_client_pool
+from src.bridge.openai_client_pool import openai_client_pool
 from src.core.app_state_key_value_store import KeyValueStore
 from src.core.focus_engine import FocusEngine
 from src.core.hotkeys.global_hotkey_manager import hotkey_manager
@@ -89,21 +89,21 @@ def main():
 
     # Module registry + engine host: engine lỗi/chưa cài chỉ bị bỏ qua, không làm sập app
     from src.core.chat_session_manager import chat_session_manager
-    chat_session_manager.set_client_pool(hermes_client_pool)
+    chat_session_manager.set_client_pool(openai_client_pool)
     registry = ModuleRegistry()
-    hermes_client_pool.manifest_connection_resolver = registry.connection_for
+    openai_client_pool.manifest_connection_resolver = registry.connection_for
     # Module coach (dữ liệu của trẻ) thiếu kết nối → KHÔNG rơi về kết nối đầu tiên (thường là profile công việc)
-    hermes_client_pool.strict_module_predicate = lambda mid: getattr(registry.get(mid), "engine", None) != "work"
+    openai_client_pool.strict_module_predicate = lambda mid: getattr(registry.get(mid), "engine", None) != "work"
     ctx = AppRuntimeContext(
-        focus_engine=focus_engine, audio=audio_manager, registry=registry, client_pool=hermes_client_pool,
+        focus_engine=focus_engine, audio=audio_manager, registry=registry, client_pool=openai_client_pool,
         kv=KeyValueStore(db.engine),
     )
-    ctx.quick_chat = QuickChatPopup(focus_engine=focus_engine, client_pool=hermes_client_pool, registry=registry)
+    ctx.quick_chat = QuickChatPopup(focus_engine=focus_engine, client_pool=openai_client_pool, registry=registry)
     ctx.dashboard = DashboardWindow(focus_engine=focus_engine, registry=registry)
     ctx.dashboard.bind_chat(ctx.quick_chat)   # chat to nằm trong app (trang 💬), không còn popup nổi
     ctx.bubble = PetSpeechBubble(
         focus_engine=focus_engine,
-        client_pool=hermes_client_pool,
+        client_pool=openai_client_pool,
         registry=registry,
         quick_chat=ctx.quick_chat,
         dashboard=ctx.dashboard,
@@ -133,7 +133,7 @@ def main():
 
     app.aboutToQuit.connect(on_about_to_quit)
 
-    cheer_provider = CheerLineProvider(registry, hermes_client_pool, focus_engine=focus_engine, bubble=ctx.bubble)
+    cheer_provider = CheerLineProvider(registry, openai_client_pool, focus_engine=focus_engine, bubble=ctx.bubble)
     companion = TedCompanionWidget(ctx, cheer_provider)
     _tray = TrayManager(
         companion_widget=companion,

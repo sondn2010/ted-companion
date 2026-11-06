@@ -16,7 +16,7 @@ from src.config import settings
 from src.core.background_task_spawner import spawn_background_task
 from src.core.focus_engine import FocusState
 from src.core.gamification.health_break_contract_schema import HealthBreakSuggestion
-from src.core.gamification.health_break_hermes_suggestion_fetcher import HealthBreakContext, fetch_hermes_suggestion
+from src.core.gamification.health_break_suggestion_fetcher import HealthBreakContext, fetch_health_break_suggestion as fetch_hermes_suggestion
 from src.core.gamification.health_break_rotation_state import HealthBreakRotationState
 from src.core.gamification.health_break_suggestions import (
     WATER_DUE_MINUTES,

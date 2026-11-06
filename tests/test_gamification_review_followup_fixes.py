@@ -239,33 +239,3 @@ def test_stopped_hub_ignores_late_focus_signals(memory_engine):
     hub.stop()
     focus.tasks_updated.emit()
     assert not hub._debounce.isActive()
-
-
-# ---- L6: save_growth_report.py chịu được index hỏng và --last không hợp lệ ----
-def _script(*args, stdin=""):
-    import subprocess
-    import sys
-    from skill_sample_extraction_helper import COMMON_SKILLS_DIR
-    script = COMMON_SKILLS_DIR / "ted-growth-hub" / "scripts" / "save_growth_report.py"
-    done = subprocess.run([sys.executable, "-I", str(script), *args], input=stdin, capture_output=True,
-                          text=True, encoding="utf-8", timeout=60)
-    return done.returncode, done.stdout
-
-
-def test_query_rejects_non_positive_last(tmp_path):
-    for bad in ("0", "-2"):
-        code, out = _script("query", "--home", str(tmp_path), "--learner", "bin", "--last", bad)
-        assert code != 0 and json.loads(out) == {"saved": False, "error": "invalid last"}
-
-
-def test_corrupted_index_does_not_crash_save_or_query(tmp_path):
-    index = tmp_path / "reports" / "growth" / "bin" / "index.json"
-    index.parent.mkdir(parents=True)
-    index.write_text(json.dumps({"daily": {"2026-10-20": {"no_kind": 1}, "2026-10-19": "x"}, "weekly": []}),
-                     encoding="utf-8")
-    payload = {"kind": "daily", "report_kind": "learning", "date": "2026-10-21", "learner": "bin"}
-    code, out = _script("save", "--home", str(tmp_path), stdin=json.dumps(payload))
-    assert code == 0 and json.loads(out)["saved"] is True        # mục thiếu report_kind không làm memory_line sập
-    index.write_text("[1, 2]", encoding="utf-8")                  # index.json không phải dict
-    code, out = _script("query", "--home", str(tmp_path), "--learner", "bin", "--kind", "daily")
-    assert code == 0 and json.loads(out) == []

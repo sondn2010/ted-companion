@@ -5,8 +5,8 @@ import logging
 from datetime import timedelta
 from typing import Callable
 
-from src.bridge.hermes_offline_probe_and_backoff import OfflineBackoff, OfflineProbe
-from src.bridge.hermes_json_contract_request import request_json
+from src.bridge.openai_offline_probe_and_backoff import OfflineBackoff, OfflineProbe
+from src.bridge.openai_json_contract_request import request_openai_json_contract as request_json
 from src.engines.coach.coach_module_services import CoachModuleServices
 from src.engines.coach.coach_quiz_writing_report_schemas import ProgressReportSavedReply
 from src.engines.coach.coach_request_envelope import envelope

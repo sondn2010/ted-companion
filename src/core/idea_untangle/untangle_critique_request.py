@@ -4,7 +4,7 @@ import logging
 import re
 from typing import Mapping, Optional, Sequence
 
-from src.bridge.hermes_json_contract_request import request_json
+from src.bridge.openai_json_contract_request import request_openai_json_contract as request_json
 from src.core.idea_untangle.untangle_critique_contract_schemas import UntangleCritique
 from src.core.idea_untangle.untangle_problem_kinds_by_engine import audience_for, normalize_kind
 from src.core.idea_untangle.untangle_prompt_templates import AUDIENCE_RULES, CHAT_PREFIX, CRITIQUE_TEMPLATE

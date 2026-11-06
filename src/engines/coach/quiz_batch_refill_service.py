@@ -4,8 +4,8 @@ import logging
 from datetime import datetime
 from typing import Optional, Protocol, Sequence
 
-from src.bridge.hermes_client import HermesBrainClient
-from src.bridge.hermes_json_contract_request import request_json
+from src.bridge.openai_client import OpenAIBrainClient as HermesBrainClient
+from src.bridge.openai_json_contract_request import request_openai_json_contract as request_json
 from src.engines.coach.coach_item_repository import CoachItemRepository
 from src.engines.coach.coach_quiz_writing_report_schemas import QuizBatchResponse
 from src.engines.coach.coach_request_envelope import envelope

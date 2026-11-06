@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Ted FastMCP Server — Cho phép Hermes Agent (Local hoặc VPS) trực tiếp điều khiển
+Ted FastMCP Server — Cho phép các AI Agent hoặc công cụ MCP trực tiếp điều khiển
 giao diện PySide6 của Ted, đổi nhân vật (Mèo / Cú / Gấu trúc), quản lý Tasks, Pomodoro và Daily Journal.
 """
 

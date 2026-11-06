@@ -2,10 +2,10 @@
 
 from typing import Iterable
 from PySide6.QtCore import Qt
-from src.core.connection_registry_and_settings_migration import HermesConnection
+from src.core.connection_registry_and_settings_migration import OpenAIConnection, HermesConnection
 
 
-def connection_matches_query(conn: HermesConnection, query: str) -> bool:
+def connection_matches_query(conn: OpenAIConnection, query: str) -> bool:
     """Kiểm tra một kết nối Não AI có khớp với từ khóa tìm kiếm (tên, model, URL, ID) hay không."""
     q = query.strip().lower()
     if not q:

@@ -13,6 +13,7 @@ from pydantic import ValidationError
 
 from src.core.connection_registry_and_settings_migration import (
     SETTINGS_SCHEMA_VERSION,
+    OpenAIConnection,
     HermesConnection,
     ModuleOverride,
     migrate_settings_payload,
@@ -125,7 +126,7 @@ class AppConfig:
         self.character_skin: str = os.getenv("TED_CHARACTER_SKIN", DEFAULT_CHARACTER_SKIN).lower()
         if self.character_skin not in CHARACTER_SKINS:
             self.character_skin = DEFAULT_CHARACTER_SKIN
-        self.connections: list[HermesConnection] = []
+        self.connections: list[OpenAIConnection] = []
         self.module_overrides: dict[str, ModuleOverride] = {}
         self.active_module: str = "work"
         self.read_only = False  # True khi file do bản build mới hơn ghi → không được ghi đè
@@ -293,12 +294,12 @@ class AppConfig:
         self.connections = []
         for item in payload.get("connections") or []:
             try:
-                self.connections.append(HermesConnection.model_validate(item))
+                self.connections.append(OpenAIConnection.model_validate(item))
             except ValidationError as exc:
                 logger.warning("Bỏ qua kết nối không hợp lệ %r: %s", item.get("id") if isinstance(item, dict) else "?", validation_error_summary(exc))
         if not self.connections:  # luôn có ít nhất 1 kết nối để client pool không bao giờ rỗng
             seed = migrate_settings_payload({}, os.environ)[0]["connections"]
-            self.connections = [HermesConnection.model_validate(c) for c in seed]
+            self.connections = [OpenAIConnection.model_validate(c) for c in seed]
         self.module_overrides = {}
         for module_id, item in (payload.get("modules") or {}).items():
             try:
@@ -368,10 +369,10 @@ class AppConfig:
             raise
 
     # ---------- connections CRUD ----------
-    def get_connection(self, conn_id: str) -> Optional[HermesConnection]:
+    def get_connection(self, conn_id: str) -> Optional[OpenAIConnection]:
         return next((c for c in self.connections if c.id == conn_id), None)
 
-    def upsert_connection(self, conn: HermesConnection):
+    def upsert_connection(self, conn: OpenAIConnection):
         for idx, existing in enumerate(self.connections):
             if existing.id == conn.id:
                 self.connections[idx] = conn
@@ -383,7 +384,7 @@ class AppConfig:
         if self.get_connection(conn_id) is None:
             return f"Không tìm thấy kết nối '{conn_id}'."
         if len(self.connections) <= 1:
-            return "Phải giữ lại ít nhất 1 kết nối Hermes."
+            return "Phải giữ lại ít nhất 1 kết nối AI."
         users = [m for m, o in self.module_overrides.items() if o.connection == conn_id and o.enabled is not False]
         if users:
             return f"Kết nối '{conn_id}' đang được dùng bởi module: {', '.join(users)}."
@@ -398,5 +399,6 @@ class AppConfig:
         current = self.module_override(module_id).model_dump()
         current.update(fields)
         self.module_overrides[module_id] = ModuleOverride.model_validate(current)
+
 
 settings = AppConfig()

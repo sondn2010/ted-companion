@@ -1,6 +1,6 @@
 from PySide6.QtWidgets import QFrame, QHBoxLayout, QLabel, QMessageBox, QPushButton, QTextEdit, QVBoxLayout, QWidget
 from shiboken6 import isValid
-from src.bridge.hermes_client_pool import hermes_client_pool
+from src.bridge.openai_client_pool import openai_client_pool
 from src.bridge.sync_worker import sync_worker
 from src.config import settings
 from src.core.background_task_spawner import spawn_background_task
@@ -107,7 +107,8 @@ class DashboardAnalyticsTabWidget(QWidget):
         count = await sync_worker.sync_completed_sessions()
         if not isValid(self):
             return
-        conn_name = hermes_client_pool.for_module("work").connection.name
+        work_client = openai_client_pool.for_module("work")
+        conn_name = work_client.connection.name if work_client else "Chưa cấu hình"
         QMessageBox.information(
             self, "Sync", f"Đã đồng bộ {count} phiên tập trung mới lên bộ nhớ của Não AI ({conn_name})."
         )

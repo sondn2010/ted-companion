@@ -4,7 +4,7 @@ import logging
 from datetime import datetime, time, timedelta, timezone
 from typing import Optional
 
-from src.bridge.hermes_json_contract_request import request_json
+from src.bridge.openai_json_contract_request import request_openai_json_contract as request_json
 from src.engines.work.calendar_contract_schemas import CalendarResponse, to_utc
 from src.engines.work.calendar_event_cache_model_and_repository import CalendarEventRepository
 from src.engines.work.local_timezone_name import local_timezone_name

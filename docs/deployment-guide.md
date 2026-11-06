@@ -73,7 +73,7 @@ uv run python src/main.py
 
 ## 3. Khởi chạy máy chủ FastMCP (Ted MCP Server)
 
-Ted tích hợp sẵn FastMCP server để kết nối với các công cụ phát triển như Claude Desktop, Cursor hoặc Hermes Agent:
+Ted tích hợp sẵn FastMCP server để kết nối với các công cụ phát triển như Claude Desktop, Cursor hoặc các AI Agent:
 ```bash
 # Khởi chạy máy chủ FastMCP độc lập
 python src/bridge/ted_mcp_server.py

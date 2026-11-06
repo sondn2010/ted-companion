@@ -22,8 +22,8 @@ Prompt md dùng `{{var}}` (biến không biết được giữ nguyên, dấu `{
 
 (định nghĩa trong `src/modules_runtime/engine_fixed_menus.py`)
 
-## Thêm module coach = 1 yaml + 1 Hermes profile
-1. Tạo Hermes profile trên VPS (xem `docs/modules/hermes-vps-multi-profile-setup.md`).
+## Thêm module coach = 1 yaml + 1 kết nối Não AI (OpenAI-compatible)
+1. Cấu hình endpoint OpenAI-compatible (ví dụ OpenAI, Ollama, vLLM hoặc Cloud API).
 2. Tạo `~/.ted/modules/<id>/module.yaml`:
    ```yaml
    id: ly
@@ -35,4 +35,4 @@ Prompt md dùng `{{var}}` (biến không biết được giữ nguyên, dấu `{
    order: 50
    learner_id: con
    ```
-3. Thêm connection `ly` trong Settings, khởi động lại Ted. Mục tiêu, môn, lịch học do Hermes trả về khi sync.
+3. Thêm connection `ly` trong Cài đặt (Settings), khởi động lại Ted. Mục tiêu, môn, lịch học do Não AI trả về khi sync.

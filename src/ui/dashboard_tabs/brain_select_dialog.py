@@ -13,11 +13,11 @@ from PySide6.QtWidgets import (
     QTableWidgetItem,
     QVBoxLayout,
 )
-from src.core.connection_registry_and_settings_migration import HermesConnection
+from src.core.connection_registry_and_settings_migration import OpenAIConnection
 from src.core.i18n import tr
 from src.ui.button_text_escape import btn_text
 from src.ui.dashboard_tabs.connection_search_filter import filter_connection_table_rows
-from src.ui.dashboard_tabs.hermes_connection_edit_dialog import HermesConnectionEditDialog
+from src.ui.dashboard_tabs.openai_connection_edit_dialog import OpenAIConnectionEditDialog, HermesConnectionEditDialog
 
 COL_NAME, COL_MODEL, COL_URL, COL_STATUS = range(4)
 
@@ -33,7 +33,7 @@ class BrainSelectDialog(QDialog):
 
     def __init__(
         self,
-        connections: list[HermesConnection],
+        connections: list[OpenAIConnection],
         current_id: Optional[str] = None,
         module_name: str = "",
         can_clear: bool = False,
@@ -182,7 +182,7 @@ class BrainSelectDialog(QDialog):
         if self._config is None:
             return
         taken = frozenset(c.id for c in self._config.connections)
-        dialog = HermesConnectionEditDialog(taken_ids=taken, parent=self)
+        dialog = OpenAIConnectionEditDialog(taken_ids=taken, parent=self)
         if dialog.exec() and dialog.result_connection:
             new_conn = dialog.result_connection
             self._config.upsert_connection(new_conn)

@@ -5,7 +5,7 @@ Mỗi module_id tối đa 1 sync đang bay TOÀN TIẾN TRÌNH (kể cả engine
 import logging
 from typing import Callable, Optional
 
-from src.bridge.hermes_json_contract_request import request_json
+from src.bridge.openai_json_contract_request import request_openai_json_contract as request_json
 from src.engines.coach.coach_module_services import CoachModuleServices
 from src.engines.coach.coach_request_envelope import envelope
 from src.engines.coach.coach_stats_collector import collect_sync_stats
@@ -14,7 +14,7 @@ from src.engines.coach.coach_sync_plan_schemas import SyncPlanResponse
 logger = logging.getLogger("ted")
 SYNC_TIMEOUT_SECS = 60.0
 FAILED_TEXT = "Chưa đồng bộ được, Ted dùng kế hoạch cũ nhé"
-NO_CONNECTION_TEXT = "Chưa cấu hình kết nối Hermes cho module này — vào Cài đặt để chọn nhé"
+NO_CONNECTION_TEXT = "Chưa cấu hình kết nối Não AI cho module này — vào Cài đặt để chọn nhé"
 
 # Kết quả của sync(): updated | needs_onboarding | failed | busy | skipped
 UPDATED, NEEDS_ONBOARDING, FAILED, BUSY, SKIPPED = "updated", "needs_onboarding", "failed", "busy", "skipped"

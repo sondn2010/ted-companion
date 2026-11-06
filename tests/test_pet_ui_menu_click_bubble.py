@@ -152,7 +152,7 @@ def test_bubble_chat_and_parking_lot_ux():
     bubble._input_field.setText("Chào Ted")
     bubble.btn_chat.click()
     assert "Bạn: Chào Ted" in bubble._label.text()
-    assert "Chưa có kết nối Hermes" in bubble._label.text()
+    assert "Chưa có kết nối" in bubble._label.text()
     assert bubble._input_field.text() == ""
 
 

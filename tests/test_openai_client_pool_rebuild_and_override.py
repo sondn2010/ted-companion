@@ -4,19 +4,19 @@ và thứ tự phân giải kết nối của module (override → manifest → 
 Dùng AppConfig thật trỏ vào thư mục tạm; không gọi mạng.
 """
 
-from src.bridge.hermes_client_pool import HermesClientPool
+from src.bridge.openai_client_pool import OpenAIClientPool
 from src.config import AppConfig
-from src.core.connection_registry_and_settings_migration import HermesConnection
+from src.core.connection_registry_and_settings_migration import OpenAIConnection
 
 
-def _pool(tmp_path) -> tuple[HermesClientPool, AppConfig]:
+def _pool(tmp_path) -> tuple[OpenAIClientPool, AppConfig]:
     config = AppConfig(data_dir=tmp_path)
     config.connections = [
-        HermesConnection(id="local", name="Local", base_url="http://127.0.0.1:8080/v1", api_key="key-local"),
-        HermesConnection(id="vps", name="VPS", base_url="http://100.1.2.3:8642/v1", api_key="key-vps"),
+        OpenAIConnection(id="local", name="Local", base_url="http://127.0.0.1:8080/v1", api_key="key-local"),
+        OpenAIConnection(id="vps", name="VPS", base_url="http://100.1.2.3:8642/v1", api_key="key-vps"),
     ]
     config.module_overrides = {}
-    return HermesClientPool(config), config
+    return OpenAIClientPool(config), config
 
 
 def test_same_client_reused_and_rebuilt_only_when_identity_fields_change(tmp_path):
@@ -25,15 +25,15 @@ def test_same_client_reused_and_rebuilt_only_when_identity_fields_change(tmp_pat
     assert pool.get("local") is first
 
     # Đổi tên hiển thị không đổi identity → giữ nguyên client (và lịch sử chat)
-    config.upsert_connection(HermesConnection(id="local", name="Renamed", base_url="http://127.0.0.1:8080/v1", api_key="key-local"))
+    config.upsert_connection(OpenAIConnection(id="local", name="Renamed", base_url="http://127.0.0.1:8080/v1", api_key="key-local"))
     assert pool.get("local") is first
 
     # Đổi URL, API key hoặc model → tạo client mới
-    config.upsert_connection(HermesConnection(id="local", name="Renamed", base_url="http://10.0.0.9/v1", api_key="key-local"))
+    config.upsert_connection(OpenAIConnection(id="local", name="Renamed", base_url="http://10.0.0.9/v1", api_key="key-local"))
     rebuilt = pool.get("local")
     assert rebuilt is not first and rebuilt.connection.base_url == "http://10.0.0.9/v1"
 
-    config.upsert_connection(HermesConnection(id="local", name="Renamed", base_url="http://10.0.0.9/v1", api_key="other", model="m2"))
+    config.upsert_connection(OpenAIConnection(id="local", name="Renamed", base_url="http://10.0.0.9/v1", api_key="other", model="m2"))
     again = pool.get("local")
     assert again is not rebuilt and again.connection.api_key == "other" and again.connection.model == "m2"
 

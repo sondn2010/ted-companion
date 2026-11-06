@@ -1,12 +1,12 @@
 # Project Overview & PDR (Product Development Requirements)
 
-> **Ted Desktop Companion** — Trợ lý đồng hành Deep Work & Pomodoro trên Desktop (PySide6) kết hợp não bộ Hermes Agent (Local / VPS).
+> **Ted Desktop Companion** — Trợ lý đồng hành Deep Work & Pomodoro trên Desktop (PySide6) kết nối Não AI chuẩn OpenAI-compatible (Local / Cloud / VPS).
 
 ---
 
 ## 1. Giới thiệu tổng quan (Executive Summary)
 
-**Ted Companion** là ứng dụng desktop native được phát triển bằng Python (PySide6 + qasync) hoạt động theo triết lý **Local-First**, hỗ trợ người dùng duy trì trạng thái tập trung sâu (Deep Work), quản lý công việc theo phương pháp Pomodoro và ma trận Eisenhower, đồng thời tích hợp linh hồn AI (Hermes Agent) thông qua giao thức FastMCP và SSE Streaming.
+**Ted Companion** là ứng dụng desktop native được phát triển bằng Python (PySide6 + qasync) hoạt động theo triết lý **Local-First**, hỗ trợ người dùng duy trì trạng thái tập trung sâu (Deep Work), quản lý công việc theo phương pháp Pomodoro và ma trận Eisenhower, đồng thời tích hợp não bộ AI chuẩn OpenAI-compatible thông qua giao thức FastMCP và SSE Streaming.
 
 Bên cạnh vai trò trợ lý làm việc cho người lớn (`work` engine), Ted còn đóng vai trò là một người bạn học tập đồng hành (`coach` engine) dành cho học sinh, sinh viên với hệ thống thẻ nhớ lặp lại ngắt quãng (Leitner Spaced Repetition), kế hoạch học tập, và báo cáo tiến độ tự động tới phụ huynh qua Telegram.
 
@@ -81,7 +81,7 @@ Bên cạnh vai trò trợ lý làm việc cho người lớn (`work` engine), T
 - Bộ sưu tập skin có thể mở khóa (Unlockable Skin Packs) dựa trên chuỗi thành tích.
 
 ### 4.6. Cầu nối AI Não bộ & FastMCP Server
-- Cầu nối Hermes Client Pool hỗ trợ đa kết nối (Work profile & Coach profile riêng biệt).
+- Cầu nối OpenAI Client Pool hỗ trợ đa kết nối (Work profile & Coach profile riêng biệt).
 - Phân tích cú pháp thẻ cảm xúc thời gian thực `<mood:tag>` để điều khiển biểu cảm thú cưng.
 - Tích hợp máy chủ FastMCP (`ted-companion-tools`) cho phép các mô hình AI điều khiển trực tiếp UI qua IPC queue.
 

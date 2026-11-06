@@ -9,7 +9,7 @@ from typing import Optional
 
 from PySide6.QtCore import QTimer
 
-from src.bridge.hermes_client import HermesRequestRejectedError, HermesUnavailableError, sanitize_for_history
+from src.bridge.openai_client import OpenAIRequestRejectedError as HermesRequestRejectedError, OpenAIUnavailableError as HermesUnavailableError, sanitize_for_history
 from src.core.focus_engine import FocusState
 from src.modules_runtime.module_manifest_schema import ModuleManifest
 from src.modules_runtime.prompt_template_renderer import load_prompt, parse_bullet_lines

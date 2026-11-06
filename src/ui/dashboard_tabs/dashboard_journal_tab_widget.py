@@ -1,6 +1,6 @@
 from PySide6.QtWidgets import QHBoxLayout, QLabel, QMessageBox, QPushButton, QTextEdit, QVBoxLayout, QWidget
 from shiboken6 import isValid
-from src.bridge.hermes_client_pool import hermes_client_pool
+from src.bridge.openai_client_pool import openai_client_pool
 from src.core.background_task_spawner import spawn_background_task
 from src.core.i18n import i18n, tr
 from src.core.models import db
@@ -101,7 +101,10 @@ class DashboardJournalTabWidget(QWidget):
                 self.txt_ai_summary.insertPlainText(tok)
 
         try:
-            summary = await hermes_client_pool.for_module("work").stream_chat(
+            work_client = openai_client_pool.for_module("work")
+            if not work_client:
+                return
+            summary = await work_client.stream_chat(
                 user_message=prompt,
                 current_context=self.focus_engine.get_context_snapshot(),
                 on_mood_change=lambda m: self.focus_engine.set_mood(m),

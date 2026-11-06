@@ -2,7 +2,7 @@
 
 import logging
 
-from src.bridge.hermes_client import HermesRequestRejectedError, HermesUnavailableError
+from src.bridge.openai_client import OpenAIRequestRejectedError as HermesRequestRejectedError, OpenAIUnavailableError as HermesUnavailableError
 from src.engines.work.daily_briefing_builder import sanitize_untrusted_text
 
 logger = logging.getLogger("ted")

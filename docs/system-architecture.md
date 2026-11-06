@@ -39,7 +39,7 @@ graph TD
     end
 
     subgraph Bridge ["Lớp Cầu Nối & Ngoại Vi (AI Bridge & MCP)"]
-        HermesPool["HermesClientPool (SSE Stream)"]
+        OpenAIPool["OpenAIClientPool (SSE Stream)"]
         MCP["Ted FastMCP Server (IPC Queue)"]
         Sidecar["VieNeu-TTS Sidecar Process"]
         CloudDB[("PostgreSQL Remote DB")]
@@ -56,8 +56,8 @@ graph TD
     WorkEng --> SQLite
     CoachEng --> SQLite
 
-    Popup <--> HermesPool
-    Pet <--> HermesPool
+    Popup <--> OpenAIPool
+    Pet <--> OpenAIPool
     MCP --> Tasks
     MCP --> Focus
 
@@ -89,9 +89,9 @@ Hệ thống hỗ trợ cơ chế plug-and-play thông qua file cấu hình `mod
 - **`Work Engine`**: Cung cấp khả năng lập kế hoạch làm việc buổi sáng (Daily Briefing), quản lý mục tiêu chiến lược (Rocks), và kết nối đồng bộ lịch công tác với cảnh báo trước giờ họp.
 - **`Coach Engine`**: Ứng dụng thuật toán lặp lại ngắt quãng Leitner 5 hộp nhớ. Tự động tính toán ngày đến hạn ôn tập của từng thẻ kiến thức, hỗ trợ chấm điểm bài tập tự luận và gửi báo cáo ngoại tuyến qua hàng đợi outbox.
 
-### 2.4. Phân hệ Cầu nối AI (Hermes Bridge & FastMCP)
-- **`HermesClientPool`**: Quản lý nhiều hồ sơ kết nối AI độc lập. Hỗ trợ truyền phát thời gian thực (SSE Streaming) câu trả lời từ AI về khung chat.
-- **`HermesMoodTagStreamParser`**: Lắng nghe dòng stream văn bản từ AI, bóc tách các thẻ `<mood:...>` để thay đổi biểu cảm nhân vật tức thì mà không hiển thị các thẻ này ra giao diện người dùng.
+### 2.4. Phân hệ Cầu nối Não AI (OpenAI Compatible & FastMCP)
+- **`OpenAIClientPool`**: Quản lý nhiều hồ sơ kết nối AI độc lập chuẩn OpenAI. Hỗ trợ truyền phát thời gian thực (SSE Streaming) câu trả lời từ AI về khung chat.
+- **`MoodTagStreamParser`**: Lắng nghe dòng stream văn bản từ AI, bóc tách các thẻ `<mood:...>` để thay đổi biểu cảm nhân vật tức thì mà không hiển thị các thẻ này ra giao diện người dùng.
 - **`Ted FastMCP Server`**: Cung cấp giao diện chuẩn Model Context Protocol (MCP) cho phép các mô hình AI hoặc công cụ mở rộng (Claude Desktop, Cursor) có thể trực tiếp ra lệnh cho Ted thông qua hàng đợi IPC JSON an toàn.
 
 ### 2.5. Phân hệ Giọng nói (Voice Pipeline)

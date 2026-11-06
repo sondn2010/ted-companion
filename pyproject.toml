@@ -1,7 +1,7 @@
 [project]
 name = "ted-companion"
 version = "1.0.0"
-description = "Ted — Trợ lý đồng hành Deep Work & Pomodoro trên Desktop (PySide6) kết hợp não bộ Hermes Agent (Local / VPS)"
+description = "Ted — Trợ lý đồng hành Deep Work & Pomodoro trên Desktop (PySide6) kết nối Não AI chuẩn OpenAI-compatible (Local / Cloud / VPS)"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

@@ -297,8 +297,11 @@ class TedCompanionWidget(QWidget):
             fe.set_mood("FOCUS")
 
     def _on_external_nudge(self, mood: str, message: str):
-        """Lời nhắc của Hermes: lưu vào trang Chat + hiện ở bubble nhỏ, không bật cả app lên."""
-        self.quick_chat.show_hermes_nudge(mood, message)
+        """Lời nhắc của AI: lưu vào trang Chat + hiện ở bubble nhỏ, không bật cả app lên."""
+        if hasattr(self.quick_chat, "show_ai_nudge"):
+            self.quick_chat.show_ai_nudge(mood, message)
+        elif hasattr(self.quick_chat, "show_hermes_nudge"):
+            self.quick_chat.show_hermes_nudge(mood, message)
         bubble = self.ctx.bubble
         if bubble is not None and not bubble.is_busy():   # không chen ngang chat đang mở trong bubble
             bubble.show_message(message, mood=mood, timeout_ms=FOCUS_NUDGE_BUBBLE_MS)

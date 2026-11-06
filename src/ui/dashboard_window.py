@@ -2,7 +2,7 @@ import logging
 from typing import Optional
 
 from PySide6.QtWidgets import QMainWindow, QVBoxLayout, QWidget
-from src.bridge.hermes_client_pool import hermes_client_pool
+from src.bridge.openai_client_pool import openai_client_pool
 from src.config import settings
 from src.core.i18n import i18n, tr
 from src.ui.dashboard_tabs.character_gallery_tab_widget import CharacterGalleryTabWidget
@@ -47,7 +47,7 @@ class DashboardWindow(QMainWindow):
         self.analytics_tab = DashboardAnalyticsTabWidget()
         self.gallery_tab = CharacterGalleryTabWidget(focus_engine)
         self.help_tab = DashboardHelpTabWidget()
-        self.settings_tab = DashboardSettingsTabWidget(focus_engine, hermes_client_pool, registry)
+        self.settings_tab = DashboardSettingsTabWidget(focus_engine, openai_client_pool, registry)
         self.tabs.addTab(self.tasks_tab, tr("tab_tasks"))
         self.tabs.addTab(self.journal_tab, tr("tab_journal"))
         self.tabs.addTab(self.analytics_tab, tr("tab_analytics"))

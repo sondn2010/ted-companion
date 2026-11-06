@@ -4,7 +4,7 @@ import logging
 from dataclasses import dataclass
 from typing import Optional
 
-from src.bridge.hermes_json_contract_request import request_json
+from src.bridge.openai_json_contract_request import request_openai_json_contract as request_json
 from src.engines.coach.coach_module_services import CoachModuleServices
 from src.engines.coach.coach_quiz_writing_report_schemas import WritingGradeResult
 from src.engines.coach.coach_request_envelope import envelope

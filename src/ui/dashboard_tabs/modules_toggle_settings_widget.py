@@ -13,7 +13,7 @@ from PySide6.QtWidgets import (
 from src.core.i18n import tr
 from src.ui.button_text_escape import btn_text
 from src.ui.dashboard_tabs.brain_select_dialog import BrainSelectDialog
-from src.ui.dashboard_tabs.hermes_connections_manage_dialog import HermesConnectionsManageDialog
+from src.ui.dashboard_tabs.openai_connections_manage_dialog import OpenAIConnectionsManageDialog, HermesConnectionsManageDialog
 
 
 class ModulesToggleSettingsWidget(QWidget):
@@ -107,7 +107,7 @@ class ModulesToggleSettingsWidget(QWidget):
 
     def _open_manage_connections_dialog(self):
         """Mở hộp thoại quản lý toàn bộ các kết nối Não AI."""
-        dialog = HermesConnectionsManageDialog(self._config, self._pool, self._registry, parent=self)
+        dialog = OpenAIConnectionsManageDialog(self._config, self._pool, self._registry, parent=self)
         dialog.connections_changed.connect(self.reload)
         dialog.exec()
         self.reload()

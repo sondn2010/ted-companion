@@ -4,7 +4,7 @@
 
 ![Ted Companion](assets/icons/app_icon.png)
 
-**Trợ lý đồng hành Deep Work & Pomodoro trên Desktop (PySide6) kết hợp não bộ Hermes Agent (Local / VPS)**
+**Trợ lý đồng hành Deep Work & Pomodoro trên Desktop (PySide6) kết nối Não AI chuẩn OpenAI-compatible (Local / Cloud / VPS)**
 
 [![Python Version](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
 [![Framework](https://img.shields.io/badge/GUI-PySide6%20%2F%20Qt6-green.svg)](https://wiki.qt.io/Qt_for_Python)
@@ -24,8 +24,8 @@
 - **🔄 Động cơ kép (Dual Engines)**:
   - **Work Engine**: Báo cáo ngày (Daily Briefing), theo dõi mục tiêu lớn (Rocks), đồng bộ lịch làm việc và nhắc nhở cuộc họp.
   - **Coach Engine**: Trợ lý học tập cá nhân với thuật toán Lặp lại ngắt quãng (Leitner 5 hộp nhớ), ngân hàng câu hỏi trắc nghiệm/tự luận và tự động gửi báo cáo tiến độ học tập qua Telegram.
-- **🧠 Cầu nối Não bộ AI (Hermes Bridge & FastMCP)**:
-  - Tích hợp Hermes Client Pool hỗ trợ SSE Streaming phản hồi siêu tốc.
+- **🧠 Cầu nối Não bộ AI (OpenAI Compatible & FastMCP)**:
+  - Tích hợp OpenAI Client Pool hỗ trợ SSE Streaming phản hồi siêu tốc, tương thích OpenAI, Ollama, vLLM, LM Studio, v.v.
   - Tự động bóc tách thẻ cảm xúc `<mood:tag>` để đổi biểu cảm thú cưng theo thời gian thực.
   - Tích hợp sẵn máy chủ **FastMCP** (`ted-mcp`), cho phép Claude Desktop, Cursor, hay Agent bên ngoài điều khiển giao diện Ted qua IPC an toàn.
 - **🎙️ Trợ lý giọng nói đa chế độ (TTS & STT)**:
@@ -148,7 +148,7 @@ ted-companion/
 ├── modules/            # Các module nghiệp vụ (work, caohoc, duhoc, thcs)
 ├── scripts/            # Kịch bản đóng gói build .exe, sinh assets và release
 ├── src/
-│   ├── bridge/         # Cầu nối AI Hermes, bộ lọc tâm trạng và FastMCP Server
+│   ├── bridge/         # Cầu nối Não AI (OpenAI-compatible), bộ lọc tâm trạng và FastMCP Server
 │   ├── core/           # Quản lý Pomodoro, CSDL SQLite, Gamification, Audio, Voice
 │   ├── engines/        # Động cơ nghiệp vụ: Work Engine & Coach Engine
 │   ├── modules_runtime/# Nạp động và quản lý vòng đời module

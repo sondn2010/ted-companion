@@ -16,9 +16,6 @@ from src.core.gamification.wellbeing_daily_repository import WellbeingDailyRepos
 from src.core.gamification.xp_ledger_repository import XpLedgerRepository
 from src.core.gamification.xp_source_reconciler import KV_CURSOR, XpSourceReconciler
 from src.core.models import FocusSession
-from skill_sample_extraction_helper import COMMON_SKILLS_DIR
-
-SCRIPT = COMMON_SKILLS_DIR / "ted-growth-hub" / "scripts" / "save_growth_report.py"
 
 
 def _local_noon(day: date) -> datetime:
@@ -71,19 +68,3 @@ def test_hub_service_refreshes_after_meeting_completed(memory_engine):
         assert hub._debounce.isActive()
     finally:
         hub.stop()
-
-
-def _save(payload) -> tuple:
-    done = subprocess.run([sys.executable, "-I", str(SCRIPT), "save", "--home", str(payload.pop("_home"))],
-                          input=json.dumps(payload), capture_output=True, text=True, encoding="utf-8", timeout=60)
-    return done.returncode, done.stdout, done.stderr
-
-
-def test_save_script_rejects_malformed_sections_with_json_error(tmp_path):
-    base = {"kind": "daily", "report_kind": "general", "date": "2026-10-21", "learner": "user", "_home": tmp_path}
-    for bad in ({"stats": [1, 2]}, {"counts": "x"}, {"badges_new": [1, 2]}, {"wellbeing": [1]}):
-        code, out, err = _save({**base, **bad})
-        assert code != 0 and json.loads(out) == {"saved": False, "error": "invalid payload"}, (bad, err)
-    code, out, _ = _save({**base, "report_kind": "learning", "wellbeing": {"health": 1}})
-    assert code != 0 and json.loads(out)["saved"] is False
-    assert not (tmp_path / "reports" / "wellbeing").exists()

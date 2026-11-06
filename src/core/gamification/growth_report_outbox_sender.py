@@ -12,8 +12,8 @@ from dataclasses import dataclass, replace
 from datetime import date, datetime, timedelta, timezone
 from typing import Any, Callable, Dict, FrozenSet, List, Optional
 
-from src.bridge.hermes_json_contract_request import request_json
-from src.bridge.hermes_offline_probe_and_backoff import OfflineBackoff, OfflineProbe
+from src.bridge.openai_json_contract_request import request_openai_json_contract as request_json
+from src.bridge.openai_offline_probe_and_backoff import OfflineBackoff, OfflineProbe
 from src.core.gamification.growth_report_aggregation import (
     GrowthSources, collect_day, collect_week, is_active, learning_badge_ids)
 from src.core.gamification.growth_report_contract_schemas import ProgressReportSavedReply

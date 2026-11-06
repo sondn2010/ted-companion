@@ -13,7 +13,7 @@ Dự án gồm hơn **320 file mã nguồn Python** với khoảng **~30,000 dò
 | `src/core/` | 143 | ~12,200 | Lõi logic: Models, DB SQLite/PG, Gamification, Audio, Hotkeys, Watcher, Untangle, Settings |
 | `src/ui/` | 107 | ~12,600 | Giao diện người dùng PySide6: Pet Widget, Dashboard, Quick Chat, Theme, Rich Content Renderers |
 | `src/engines/` | 59 | ~3,500 | Bộ xử lý nghiệp vụ chuyên biệt: `work` (Rocks, Briefing, Calendar) & `coach` (Leitner, Quiz, Reports) |
-| `src/bridge/` | 9 | ~580 | Cầu nối Hermes AI Agent (SSE Client, Pool, Mood Parser) & FastMCP Server (`ted-mcp`) |
+| `src/bridge/` | 9 | ~580 | Cầu nối Não AI OpenAI-compatible (SSE Client, Pool, Mood Parser) & FastMCP Server (`ted-mcp`) |
 | `src/modules_runtime/` | 8 | ~390 | Hệ thống nạp runtime module, manifest validation, schema, template prompts |
 | `modules/` | Config + Prompts | ~500 | Các module cài sẵn: `work`, `caohoc`, `duhoc`, `thcs` |
 | `scripts/` | 9 | ~1,200 | Scripts đóng gói PyInstaller, phát hành release, sinh ảnh badge, quản lý character packs |
@@ -51,10 +51,10 @@ ted-companion/
 │   ├── main.py                      # Điểm vào chính của ứng dụng PySide6 (main entry point)
 │   ├── bridge/                      # Cầu nối AI và máy chủ MCP
 │   │   ├── chat_json_tail_detector.py # Nhận diện JSON contract gửi kèm ở đuôi câu trả lời AI
-│   │   ├── hermes_client.py         # Client gọi AI backend qua HTTP/SSE Streaming
-│   │   ├── hermes_client_pool.py    # Quản lý pool kết nối nhiều profile AI
-│   │   ├── hermes_mood_tag_stream_parser.py # Bóc tách thẻ <mood:tag> điều khiển biểu cảm
-│   │   ├── hermes_offline_probe_and_backoff.py # Thăm dò trạng thái kết nối AI có backoff
+│   │   ├── openai_client.py         # Client gọi AI backend qua HTTP/SSE Streaming chuẩn OpenAI
+│   │   ├── openai_client_pool.py    # Quản lý pool kết nối nhiều profile AI
+│   │   ├── mood_tag_stream_parser.py # Bóc tách thẻ <mood:tag> điều khiển biểu cảm
+│   │   ├── openai_offline_probe_and_backoff.py # Thăm dò trạng thái kết nối AI có backoff
 │   │   ├── sync_worker.py           # Worker đồng bộ dữ liệu ngầm lên AI server
 │   │   └── ted_mcp_server.py        # FastMCP Server cung cấp tools cho AI agents
 │   ├── core/                        # Logic nền tảng và cơ sở dữ liệu

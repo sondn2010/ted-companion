@@ -133,9 +133,11 @@ class QuickChatPopup(QWidget):
         self.ping_banner.ask(task_title)
         self.reveal_requested.emit()
 
-    def show_hermes_nudge(self, mood: str, message: str):
+    def show_ai_nudge(self, mood: str, message: str):
         """Chỉ lưu lời nhắc vào hội thoại work (lời nhắc hiện ở bubble, không bật cả app lên)."""
         self.transcripts.append_html(WORK_MODULE_ID, notice_html(f"<b>Ted [{escape(mood)}]:</b> {escape(message)}"))
+
+    show_hermes_nudge = show_ai_nudge
 
     def _on_confirm_focused(self):
         self.ping_banner.hide()
@@ -182,7 +184,7 @@ class QuickChatPopup(QWidget):
         self.transcripts.append_html(module_id, assistant_open_html())
         self.set_streaming_ui(True)
         client = self._pool.for_module(module_id)
-        coro = self._stream_from_hermes(user_text, client, module_id)
+        coro = self._stream_from_ai(user_text, client, module_id)
         try:
             self._stream_task = spawn_background_task(coro, "quick-chat-stream")
         except RuntimeError:   # chưa có event loop: nhả khoá để người dùng gửi lại được
@@ -211,5 +213,7 @@ class QuickChatPopup(QWidget):
         self.btn_send.setText(btn_text(tr("bubble_btn_stop" if streaming else "quick_chat_btn_send")))
         self.btn_send.setToolTip(tr("bubble_btn_stop_tooltip") if streaming else "")
 
-    async def _stream_from_hermes(self, user_text: str, client, module_id: str):
+    async def _stream_from_ai(self, user_text: str, client, module_id: str):
         await stream_reply_into_popup(self, user_text, client, module_id)
+
+    _stream_from_hermes = _stream_from_ai
